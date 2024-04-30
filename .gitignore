@@ -1,0 +1,8 @@
+*.o
+perf_chains/*.data
+perf_chains/*.pkl
+*.data
+*.pkl
+perf.data.old
+*.proto
+perf.proto
