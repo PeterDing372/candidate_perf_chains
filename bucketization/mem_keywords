@@ -1,0 +1,94 @@
+memcpy	                   # memory copy - performInserts, CmdFindAndModify, V2LogBuilder 
+::_appendBytes	           # mongo::KeyString::...::_appendBytes calls memcpy (https://github.com/mongodb/mongo/blob/47ec1177999045a9ebe6af6f769ec94739116388/src/mongo/db/storage/key_string.cpp#L1350)
+memcmp	                   # memory compare - performInserts, BSONObj (binary json) ops, FindCmd  
+StringData::compare        # mongo::StringData::compare calls memcmp (https://github.com/mongodb/mongo/blob/47ec1177999045a9ebe6af6f769ec94739116388/src/mongo/base/string_data.h#L222)
+memmove                    # memory move - Btree ops, BSONObj ops (PlanExecuter)
+memset                     # memory set - Snappy (compression), CmdFindAndModify, insertKeysAndUpdateMultiKeys 
+memchr                     # memory character, searches for a character
+tc_malloc                  # custom malloc - TransportLayerASIO (Networking)
+tcmalloc                   # ^
+tc_realloc                 # custom realloc - BSONObj ops, updateRecord, insertBatchAndHandleError
+tc_calloc                  # custom calloc
+tc_free                    # custom free
+tc_delete                  # custom delete - calls free()
+kmalloc                    # allocate contiguous memory in the physical memory
+kmem_cache_                # handle pre-allocated size objects
+slab_alloc                 # Called by kmem_cache_alloc
+OpMsg::parse               # Parse the message, lot of vector and buffers
+mongoMalloc                # Custom Mongo Malloc
+_M_realloc_insert          # Reallocate memory
+DocumentStorage::findFieldInCache      # Reads through cache to find a field, does a lot of memcmp ops
+kfree                                    # Free previously allocated kmalloc memory
+mongo::BSONObj::copy                     # Memcpy operations into SharedBuffer
+mongo::StringBuilderImpl<mongo::SharedBufferAllocator>::append # Copy string to a buffer after growing it
+mongo::NetworkCounter::hitPhysicalIn     # _physicalBytesIn->{store,fetchAndAdd}(bytes)
+namespace)::do_malloc_pages (anonymous namespace)::do_malloc_pages # Helper for do_malloc()
+mongo::NetworkCounter::hitPhysicalOut    # _physicalBytesOut->{store,fetchAndAdd} operations
+mongo::transport::TransportLayerASIO::ASIOSession::sinkMessage # write() operation
+_copy_from_user                          # 
+mongo::KeyString::TypeBits::resetFromBuffer # memcpy from buffer
+fput                                     # 
+copyin                                   # 
+mongo::WorkingSet::allocate              # 
+mallocgc                                 # Golang'malloc
+malloc@plt                               # 
+calloc@plt                               # 
+grpc_core::FilterStackCall::Create       # gRPC creates a Call by allocating some memory and sets some attributes of the call
+gpr_free                                 # gRPC's memfree
+gpr_malloc                               # gRPC's malloc
+gpr_realloc                              # gRPC's realloc
+grpc_cq_internal_unref                   # gRPC's code to check a completion queue (CQ) and free the memory
+runtime.memequal                         # Golang's wrapper for memcmp
+grpc_slice_buffer_add                    # gRPC's code to add slice data to a slice buffer. Contains memcpy operations
+realloc@plt                              # 
+grpc_chttp2_stream_map_add               # gRPC's code that does reallocation of memory if table is not at least 25% free
+free
+tc_newarray
+TCMallocImplementation
+__libc_realloc
+mongo::mongoRealloc
+malloc
+TCMalloc
+Malloc
+__libc_calloc
+operator new
+__gnu_cxx::new_allocator
+_IO_str_seekoff
+gc_
+copyTV
+lj_alloc_realloc
+resizestack
+lj_state_growstack
+buf_grow
+setgcVraw
+str_fastcmp
+ngx_palloc
+ngx_pcalloc
+ngx_alloc_chain_link
+ngx_alloc
+ngx_palloc_large
+ngx_list_push
+ngx_memn2cmp
+lj_BC_FUNCC
+lj_str_new
+propagatemark
+lj_mem_newgco
+lj_buf_putmem
+ngx_pnalloc
+lj_BC_JLOOP
+event_strlcpy_
+mongo::StringBuilderImpl<mongo::SharedBufferAllocator>::operator<<(char const*)
+_IO_setb
+_IO_default_uflow # Involves memory management as it deals with buffers
+_IO_str_underflow
+_IO_str_pbackfail # It involves memory management as it deals with string buffers
+_IO_file_doallocate
+_IO_doallocbuf
+__sweep_remove_one
+__block_manager_session_cleanup # This function is responsible for cleaning up the session of a block manager. It is a memory management function as it is responsible for freeing up the memory used by the block manager session.
+__block_size_discard # This function is responsible for discarding the block size. It is a memory management function as it is responsible for freeing up the memory used by the block size.
+__block_merge # This function is responsible for merging the blocks. It is a memory management function as it is responsible for freeing up the memory used by the blocks.
+__block_ext_insert # This function is responsible for inserting the block extension. It is a memory management function as it is responsible for allocating memory for the block extension.
+__block_off_remove.isra.0 # This function is responsible for removing the block offset. It is a memory management function as it is responsible for freeing up the memory used by the block offset.
+__block_append # This function is responsible for appending the block. It is a memory management function as it is responsible for allocating memory for the block.
+__block_ext_alloc # This function is responsible for allocating the block extension. It is a memory management function as it is responsible for allocating memory for the block extension.

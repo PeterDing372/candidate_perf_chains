@@ -1,0 +1,399 @@
+apic_timer_interrupt           # APIC interrupts
+asio                           # Asio C++ library for network programming
+reschedule_interrupt           # Reschedule interrupt - when mutex unlock fails, sending TCP message 
+call_function_interrupt        # 
+tcp_recvmsg                    # Receive TCP message
+tcp_v4_rcv                     # ^
+tcp_sendmsg_locked             # Send TCP message
+tcp_ack                        # Deal with incoming acks
+tcp_rcv_established            # TCP receive function for ESTABLISHED state
+recvmsg                        # ^
+hrtimer_interrupt              # High resolution timer 
+hrtimer_wakeup                 # ^
+schedule_hrtimeout_range       # ^ sleep until timeout
+epoll                          # syscall for I/O 
+sock_poll                      # kernel socket polling
+rb_next                        # Kernel RBTree function
+rb_prev                        # ^
+psi_task                       # Pressure Stall Information
+do_syscall_64                  # https://stackoverflow.com/questions/57439557/perf-profiler-reporting-excess-use-of-do-syscall-64
+nf_conntrack                   # Network connection tracking
+nf_hook_slow                   # interface b/w networking code and netfilter
+hash_conntrack_raw             # ^
+ipt_do_table                   # Returns firewall policies
+veth_xmit                      # Linux networking
+__sched_text_start             # Scheduling
+update_load_avg                # Update task and cfs_rq load average
+update_cfs_group               # iRecomputes group entity based on current state of group runqueue
+kmem_cache_free                # Free object in cache
+entry_SYSCALL_64               # Syscall handler
+syscall_return_via_sysret      # Returning from a syscall
+prepare_exit_to_usermode       # Moving from kernel mode
+gettimeofday                   # Get time
+switch_fpu_return              # Load FPU registers
+copy_user_enhanced_fast_string  # Some CPUs have enhanced string copy operations
+copy_user_generic_unrolled     # If CPU does not have an ERMS feature, this replaces copy_user..._fast_string
+__this_module                  # Part of dynamic loading of modules into the kernel
+__fget                         # makes sure a file refcount != 0
+__seccomp_filter               # Syscall to operate on Secure Computing state of process
+update_curr                    # Update current task's runtime statistics
+update_blocked_averages        # Updating load averages when scheduling
+change_pte_range               # Memory access protections for calling process
+do_numa_page                   # ^
+clock_gettime                  # Get time of a clock
+ip_finish_output2              # Passes the packet to the L2 layer
+cpuacct_charge                 # Charge this task's execution time to its accounting group
+__tcp_transmit_skb             # Transmits TCP packets queued by tcp_do_sendmsg()
+select_task_rq_fair            # Select target runqueue for the waking task
+smp_call_function_many         # Runs a function on a set of CPUs
+syscall_trace_enter            # Syscall trace entries
+select_idle_sibling            # Try to locate an idle CPU in sched_domain
+nf_ct_seq_offset               # Netfilter NAT sequence number mangling
+dev_queue_xmit                 # Transmit a buffer
+inet_lookup_established        # Find connection sock struct for a packet
+__ctype_b_loc                  # points to "traits" of each character
+kvm_vcpu_block                 # vCPU executed a HLT instruction in in-kernel mode
+tcp_in_window                  # TCP handling
+tcp_clean_rtx_queue            # Remove acknowledged frames from retransmission queue
+__netif_receive_skb_core       # Delivers data to protocol layers
+kvm_vm_ioctl_check_extension   # KVM check extension
+aa_sk_perm                     # Handle request on socket (?)
+br_handle_frame                # Receiving handler for network messages
+pick_next_task_fair            # Fair scheduling pick next task
+find_next_bit                  # Find the next set bit in a memory region
+tcp_write_xmit                 # Start sending data packets in write queue
+__handle_mm_fault              # Kernel fault handler when holding mm semaphore
+ktime_get                      # Device drivers read current time
+__virt_addr_valid              # Check validity of virtual address
+snmp_fold_field                # Get some infor for each CPU
+try_to_wake_up                          # Wake up a thread
+flexible_sched_in                       # Flexible Scheduling
+diskstats_show                          # Aggregate disk stat collector
+__pthread_enable_asynccancel            # Cancel cancelable functions like write()
+__pthread_disable_asynccancel           # Disable cancel for cancelable functions such as write()
+aa_file_perm                            # Do permission revalidation check
+task_numa_find_cpu                      # Go through each CPU and find where the task can migrate
+copy_page                               # Copy a page
+ip_rcv_core.isra.0                       # Linux IP Receive routine
+skb_page_frag_refill                     # check that a page_frag has enough room
+enqueue_task_fair                        # Update fair scheduling stats and insert into rbtree
+enqueue_entity                           # Enqueue into the rb-tree
+validate_xmit_skb                        # Linux networking validation
+account_entity_dequeue                   # Dequeue from rb-tree
+ipv4_mtu                                 # IPV4 Maximum Transmission Unit
+clear_page_erms                          # Clear page
+__ip_queue_xmit                          # Queue IP CMIT
+_copy_to_iter                            # Copy byte-byte-byte (?)
+tcp_event_new_data_sent                  # Account for new data sent to the network
+update_cfs_rq_h_load                     # Calculate hierarchical load of run queue for fair scheduling
+available_idle_cpu                       # Is a CPU idle for enqueuing work
+br_nf_pre_routing                        # Direct IPv6 traffic to the corresponding ipv6 function
+skb_release_data                         # Release data from sk buffer before freeing the memory
+__x86_indirect_thunk_rax                 # GCC's Spectre mitigation for indirect calls
+eth_type_trans                           # determine the packet's protocol ID
+tcp_cleanup_rbuf                         # Clean up the receive buffer and send ACK if needed
+__cgroup_bpf_run_filter_skb              # run a program for packet filtering
+__wake_up_common                         # Core wakeup function
+__secure_computing                       # Operate on Secure Computing state of process
+fput_many                                # Many fput : puts a string on a stream
+ip_output                                # 
+sendmsg@plt                              # Send a message to a socker
+pollwake                                 # 
+fdb_find_rcu                             # 
+tcp_current_mss                          # Compute the currect effective MSS taking into account other options
+update_min_vruntime                      # Update minimum vruntime
+__fsnotify_parent                        # Notify this dentry's parent about a child's events
+__slab_free                              # Slow path handling
+reweight_entity                          # Update load and weight of entity
+ctx_sched_out                            # 
+write                                    # Write syscall
+__check_object_size                      # Checks on the buffer
+common_file_perm                         # 
+task_numa_fault                          # Got a PROT_NONE fault for a page on @node
+__calc_delta                             # Change priority in sched/fair.c
+native_sched_clock                       # Scheduler clock - returns current time in ns
+ipv4_dst_check                           # 
+migrate_task_rq_fair                     # 
+pthread_self@plt                         # Return ID of calling thread
+br_nf_post_routing                       # Post Routing
+sap_registered                           # 
+dcdbas_pdev                              # 
+__local_bh_enable_ip                     # 
+svc_set_num_threads                      # 
+svc_udp_recvfrom                         # 
+i40e_xmit_frame_ring                     # 
+nf_nat_inet_fn                           # 
+newidle_balance                          # 
+dev_hard_start_xmit                      # 
+netif_skb_features                       # 
+net_rx_action                            # 
+process_backlog                          # 
+fb_sys_read                              # 
+ipv4_conntrack_defrag                    # 
+check_stack_object                       # 
+ip_idents_reserve                        # 
+iptable_mangle_hook                      # 
+dequeue_task_fair                        # 
+__ip_finish_output                       # 
+sk_wait_data                             # 
+nf_ct_deliver_cached_events              # 
+netdev_core_pick_tx                      # 
+iptunnel_xmit                            # 
+read_tsc                                 # 
+br_forward                               # 
+ip_vs_local_reply4                       # 
+skb_segment                              # 
+do_csum                                  # 
+ipv4_conntrack_local                     # 
+iptable_filter_hook                      # 
+wait_woken                               # 
+nf_nat_ipv4_local_fn                     # 
+vxlan_build_skb                          # 
+dequeue_entity                           # 
+tcp_release_cb                           # 
+__get_xps_queue_idx                      # 
+dst_cache_per_cpu_get.isra.0             # 
+deactivate_task                          # 
+ipv4_confirm                             # 
+__softirqentry_text_start                # 
+swapgs_restore_regs_and_return_to_usermode # 
+get_l4proto                              # 
+__br_forward                             # 
+mod_timer                                # 
+__update_idle_core                       # 
+__session_commit_transaction             # 
+intel_pstate_update_util                 # 
+enqueue_to_backlog                       # 
+marvell_enable                           # 
+update_sd_lb_stats                       # 
+ip_vs_in.part.0                          # 
+sk_stream_alloc_skb                      # 
+tcp_mstamp_refresh                       # 
+__tcp_push_pending_frames                # 
+tcp_rearm_rto                            # 
+nbp_switchdev_frame_mark                 # 
+br_nf_forward_finish                     # 
+nf_ct_get_tuple                          # 
+vxlan_find_mac                           # 
+__accumulate_pelt_segments               # 
+ip_vs_local_request4                     # 
+__skb_datagram_iter                      # 
+page_frag_free                           # 
+yield_task_fair                          # 
+import_iovec                             # 
+do_softirq.part.0                        # 
+ip_vs_forward_icmp                       # 
+is_skb_forwardable                       # 
+ip_queue_xmit                            # 
+intel_pmu_disable_all                    # 
+vxlan_xmit                               # 
+sched_yield@plt                          # 
+nf_nat_ipv4_fn                           # 
+do_nmi                                   # 
+__raise_softirq_irqoff                   # 
+tcp_push                                 # 
+skb_release_head_state                   # 
+mem_cgroup_from_task                     # 
+__curfile_update_check                   # 
+rw_copy_check_uvector                    # 
+tcp_recv_timestamp                       # 
+schedule_timeout                         # 
+validate_xmit_xfrm                       # 
+__next_timer_interrupt                   # 
+up_read                                  # 
+__xa_set_mark                            # 
+cpumask_next                             # 
+br_validate_ipv4.isra.0                  # 
+check_cfs_rq_runtime                     # 
+_copy_from_iter_full                     # 
+__nf_ct_refresh_acct                     # 
+tcp_chrono_stop                          # 
+__count_memcg_events                     # 
+__skb_ext_del                            # 
+clear_buddies                            # 
+fsnotify                                 # 
+br_dev_queue_push_xmit                   # 
+tcp_rcv_space_adjust                     # 
+__copy_skb_header                        # 
+run_rebalance_domains                    # 
+_cond_resched                            # 
+record_times                             # 
+udp_set_csum                             # 
+ext4_get_branch                          # 
+num_to_str                               # 
+brnf_get_logical_dev                     # 
+pick_next_entity                         # 
+__curfile_cache                          # 
+skb_scrub_packet                         # 
+__skb_ext_put                            # 
+__ip_local_out                           # 
+nf_confirm                               # 
+nf_bridge_update_protocol                # 
+netif_rx                                 # 
+fpregs_assert_state_consistent           # 
+ip_finish_output                         # 
+should_failslab                          # 
+inet_send_prepare                        # 
+nf_nat_ipv4_out                          # 
+event_sched_in.isra.0                    # 
+tcp_schedule_loss_probe                  # 
+ip_vs_out                                # 
+x86_pmu_disable                          # 
+__lock_text_start                        # 
+__evict_clear_walk                       # 
+br_nf_forward_ip                         # 
+fq_codel_dequeue                         # 
+alloc_pages_vma                          # 
+copy_msghdr_from_user                    # 
+rcu_core_si                              # 
+inet_sendmsg                             # 
+sch_direct_xmit                          # 
+iptunnel_handle_offloads                 # 
+pick_next_task_idle                      # 
+iov_iter_advance                         # 
+passthru_features_check                  # 
+domain_dirty_limits                      # 
+__rec_cell_build_leaf_key                # 
+_IO_link_in                              # 
+put_prev_task_fair                       # 
+sockfd_lookup_light                      # 
+skb_udp_tunnel_segment                   # 
+do_futex                                 # 
+lock_sock_nested                         # 
+nf_nat_packet                            # 
+i40e_lan_xmit_frame                      # 
+br_allowed_egress                        # 
+__txn_config_operation_timeout           # 
+br_allowed_ingress                       # 
+i40e_features_check                      # 
+pqdownheap                               # 
+i40e_check_fdir_input_set.isra.0         # 
+sock_sendmsg                             # 
+drm_lease_held                           # 
+__alloc_skb                              # 
+ip_vs_reply4                             # 
+i40e_get_strings                         # 
+__evict_lock_handle_list                 # 
+__evict_pass                             # 
+_initial_num_blocks_is_419681            # 
+hrtimer_sleeper_start_expires            # 
+nested_get_vmcs12_pages                  # 
+i40e_lan_select_queue                    # 
+ksize                                    # 
+do_softirq_own_stack                     # 
+ip_send_check                            # 
+scrub_show                               # 
+__netif_receive_skb_one_core             # 
+remove_wait_queue                        # 
+vmx_create_vcpu                          # 
+inet_get_local_port_range                # 
+update_rq_clock                          # 
+__split_parent                           # 
+rcu_irq_enter                            # 
+dst_cache_get_ip4                        # 
+number                                   # 
+remote_function                          # 
+idle_cpu                                 # 
+update_nohz_stats                        # 
+i40e_finalize_xdp_rx                     # 
+thread_group_cputime                     # 
+task_numa_work                           # 
+__ptep_modify_prot_start                 # 
+drm_client_framebuffer_delete            # 
+hash_futex                               # 
+__x64_sys_futex                          # 
+tcp_wfree                                # 
+i40e_set_rxnfc                           # 
+i40e_napi_poll                           # 
+tcp_small_queue_check.isra.0             # 
+task_tick_fair                           # 
+vmx_get_nested_state                     # 
+apparmor_file_permission                 # 
+__msecs_to_jiffies                       # 
+br_nf_hook_thresh                        # 
+sync_vmcs02_to_vmcs12_rare               # 
+i40e_clean_tx_irq                        # 
+br_handle_vlan                           # 
+sk_page_frag_refill                      # 
+acpi_nfit_ctl                            # 
+tcp_stream_memory_free                   # 
+pthread_testcancel                       # 
+show_stat                                # 
+put_prev_entity                          # 
+security_socket_sendmsg                  # 
+__sk_dst_check                           # 
+sync_regs                                # 
+acpi_nfit_blk_region_do_io               # 
+cgroup_rstat_updated                     # 
+nested_vmx_load_cr3                      # 
+tcp_chrono_start                         # 
+inet_gso_segment                         # 
+finish_task_switch                       # 
+memcg_kmem_put_cache                     # 
+sock_rfree                               # 
+skb_network_protocol                     # 
+__account_cfs_rq_runtime                 # 
+__tcp_select_window                      # 
+runtime.systemstack.abi0                 # Golang's code to allow a function to run on the system stack
+runtime.execute                          # Golang's code to execute the program (RECHECK)
+runtime.step                             # Golang's code to step through a instruction (RECHECK)
+runtime.pcvalue                          # Golang's code to get program counter value
+runtime.schedule                         # Golang's code for scheduling
+runtime.runqgrab                         # Golang's code to choose subroutines from __p__'s runnable queue
+runtime.casgstatus                       # Golang's CAS (compare and swap) GStatus (status of runtime) for scheduling
+runtime.findrunnable                     # Golang's code to find a runnable goroutine to execute
+runtime.procyield.abi0                   # Golang's code to yield current process
+runtime.gogo.abi0                        # Golang's code to yield
+runtime.exitsyscallfast                  # Golang's code to exit a systemcall
+get_futex_key                            # 
+futex_wait_setup                         # 
+runtime.reentersyscall                   # Golang's code that works as the entrypoint used by cgo callbacks
+runtime.exitsyscall.abi0                 # Golang's code to yield
+get_signal                               # 
+runtime.newstack.abi0                    # Golang's code to yield
+internal/bytealg.IndexByteString.abi0    # 
+runtime.morestack_noctxt.abi0            # 
+do_signal                                # 
+schedule                                 # 
+__task_pid_nr_ns                         # 
+getname_flags                            # 
+i40e_clean_rx_irq                        # 
+tcp_handle_read                          # 
+exit_to_usermode_loop                    # 
+__legitimize_mnt                         # 
+runtime.entersyscall.abi0                # Golang's code
+runtime.sigfwdgo                         # Golang's signal handler handler - checks if Go should handle the signal or if something else should
+ksoftirqd_running                        # 
+runtime.asmcgocall.abi0                  # Golang's code for ABI
+fpu__clear                               # 
+copy_fpstate_to_sigframe                 # 
+dma_direct_map_page                      # 
+mark_wake_futex                          # 
+recalc_sigpending                        # 
+__sigqueue_free.part.0                   # 
+account_entity_enqueue                   # 
+tcp_flush                                # 
+resched_curr                             # 
+__send_signal                            # 
+wake_up_q                                # 
+tcp_send                                 # 
+_raw_read_lock_irqsave                   # 
+__unqueue_futex                          # 
+__evict_clear_all_walks
+posix_memalign
+__libc_send
+socket
+__libc_recv
+ngx_unix_recv
+ngx_unix_send
+ngx_reusable_connection
+ngx_tcp_nodelay
+recv
+ngx_linux_sendfile_chain
+ngx_memalign
+ngx_resolver
+ngx_resolve_name
+ngx_resolve_start
+ngx_get_connection
+__libc_alloca_cutoff
+event_active_nolock_   

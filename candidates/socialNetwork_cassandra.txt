@@ -1,0 +1,1801 @@
+Parsing Proto
+loading symbolize
+loading ip_to_func_name.pkl
+loading functionJumps.pkl and functionJumpCounts.pkl and func_to_ip.pkl
+Total number of cycles: 3733627880
+0: (None, None, 0.9580489646247469, 2055710017.0)
+application_logic -> application_logic
+count: 18298520
+Average cc/chain = 112.34296637105078
+1: ('JVM_handle_linux_signal', 'JVM_handle_linux_signal', 0.9677470065223058, 947504684.0)
+application_logic -> application_logic
+count: 220064
+Average cc/chain = 4305.586938345209
+2: ('', '', 0.8653164413597327, 361321098.0)
+application_logic -> application_logic
+count: 7467090
+Average cc/chain = 48.38847502842473
+3: (None, 'JVM_FindSignal', 0.035288275607975976, 75718950.0)
+application_logic -> application_logic
+count: 408862
+Average cc/chain = 185.19439321824967
+4: ('??', '??', 0.6931956288225273, 51282849.0)
+application_logic -> application_logic
+count: 1229278
+Average cc/chain = 41.717861216095955
+5: ('', '__lll_unlock_wake', 0.03460493918546894, 14449621.0)
+application_logic -> sync
+count: 18533
+Average cc/chain = 779.6698321912264
+6: ('AsyncGetCallTrace', 'AsyncGetCallTrace', 0.431070878377166, 12780936.0)
+application_logic -> application_logic
+count: 234362
+Average cc/chain = 54.53501847569145
+7: (None, '', 0.0058165909224303265, 12480807.0)
+application_logic -> application_logic
+count: 56019
+Average cc/chain = 222.79596208429282
+8: ('', None, 0.028610887995202273, 11946748.0)
+application_logic -> application_logic
+count: 58116
+Average cc/chain = 205.56727923463419
+9: ('', '__pthread_cond_timedwait', 0.027677227037180764, 11556889.0)
+application_logic -> sync
+count: 13046
+Average cc/chain = 885.8568910010731
+10: ('JVM_handle_linux_signal', 'AsyncGetCallTrace', 0.011512144021474999, 11271345.0)
+application_logic -> application_logic
+count: 160418
+Average cc/chain = 70.26234587141094
+11: ('??', 'AsyncGetCallTrace', 0.12799796367524177, 9469333.0)
+application_logic -> application_logic
+count: 191378
+Average cc/chain = 49.47973643783507
+12: ('', '__pthread_cond_signal', 0.018368872113091947, 7670097.0)
+application_logic -> sync
+count: 9335
+Average cc/chain = 821.6493840385646
+13: ('AsyncGetCallTrace', '??', 0.24515154977856451, 7268564.0)
+application_logic -> application_logic
+count: 192270
+Average cc/chain = 37.80394237270505
+14: ('JVM_FindSignal', 'JVM_handle_linux_signal', 0.285619389758786, 7256667.0)
+application_logic -> application_logic
+count: 49491
+Average cc/chain = 146.625992604716
+15: ('memset', 'LZ4_compress_limitedOutput', 0.9429449765195732, 6914938.0)
+mem -> application_logic
+count: 2099
+Average cc/chain = 3294.396379228204
+16: ('AsyncGetCallTrace', 'JVM_handle_linux_signal', 0.22819473991735648, 6765807.0)
+application_logic -> application_logic
+count: 160776
+Average cc/chain = 42.08219510374683
+17: ('JVM_handle_linux_signal', 'JVM_FindSignal', 0.00668738780312019, 6547508.0)
+application_logic -> application_logic
+count: 45344
+Average cc/chain = 144.3963479181369
+18: ('__clock_gettime', 'clock_gettime', 0.8726592912563617, 6240281.0)
+kernel -> kernel
+count: 244418
+Average cc/chain = 25.531184282663308
+19: ('JVM_FindSignal', 'JVM_FindSignal', 0.2336042833932511, 5935131.0)
+application_logic -> application_logic
+count: 182741
+Average cc/chain = 32.47837650007388
+20: ('??', 'JVM_FindSignal', 0.07903411799629309, 5846971.0)
+application_logic -> application_logic
+count: 266154
+Average cc/chain = 21.968375451806097
+21: ('JVM_handle_linux_signal', '??', 0.005118168510656149, 5011112.0)
+application_logic -> application_logic
+count: 109928
+Average cc/chain = 45.58540135361327
+22: ('JVM_FindSignal', '??', 0.15356224106068095, 3901521.0)
+application_logic -> application_logic
+count: 273226
+Average cc/chain = 14.279464619033329
+23: ('??', 'JVM_handle_linux_signal', 0.05079963067485726, 3758174.0)
+application_logic -> application_logic
+count: 82123
+Average cc/chain = 45.76274612471536
+24: ('JVM_FindSignal', '__clock_gettime', 0.1471227770642104, 3737915.0)
+application_logic -> kernel
+count: 224865
+Average cc/chain = 16.62292931314344
+25: ('', 'epoll_wait', 0.008264671321797286, 3450992.0)
+application_logic -> kernel
+count: 4394
+Average cc/chain = 785.3873463814292
+26: ('JVM_handle_linux_signal', None, 0.003522171101476221, 3448498.0)
+application_logic -> application_logic
+count: 35647
+Average cc/chain = 96.74020254158835
+27: ('JVM_FindSignal', None, 0.13070628843733914, 3320825.0000000005)
+application_logic -> application_logic
+count: 484503
+Average cc/chain = 6.854085526818205
+28: ('??', '__clock_gettime', 0.043578320354051896, 3223939.0)
+application_logic -> kernel
+count: 273323
+Average cc/chain = 11.795344702055809
+29: ('JVM_handle_linux_signal', 'JVM_SetNativeThreadName', 0.0032493362261203007, 3181370.0)
+application_logic -> application_logic
+count: 20090
+Average cc/chain = 158.35589845694375
+30: ('fork1', '??', 0.346007869970738, 2894870.0)
+application_logic -> application_logic
+count: 68526
+Average cc/chain = 42.24484137407699
+31: ('__GI___pthread_mutex_lock', 'fork1', 0.9909504268659104, 2503226.0)
+sync -> application_logic
+count: 5077
+Average cc/chain = 493.05219617884575
+32: ('JVM_SetNativeThreadName', 'AsyncGetCallTrace', 0.7664750125663166, 2246119.0)
+application_logic -> application_logic
+count: 56072
+Average cc/chain = 40.05776501640747
+33: ('LZ4_compress_generic.constprop.1', '??', 0.7472697188975553, 2068465.0)
+application_logic -> application_logic
+count: 34
+Average cc/chain = 60837.205882352944
+34: ('LZ4_decompress_fast', '??', 0.766040634303095, 1943799.0)
+application_logic -> application_logic
+count: 36
+Average cc/chain = 53994.416666666664
+35: ('fork1', 'JVM_handle_linux_signal', 0.225301518463068, 1884982.0)
+application_logic -> application_logic
+count: 43149
+Average cc/chain = 43.685415652738186
+36: ('', 'JVM_handle_linux_signal', 0.004510897281783056, 1883568.0)
+application_logic -> application_logic
+count: 1343
+Average cc/chain = 1402.5078183172002
+37: ('__GI___pthread_getspecific', 'JVM_FindSignal', 0.53472671813379, 1849293.0)
+sync -> application_logic
+count: 23513
+Average cc/chain = 78.64981074299324
+38: ('_L_unlock_554', '__lll_unlock_wake', 1.0, 1807708.0)
+application_logic -> sync
+count: 12194
+Average cc/chain = 148.24569460390356
+39: ('AsyncGetCallTrace', 'JVM_SetNativeThreadName', 0.0584694367496695, 1733576.0)
+application_logic -> application_logic
+count: 37603
+Average cc/chain = 46.10206632449539
+40: ('__pthread_mutex_trylock', 'fork1', 0.9977668617923732, 1684884.0)
+sync -> application_logic
+count: 10372
+Average cc/chain = 162.44543000385653
+41: ('__pthread_cond_timedwait', '__pthread_mutex_cond_lock', 0.3295724665762065, 1661825.0)
+sync -> sync
+count: 10711
+Average cc/chain = 155.1512463822239
+42: ('', '__write', 0.003736293896340238, 1560125.0)
+application_logic -> kernel
+count: 1942
+Average cc/chain = 803.359938208033
+43: ('fork1', 'JVM_FindSignal', 0.18348061539814922, 1535088.0)
+application_logic -> application_logic
+count: 40752
+Average cc/chain = 37.66902237926973
+44: ('__pthread_disable_asynccancel', '__pthread_cond_timedwait', 0.9449516879141091, 1531006.0)
+kernel -> sync
+count: 11537
+Average cc/chain = 132.703995839473
+45: ('__pthread_mutex_unlock_usercnt', 'JVM_handle_linux_signal', 0.7724802713842835, 1388154.0)
+sync -> application_logic
+count: 10410
+Average cc/chain = 133.34812680115274
+46: ('__pthread_cond_timedwait', '__pthread_disable_asynccancel', 0.2751912495046968, 1387615.0)
+sync -> kernel
+count: 12307
+Average cc/chain = 112.75006094092792
+47: ('__pthread_cond_signal', '', 0.8864979229558532, 1339962.0)
+sync -> application_logic
+count: 6566
+Average cc/chain = 204.07584526347853
+48: ('JVM_FindSignal', 'fork1', 0.04549971773274788, 1156001.0)
+application_logic -> application_logic
+count: 43181
+Average cc/chain = 26.771056714758807
+49: ('JVM_handle_linux_signal', '', 0.0010986136545723018, 1075634.0)
+application_logic -> application_logic
+count: 269
+Average cc/chain = 3998.639405204461
+50: ('__pthread_cond_timedwait', '__pthread_mutex_unlock_usercnt', 0.21091150463889372, 1063493.0)
+sync -> sync
+count: 9589
+Average cc/chain = 110.9076024611534
+51: ('fork1', 'JVM_SetNativeThreadName', 0.12691911514583304, 1061867.0)
+application_logic -> application_logic
+count: 20114
+Average cc/chain = 52.79243313115243
+52: ('JVM_handle_linux_signal', 'fork1', 0.0010609120517676048, 1038721.0)
+application_logic -> application_logic
+count: 16376
+Average cc/chain = 63.429469956033216
+53: ('JNI_GetCreatedJavaVMs', 'JVM_SetNativeThreadName', 0.5566624208986387, 988568.9999999999)
+application_logic -> application_logic
+count: 17404
+Average cc/chain = 56.801252585612495
+54: ('strerror_l', 'JVM_handle_linux_signal', 0.6868664934717279, 964761.0)
+application_logic -> application_logic
+count: 1821
+Average cc/chain = 529.7973640856673
+55: ('LZ4_compress_limitedOutput', '??', 0.9441012448315607, 942788.0)
+application_logic -> application_logic
+count: 2120
+Average cc/chain = 444.711320754717
+56: ('fork1', 'fork1', 0.09969896561112992, 834130.0)
+application_logic -> application_logic
+count: 20962
+Average cc/chain = 39.792481633431926
+57: ('', 'writev', 0.0019085591531881744, 796937.0)
+application_logic -> kernel
+count: 942
+Average cc/chain = 846.0053078556264
+58: ('__clock_gettime', 'JVM_FindSignal', 0.11109165740323672, 794403.0)
+kernel -> application_logic
+count: 265368
+Average cc/chain = 2.9935900334629646
+59: ('__GI___pthread_getspecific', 'JVM_handle_linux_signal', 0.22550008110712821, 779867.0)
+sync -> application_logic
+count: 22596
+Average cc/chain = 34.51349796424146
+60: ('__pthread_cond_destroy', 'fork1', 0.9965905408448538, 725785.0)
+sync -> application_logic
+count: 6025
+Average cc/chain = 120.46224066390042
+61: ('LZ4_compress_generic.constprop.1', '', 0.2525420605990542, 699044.0)
+application_logic -> application_logic
+count: 21
+Average cc/chain = 33287.80952380953
+62: ('__pthread_cond_init', 'fork1', 0.9980919699822847, 680031.0)
+sync -> application_logic
+count: 7818
+Average cc/chain = 86.98273215656178
+63: ('JNI_GetCreatedJavaVMs', None, 0.3641174039324596, 646631.0)
+application_logic -> application_logic
+count: 20197
+Average cc/chain = 32.01619052334505
+64: ('__lll_unlock_wake', '', 0.6628757927854444, 637135.0)
+sync -> application_logic
+count: 12260
+Average cc/chain = 51.96859706362153
+65: ('LZ4_decompress_fast', '', 0.23351916206035794, 592546.0)
+application_logic -> application_logic
+count: 24
+Average cc/chain = 24689.416666666668
+66: ('AsyncGetCallTrace', 'JNI_GetCreatedJavaVMs', 0.019614480870151666, 581555.0)
+application_logic -> application_logic
+count: 18720
+Average cc/chain = 31.06597222222222
+67: ('__GI___pthread_getspecific', 'JVM_SetNativeThreadName', 0.16609351926576219, 574416.0)
+sync -> application_logic
+count: 18212
+Average cc/chain = 31.540522732264442
+68: (None, 'JVM_handle_linux_signal', 0.0002572910750155535, 552076.0)
+application_logic -> application_logic
+count: 17428
+Average cc/chain = 31.677530410833143
+69: ('__pthread_cond_timedwait', '', 0.1055357742773928, 532150.0)
+sync -> application_logic
+count: 9437
+Average cc/chain = 56.38974250291406
+70: ('__nss_passwd_lookup', None, 0.9146416332533263, 527397.0)
+c_libraries -> application_logic
+count: 6301
+Average cc/chain = 83.70052372639263
+71: ('', '??', 0.001220815245880996, 509763.0)
+application_logic -> application_logic
+count: 440
+Average cc/chain = 1158.5522727272728
+72: ('JVM_SetNativeThreadName', 'JNI_GetCreatedJavaVMs', 0.16110205487001497, 472102.0)
+application_logic -> application_logic
+count: 16671
+Average cc/chain = 28.318757123147982
+73: ('', '__read_nocancel', 0.0011233465012053122, 469064.00000000006)
+application_logic -> application_logic
+count: 577
+Average cc/chain = 812.9358752166379
+74: ('Java_net_jpountz_lz4_LZ4JNI_LZ4_1compress_1limitedOutput', 'AsyncGetCallTrace', 0.9387772223438584, 458787.0)
+application_logic -> application_logic
+count: 4213
+Average cc/chain = 108.89793496320911
+75: ('__pthread_mutex_cond_lock', '__pthread_cond_timedwait', 0.9688644807256823, 448810.0)
+sync -> sync
+count: 10560
+Average cc/chain = 42.50094696969697
+76: ('eventfd_write', '__write', 0.940456411258796, 423401.0)
+kernel -> kernel
+count: 1152
+Average cc/chain = 367.53559027777777
+77: ('??', '', 0.005369007423201793, 397201.0)
+application_logic -> application_logic
+count: 372
+Average cc/chain = 1067.744623655914
+78: ('strerror_l', '', 0.24782159544861357, 348086.0)
+application_logic -> application_logic
+count: 91
+Average cc/chain = 3825.120879120879
+79: (None, 'JVM_SetNativeThreadName', 0.00015736123403897596, 337654.0)
+application_logic -> application_logic
+count: 16154
+Average cc/chain = 20.90219140770088
+80: ('', 'LZ4_compress_generic.constprop.1', 0.0008041752191305087, 335791.0)
+application_logic -> application_logic
+count: 291
+Average cc/chain = 1153.9209621993127
+81: ('__pthread_mutex_unlock_usercnt', '__pthread_cond_timedwait', 0.18262123339393402, 328172.0)
+sync -> sync
+count: 9427
+Average cc/chain = 34.8119231993211
+82: ('__lll_unlock_wake', '_L_unlock_554', 0.3371242072145556, 324033.0)
+sync -> application_logic
+count: 18697
+Average cc/chain = 17.330748248382093
+83: ('__pthread_cond_timedwait', '__pthread_enable_asynccancel', 0.06400368398485949, 322730.0)
+sync -> kernel
+count: 9328
+Average cc/chain = 34.5979845626072
+84: (None, 'JVM_NanoTime', 0.0001471395161082633, 315721.0)
+application_logic -> application_logic
+count: 65
+Average cc/chain = 4857.246153846154
+85: ('epoll_wait', '', 0.495269127969964, 298520.0)
+kernel -> application_logic
+count: 6116
+Average cc/chain = 48.80967952910399
+86: ('epoll_wait', 'pthread_setcanceltype', 0.4923790073049376, 296778.0)
+kernel -> sync
+count: 10218
+Average cc/chain = 29.044627128596595
+87: ('__pthread_enable_asynccancel', '__pthread_cond_timedwait', 0.9320602311936526, 293091.0)
+kernel -> sync
+count: 9344
+Average cc/chain = 31.36675941780822
+88: ('__write', 'pthread_setcanceltype', 0.8416398453442798, 285815.0)
+kernel -> sync
+count: 3050
+Average cc/chain = 93.70983606557377
+89: ('', 'strerror_l', 0.0006775393735087289, 282913.0)
+application_logic -> application_logic
+count: 240
+Average cc/chain = 1178.8041666666666
+90: ('', '__pthread_cond_wait', 0.0006681083821690685, 278975.0)
+application_logic -> sync
+count: 278
+Average cc/chain = 1003.5071942446043
+91: ('pthread_setcanceltype', 'epoll_wait', 0.4657823559060932, 262446.0)
+sync -> kernel
+count: 10112
+Average cc/chain = 25.953916139240505
+92: (None, 'Java_net_jpountz_lz4_LZ4JNI_LZ4_1compress_1limitedOutput', 0.00011990956419764091, 257293.0)
+application_logic -> application_logic
+count: 2106
+Average cc/chain = 122.17141500474834
+93: (None, 'AsyncGetCallTrace', 0.00011882787873203273, 254972.0)
+application_logic -> application_logic
+count: 23740
+Average cc/chain = 10.740185341196293
+94: ('AsyncGetCallTrace', '', 0.007894528795786797, 234067.00000000003)
+application_logic -> application_logic
+count: 116
+Average cc/chain = 2017.8189655172416
+95: ('free', None, 0.9654081371711909, 222738.0)
+mem -> application_logic
+count: 1089
+Average cc/chain = 204.53443526170798
+96: ('pthread_setcanceltype', '__write', 0.3868226574757033, 217956.0)
+sync -> kernel
+count: 3123
+Average cc/chain = 69.79058597502402
+97: ('AsyncGetCallTrace', None, 0.007096701341834139, 210412.0)
+application_logic -> application_logic
+count: 27817
+Average cc/chain = 7.564151418197505
+98: ('__GI___pthread_getspecific', 'fork1', 0.05872618725076907, 203098.0)
+sync -> application_logic
+count: 9875
+Average cc/chain = 20.566886075949366
+99: ('memset', 'JVM_handle_linux_signal', 0.027549785622980626, 202032.0)
+mem -> application_logic
+count: 52
+Average cc/chain = 3885.230769230769
+100: ('__pthread_cond_signal', 'fork1', 0.11350207704414686, 171561.0)
+sync -> application_logic
+count: 9298
+Average cc/chain = 18.451387395138738
+101: ('', 'LZ4_decompress_fast', 0.00040898602768457687, 170776.0)
+application_logic -> application_logic
+count: 153
+Average cc/chain = 1116.1830065359477
+102: ('', 'memset', 0.0003706825041989166, 154782.0)
+application_logic -> mem
+count: 116
+Average cc/chain = 1334.3275862068965
+103: ('malloc', 'operator new(unsigned long)', 0.946577567058033, 152133.0)
+mem -> mem
+count: 1005
+Average cc/chain = 151.37611940298507
+104: ('', '__write_nocancel', 0.0003398342057108092, 141901.0)
+application_logic -> kernel
+count: 181
+Average cc/chain = 783.9834254143647
+105: ('', 'AsyncGetCallTrace', 0.00033937199613017063, 141708.0)
+application_logic -> application_logic
+count: 118
+Average cc/chain = 1200.915254237288
+106: ('Java_net_jpountz_lz4_LZ4JNI_LZ4_1decompress_1fast', 'AsyncGetCallTrace', 0.9680708987181906, 133375.0)
+application_logic -> application_logic
+count: 816
+Average cc/chain = 163.44975490196077
+107: ('JVM_SetNativeThreadName', 'fork1', 0.043618853467364944, 127823.0)
+application_logic -> application_logic
+count: 20244
+Average cc/chain = 6.3141177632878875
+108: ('JNI_GetCreatedJavaVMs', 'AsyncGetCallTrace', 0.07012893845663516, 124540.99999999999)
+application_logic -> application_logic
+count: 19245
+Average cc/chain = 6.471343206027539
+109: ('', '__read', 0.0002900448938896964, 121111.0)
+application_logic -> application_logic
+count: 150
+Average cc/chain = 807.4066666666666
+110: ('memset', None, 0.01638598063475016, 120164.00000000001)
+mem -> application_logic
+count: 1271
+Average cc/chain = 94.54287962234463
+111: ('fork1', '__clock_gettime', 0.014312340927839956, 119744.0)
+application_logic -> kernel
+count: 10063
+Average cc/chain = 11.899433568518335
+112: ('__pthread_cond_wait', '__pthread_disable_asynccancel', 0.5159729619416432, 103660.0)
+sync -> kernel
+count: 243
+Average cc/chain = 426.5843621399177
+113: ('strerror_l', '??', 0.06529055242730404, 91705.99999999999)
+application_logic -> application_logic
+count: 520
+Average cc/chain = 176.35769230769228
+114: ('operator new(unsigned long)', '??', 0.9673212292411782, 84925.0)
+mem -> application_logic
+count: 1199
+Average cc/chain = 70.82985821517931
+115: ('writev', 'pthread_setcanceltype', 0.8152855630904315, 83195.0)
+kernel -> sync
+count: 1262
+Average cc/chain = 65.92313787638669
+116: ('', 'JVM_FindSignal', 0.00018866772415907955, 78780.0)
+application_logic -> application_logic
+count: 67
+Average cc/chain = 1175.8208955223881
+117: ('JVM_SetNativeThreadName', '??', 0.026215742071277033, 76824.0)
+application_logic -> application_logic
+count: 17662
+Average cc/chain = 4.349677273241989
+118: ('__pthread_cond_timedwait', 'fork1', 0.0147853210179507, 74553.0)
+sync -> application_logic
+count: 11746
+Average cc/chain = 6.347096884045633
+119: ('memset', 'AsyncGetCallTrace', 0.009565625058806749, 70148.0)
+mem -> application_logic
+count: 814
+Average cc/chain = 86.17690417690417
+120: ('pthread_setcanceltype', 'writev', 0.12396619410349062, 69849.0)
+sync -> kernel
+count: 1266
+Average cc/chain = 55.17298578199052
+121: ('__pthread_mutex_unlock_usercnt', 'fork1', 0.038115001093483675, 68493.0)
+sync -> application_logic
+count: 18977
+Average cc/chain = 3.609263845707962
+122: ('operator new[](unsigned long)', '??', 0.9808435170957968, 68303.0)
+mem -> application_logic
+count: 1296
+Average cc/chain = 52.70293209876543
+123: (None, 'Java_net_jpountz_lz4_LZ4JNI_LZ4_1decompress_1fast', 3.132740068857459e-05, 67220.0)
+application_logic -> application_logic
+count: 406
+Average cc/chain = 165.56650246305418
+124: ('__pthread_cond_wait', '__pthread_mutex_cond_lock', 0.32544225542801963, 65382.0)
+sync -> sync
+count: 193
+Average cc/chain = 338.76683937823833
+125: ('__clock_gettime', None, 0.0090037882056178, 64385.0)
+kernel -> application_logic
+count: 6314
+Average cc/chain = 10.197180867912575
+126: ('JVM_FindSignal', '', 0.002219565625276378, 56392.0)
+application_logic -> application_logic
+count: 65
+Average cc/chain = 867.5692307692308
+127: ('', '__lll_lock_wait', 0.00013233802702851708, 55259.0)
+application_logic -> sync
+count: 68
+Average cc/chain = 812.6323529411765
+128: ('LZ4_compress_limitedOutput', 'LZ4_compress_generic.constprop.1', 0.054530852415710256, 54455.0)
+application_logic -> application_logic
+count: 2098
+Average cc/chain = 25.955672068636797
+129: ('__write', '', 0.14650773131366077, 49753.0)
+kernel -> application_logic
+count: 1085
+Average cc/chain = 45.85529953917051
+130: ('__GI___pthread_getspecific', '??', 0.01331515916804038, 46049.0)
+sync -> application_logic
+count: 1331
+Average cc/chain = 34.597295266716756
+131: ('AsyncGetCallTrace', 'JVM_FindSignal', 0.0014884347229078302, 44131.0)
+application_logic -> application_logic
+count: 495
+Average cc/chain = 89.15353535353535
+132: ('__pthread_disable_asynccancel', '__pthread_cond_wait', 0.026930091748215493, 43632.0)
+kernel -> sync
+count: 224
+Average cc/chain = 194.78571428571428
+133: ('__clock_gettime', 'fork1', 0.005773975479098444, 41289.0)
+kernel -> application_logic
+count: 10721
+Average cc/chain = 3.85122656468613
+134: ('JVM_FindSignal', 'AsyncGetCallTrace', 0.0015034967250661861, 38199.0)
+application_logic -> application_logic
+count: 506
+Average cc/chain = 75.49209486166008
+135: ('Java_sun_nio_ch_FileChannelImpl_position0', None, 0.9105421374520576, 35136.0)
+application_logic -> application_logic
+count: 2107
+Average cc/chain = 16.675842429995253
+136: ('', 'fork1', 8.051068228966662e-05, 33618.0)
+application_logic -> application_logic
+count: 28
+Average cc/chain = 1200.642857142857
+137: ('__read_nocancel', '__pthread_enable_asynccancel', 0.5790502111029694, 33190.0)
+application_logic -> kernel
+count: 187
+Average cc/chain = 177.4866310160428
+138: ('Java_net_jpountz_lz4_LZ4JNI_LZ4_1compress_1limitedOutput', '??', 0.05732473649855639, 28015.0)
+application_logic -> application_logic
+count: 2122
+Average cc/chain = 13.202167766258247
+139: ('__pthread_disable_asynccancel', '__read_nocancel', 0.017184968476016776, 27843.0)
+kernel -> application_logic
+count: 593
+Average cc/chain = 46.952782462057336
+140: ('eventfd_write', None, 0.059543588741204065, 26807.0)
+kernel -> application_logic
+count: 2076
+Average cc/chain = 12.912813102119461
+141: ('fork1', '', 0.003172060528159612, 26539.0)
+application_logic -> application_logic
+count: 34
+Average cc/chain = 780.5588235294117
+142: ('memset', '??', 0.0031813598765746912, 23330.0)
+mem -> application_logic
+count: 91
+Average cc/chain = 256.3736263736264
+143: ('__nss_passwd_lookup', 'LZ4_decompress_fast', 0.04043939120662625, 23318.0)
+c_libraries -> application_logic
+count: 34
+Average cc/chain = 685.8235294117648
+144: ('__lll_lock_wait', '', 0.5488910028538527, 21926.0)
+sync -> application_logic
+count: 61
+Average cc/chain = 359.44262295081967
+145: ('__nss_passwd_lookup', 'LZ4_compress_generic.constprop.1', 0.034740624609792305, 20032.0)
+c_libraries -> application_logic
+count: 33
+Average cc/chain = 607.030303030303
+146: ('__pthread_self', None, 0.775174135362564, 19253.0)
+sync -> application_logic
+count: 125
+Average cc/chain = 154.024
+147: ('eventfd_read', '__read', 0.9652013714753594, 18861.0)
+application_logic -> application_logic
+count: 233
+Average cc/chain = 80.94849785407726
+148: ('__read', 'pthread_setcanceltype', 0.6387660560117919, 18201.0)
+application_logic -> sync
+count: 419
+Average cc/chain = 43.43914081145585
+149: ('writev', '', 0.17047548116498765, 17396.0)
+kernel -> application_logic
+count: 338
+Average cc/chain = 51.467455621301774
+150: ('', '__lseek_nocancel', 4.06792328327764e-05, 16986.0)
+application_logic -> application_logic
+count: 21
+Average cc/chain = 808.8571428571429
+151: ('AsyncGetCallTrace', 'JVM_Sleep', 0.0005668268100244498, 16806.0)
+application_logic -> application_logic
+count: 60
+Average cc/chain = 280.1
+152: ('_L_lock_909', '__lll_lock_wait', 1.0, 16623.0)
+application_logic -> sync
+count: 26
+Average cc/chain = 639.3461538461538
+153: ('__read_nocancel', '__pthread_disable_asynccancel', 0.27411982274329183, 15712.000000000002)
+application_logic -> kernel
+count: 585
+Average cc/chain = 26.858119658119662
+154: ('', 'clock_gettime', 3.5944578216598435e-05, 15009.0)
+application_logic -> kernel
+count: 13
+Average cc/chain = 1154.5384615384614
+155: ('', '__clock_gettime', 3.4898020772354747e-05, 14572.0)
+application_logic -> kernel
+count: 12
+Average cc/chain = 1214.3333333333333
+156: ('__pthread_cond_wait', '__pthread_mutex_unlock_usercnt', 0.0717314909756996, 14411.000000000002)
+sync -> sync
+count: 139
+Average cc/chain = 103.67625899280577
+157: ('__GI___pthread_mutex_lock', 'JVM_handle_linux_signal', 0.005607489214539806, 14165.000000000002)
+sync -> application_logic
+count: 55
+Average cc/chain = 257.54545454545456
+158: ('', '__GI___pthread_mutex_lock', 3.203136342507856e-05, 13375.0)
+application_logic -> sync
+count: 11
+Average cc/chain = 1215.909090909091
+159: ('__pthread_mutex_cond_lock', '__pthread_cond_wait', 0.02761029546686009, 12790.0)
+sync -> sync
+count: 191
+Average cc/chain = 66.96335078534031
+160: ('__lll_lock_wait', '_L_lock_909', 0.31595153457167174, 12621.0)
+sync -> application_logic
+count: 33
+Average cc/chain = 382.45454545454544
+161: ('pthread_setcanceltype', '__read', 0.022172252472260283, 12493.000000000002)
+sync -> application_logic
+count: 427
+Average cc/chain = 29.257611241217802
+162: ('JVM_Sleep', 'AsyncGetCallTrace', 0.7004120407462515, 12238.999999999998)
+application_logic -> application_logic
+count: 61
+Average cc/chain = 200.63934426229505
+163: (None, 'Java_sun_nio_ch_FileChannelImpl_position0', 5.684790740839525e-06, 12198.0)
+application_logic -> application_logic
+count: 50
+Average cc/chain = 243.96
+164: ('', '__pthread_mutex_trylock', 2.6798576203860118e-05, 11190.0)
+application_logic -> sync
+count: 9
+Average cc/chain = 1243.3333333333333
+165: ('__clock_gettime', '', 0.0014712876556854059, 10521.0)
+kernel -> application_logic
+count: 15
+Average cc/chain = 701.4
+166: ('', '__pthread_disable_asynccancel', 2.493776353983873e-05, 10413.0)
+application_logic -> kernel
+count: 9
+Average cc/chain = 1157.0
+167: ('Java_sun_nio_ch_IOUtil_iovMax', None, 1.0, 10100.0)
+application_logic -> application_logic
+count: 182
+Average cc/chain = 55.494505494505496
+168: ('__read', '', 0.3505650312346459, 9989.0)
+application_logic -> application_logic
+count: 220
+Average cc/chain = 45.404545454545456
+169: ('AsyncGetCallTrace', 'Java_net_jpountz_lz4_LZ4JNI_LZ4_1compress_1limitedOutput', 0.00032442622192224106, 9619.0)
+application_logic -> application_logic
+count: 4229
+Average cc/chain = 2.274532986521636
+170: ('__pthread_cond_wait', '', 0.046092124518421915, 9260.0)
+sync -> application_logic
+count: 144
+Average cc/chain = 64.30555555555556
+171: ('', 'JNI_GetCreatedJavaVMs', 2.178611686564035e-05, 9097.0)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 1137.125
+172: ('', '__GI___pthread_getspecific', 2.0943123226341084e-05, 8745.0)
+application_logic -> sync
+count: 7
+Average cc/chain = 1249.2857142857142
+173: ('JNI_GetCreatedJavaVMs', 'JVM_handle_linux_signal', 0.004763819299211774, 8460.0)
+application_logic -> application_logic
+count: 79
+Average cc/chain = 107.0886075949367
+174: ('__pthread_disable_asynccancel', '', 0.005210483923231463, 8442.0)
+kernel -> application_logic
+count: 9
+Average cc/chain = 938.0
+175: ('nallocm', 'nallocm', 0.6630152547874066, 8170.999999999999)
+application_logic -> application_logic
+count: 56
+Average cc/chain = 145.91071428571428
+176: ('__read_nocancel', '', 0.13308210335322238, 7628.0)
+application_logic -> application_logic
+count: 179
+Average cc/chain = 42.614525139664806
+177: ('JVM_SetNativeThreadName', '', 0.002588337025026506, 7585.0)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 948.125
+178: ('__pthread_disable_asynccancel', '__write_nocancel', 0.004632158474751496, 7505.0)
+kernel -> kernel
+count: 180
+Average cc/chain = 41.69444444444444
+179: ('epoll_wait', None, 0.012351864725098425, 7445.0)
+kernel -> application_logic
+count: 4241
+Average cc/chain = 1.7554821975949069
+180: ('__pthread_enable_asynccancel', '__read_nocancel', 0.023507338092890875, 7392.0)
+kernel -> application_logic
+count: 179
+Average cc/chain = 41.29608938547486
+181: ('__write_nocancel', '__pthread_disable_asynccancel', 0.5348403635516197, 6885.0)
+kernel -> kernel
+count: 176
+Average cc/chain = 39.11931818181818
+182: ('__GI___pthread_mutex_lock', '', 0.0026665758806311422, 6736.0)
+sync -> application_logic
+count: 6
+Average cc/chain = 1122.6666666666667
+183: (None, 'Java_sun_nio_ch_FileDispatcherImpl_write0', 3.063299683516822e-06, 6573.0)
+application_logic -> kernel
+count: 116
+Average cc/chain = 56.66379310344828
+184: ('__pthread_mutex_unlock_usercnt', '__pthread_cond_wait', 0.0035826197865453093, 6438.0)
+sync -> sync
+count: 139
+Average cc/chain = 46.31654676258993
+185: ('__lseek_nocancel', '__pthread_enable_asynccancel', 0.7986399697771062, 6342.0)
+application_logic -> kernel
+count: 21
+Average cc/chain = 302.0
+186: ('clock_gettime', '', 1.0, 6221.0)
+kernel -> application_logic
+count: 9
+Average cc/chain = 691.2222222222222
+187: ('__pthread_cond_wait', '__pthread_enable_asynccancel', 0.030706513623557755, 6169.0)
+sync -> kernel
+count: 137
+Average cc/chain = 45.02919708029197
+188: ('fork1', 'JVM_Sleep', 0.0006815286608977772, 5702.0)
+application_logic -> application_logic
+count: 31
+Average cc/chain = 183.93548387096774
+189: ('__pthread_self', 'JVM_handle_linux_signal', 0.2248258646374361, 5584.0)
+sync -> application_logic
+count: 56
+Average cc/chain = 99.71428571428571
+190: ('__pthread_enable_asynccancel', '__pthread_cond_wait', 0.017264791464597477, 5428.999999999999)
+kernel -> sync
+count: 131
+Average cc/chain = 41.44274809160304
+191: ('', '__pthread_cond_destroy', 1.2920314443237295e-05, 5395.0)
+application_logic -> sync
+count: 5
+Average cc/chain = 1079.0
+192: ('__lll_lock_wait', '_L_cond_lock_886', 0.13453161768387323, 5374.0)
+sync -> application_logic
+count: 14
+Average cc/chain = 383.85714285714283
+193: ('', '__nss_passwd_lookup', 1.2180300140556975e-05, 5086.0)
+application_logic -> c_libraries
+count: 4
+Average cc/chain = 1271.5
+194: ('', '__pthread_mutex_unlock_usercnt', 1.1947997916090986e-05, 4989.0)
+application_logic -> sync
+count: 4
+Average cc/chain = 1247.25
+195: ('__nss_passwd_lookup', '', 0.008411143638053748, 4850.0)
+c_libraries -> application_logic
+count: 7
+Average cc/chain = 692.8571428571429
+196: ('', '__GI___pthread_mutex_unlock', 1.1394783340300843e-05, 4758.0)
+application_logic -> sync
+count: 4
+Average cc/chain = 1189.5
+197: ('__GI___pthread_getspecific', '', 0.0013691345883878304, 4735.0)
+sync -> application_logic
+count: 7
+Average cc/chain = 676.4285714285714
+198: ('malloc', 'nallocm', 0.02933691722820575, 4715.0)
+mem -> application_logic
+count: 9
+Average cc/chain = 523.8888888888889
+199: ('', 'JVM_SetNativeThreadName', 1.0774512452293714e-05, 4499.0)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 1124.75
+200: ('__pthread_enable_asynccancel', '__lseek_nocancel', 0.013226057782512601, 4159.0)
+kernel -> application_logic
+count: 28
+Average cc/chain = 148.53571428571428
+201: ('JVM_InternString', 'JNI_GetCreatedJavaVMs', 0.9877785765636233, 4122.0)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 515.25
+202: ('__write', 'eventfd_write', 0.011852423342059465, 4025.0)
+kernel -> kernel
+count: 2054
+Average cc/chain = 1.9595910418695228
+203: ('free', '??', 0.016673962699214194, 3846.9999999999995)
+mem -> application_logic
+count: 3
+Average cc/chain = 1282.3333333333333
+204: ('', 'pthread_setcanceltype', 9.083735437108259e-06, 3792.9999999999995)
+application_logic -> sync
+count: 3
+Average cc/chain = 1264.3333333333333
+205: ('__pthread_mutex_trylock', '', 0.00223313820762678, 3771.0)
+sync -> application_logic
+count: 5
+Average cc/chain = 754.2
+206: ('free', '', 0.016149515211144293, 3726.0)
+mem -> application_logic
+count: 3
+Average cc/chain = 1242.0
+207: ('', '__vdso_gettimeofday', 8.743664139436398e-06, 3651.0)
+application_logic -> kernel
+count: 3
+Average cc/chain = 1217.0
+208: ('fork1', 'JVM_IsInterrupted', 0.00042598529418444014, 3564.0)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 445.5
+209: ('__write_nocancel', '__pthread_enable_asynccancel', 0.2687019342810534, 3459.0)
+kernel -> kernel
+count: 57
+Average cc/chain = 60.68421052631579
+210: ('__pthread_mutex_unlock_usercnt', '', 0.0019193003485235745, 3449.0)
+sync -> application_logic
+count: 5
+Average cc/chain = 689.8
+211: ('', 'free', 8.046757466038427e-06, 3360.0)
+application_logic -> mem
+count: 3
+Average cc/chain = 1120.0
+212: ('Java_sun_nio_ch_FileChannelImpl_position0', 'Java_sun_nio_ch_IOUtil_iovMax', 0.08272001658546699, 3192.0)
+application_logic -> application_logic
+count: 26
+Average cc/chain = 122.76923076923077
+213: ('JVM_handle_linux_signal', 'JNI_GetCreatedJavaVMs', 3.1754201262374433e-06, 3109.0)
+application_logic -> application_logic
+count: 79
+Average cc/chain = 39.35443037974684
+214: ('JVM_Sleep', 'fork1', 0.1701957193544695, 2974.0)
+application_logic -> application_logic
+count: 7
+Average cc/chain = 424.85714285714283
+215: ('Java_net_jpountz_lz4_LZ4JNI_LZ4_1decompress_1fast', '??', 0.021317519996516033, 2937.0)
+application_logic -> application_logic
+count: 426
+Average cc/chain = 6.894366197183099
+216: ('strchrnul', '_IO_vfprintf', 1.0, 2739.0)
+application_logic -> c_libraries
+count: 22
+Average cc/chain = 124.5
+217: (None, 'Java_sun_nio_ch_NativeThread_current', 1.2750932502817625e-06, 2736.0)
+application_logic -> application_logic
+count: 127
+Average cc/chain = 21.543307086614174
+218: ('__pthread_enable_asynccancel', '', 0.008198311364106151, 2578.0)
+kernel -> application_logic
+count: 4
+Average cc/chain = 644.5
+219: (None, '??', 1.1651071365878679e-06, 2500.0)
+application_logic -> application_logic
+count: 10
+Average cc/chain = 250.0
+220: ('__pthread_cond_destroy', '', 0.0034094591551461825, 2483.0)
+sync -> application_logic
+count: 4
+Average cc/chain = 620.75
+221: ('_IO_vfprintf', 'cuserid', 0.2910746812386157, 2397.0)
+c_libraries -> application_logic
+count: 10
+Average cc/chain = 239.7
+222: ('_IO_default_doallocate', '_IO_default_doallocate', 0.9358520267611177, 2378.0)
+application_logic -> application_logic
+count: 11
+Average cc/chain = 216.1818181818182
+223: (None, 'JVM_Sleep', 1.0942686226833253e-06, 2348.0)
+application_logic -> application_logic
+count: 6
+Average cc/chain = 391.3333333333333
+224: ('__write_nocancel', '', 0.17882389497397655, 2302.0)
+kernel -> application_logic
+count: 55
+Average cc/chain = 41.85454545454545
+225: ('malloc', 'JVM_FindSignal', 0.014024477504215432, 2254.0)
+mem -> application_logic
+count: 11
+Average cc/chain = 204.9090909090909
+226: ('JNI_GetCreatedJavaVMs', '', 0.0012624684242119146, 2242.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 747.3333333333334
+227: ('_IO_default_xsputn', '_IO_vfprintf', 0.8946107784431138, 2241.0)
+c_libraries -> c_libraries
+count: 38
+Average cc/chain = 58.973684210526315
+228: ('JVM_FindSignal', 'JVM_InternString', 8.655172382576882e-05, 2199.0)
+application_logic -> application_logic
+count: 6
+Average cc/chain = 366.5
+229: ('AsyncGetCallTrace', 'Java_net_jpountz_lz4_LZ4JNI_LZ4_1decompress_1fast', 7.248071014771765e-05, 2149.0)
+application_logic -> application_logic
+count: 833
+Average cc/chain = 2.5798319327731094
+230: ('munmap', '', 1.0, 2128.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 2128.0
+231: ('operator new(unsigned long)', 'operator new[](unsigned long)', 0.02412465544342438, 2118.0)
+mem -> mem
+count: 1005
+Average cc/chain = 2.1074626865671644
+232: ('', 'nallocm', 5.048382362621727e-06, 2108.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 1054.0
+233: ('_IO_vfprintf', '_IO_default_xsputn', 0.2548876745598057, 2099.0)
+c_libraries -> c_libraries
+count: 37
+Average cc/chain = 56.729729729729726
+234: ('memset', '', 0.00028445420928138905, 2086.0)
+mem -> application_logic
+count: 1
+Average cc/chain = 2086.0
+235: ('', '__close_nocancel', 4.871162108905405e-06, 2034.0)
+application_logic -> c_libraries
+count: 2
+Average cc/chain = 1017.0
+236: ('__vdso_gettimeofday', '', 1.0, 1981.0)
+kernel -> application_logic
+count: 3
+Average cc/chain = 660.3333333333334
+237: ('JNI_GetCreatedJavaVMs', '??', 0.0011115578364827472, 1974.0)
+application_logic -> application_logic
+count: 61
+Average cc/chain = 32.36065573770492
+238: ('__pthread_cond_wait', 'fork1', 0.00979084329673174, 1967.0)
+sync -> application_logic
+count: 242
+Average cc/chain = 8.12809917355372
+239: ('__GI___pthread_mutex_lock', 'nallocm', 0.0007755080389187066, 1959.0)
+sync -> application_logic
+count: 2
+Average cc/chain = 979.5
+240: (None, 'JVM_CurrentTimeMillis', 9.050552237014557e-07, 1942.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1942.0
+241: ('__GI___pthread_mutex_unlock', '', 1.0, 1927.0)
+sync -> application_logic
+count: 3
+Average cc/chain = 642.3333333333334
+242: ('Java_net_jpountz_lz4_LZ4JNI_LZ4_1compress_1limitedOutput', None, 0.0038980411575852197, 1905.0)
+application_logic -> application_logic
+count: 32
+Average cc/chain = 59.53125
+243: ('fwrite', '_IO_file_xsputn', 0.6657263751763046, 1888.0)
+kernel -> application_logic
+count: 7
+Average cc/chain = 269.7142857142857
+244: (None, 'JVM_IsInterrupted', 8.761605667140766e-07, 1880.0)
+application_logic -> application_logic
+count: 7
+Average cc/chain = 268.57142857142856
+245: ('JVM_IHashCode', 'JNI_GetCreatedJavaVMs', 0.995710455764075, 1857.0)
+application_logic -> application_logic
+count: 6
+Average cc/chain = 309.5
+246: ('_IO_vfprintf', 'strchrnul', 0.21287188828172435, 1753.0)
+c_libraries -> application_logic
+count: 23
+Average cc/chain = 76.21739130434783
+247: ('__pthread_enable_asynccancel', '__write_nocancel', 0.00557154441812024, 1752.0000000000002)
+kernel -> kernel
+count: 55
+Average cc/chain = 31.85454545454546
+248: ('JVM_IsInterrupted', 'JNI_GetCreatedJavaVMs', 0.8455125061304561, 1724.0)
+application_logic -> application_logic
+count: 14
+Average cc/chain = 123.14285714285714
+249: ('', '__open_nocancel', 3.961112157389154e-06, 1654.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 827.0
+250: ('JNI_GetCreatedJavaVMs', 'JVM_Sleep', 0.0009308029907325133, 1653.0)
+application_logic -> application_logic
+count: 29
+Average cc/chain = 57.0
+251: ('JVM_Sleep', 'JNI_GetCreatedJavaVMs', 0.09402540917935218, 1643.0)
+application_logic -> application_logic
+count: 29
+Average cc/chain = 56.6551724137931
+252: ('__pthread_mutex_cond_lock', '', 0.003525223807457586, 1633.0)
+sync -> application_logic
+count: 2
+Average cc/chain = 816.5
+253: ('malloc', '', 0.010061038209545852, 1616.9999999999998)
+mem -> application_logic
+count: 2
+Average cc/chain = 808.4999999999999
+254: ('__pthread_disable_asynccancel', '__lseek_nocancel', 0.0009850666123522168, 1596.0)
+kernel -> application_logic
+count: 45
+Average cc/chain = 35.46666666666667
+255: ('__pthread_mutex_unlock_usercnt', '??', 0.0008647702933040402, 1554.0)
+sync -> application_logic
+count: 16
+Average cc/chain = 97.125
+256: ('Java_net_jpountz_lz4_LZ4JNI_LZ4_1decompress_1fast', None, 0.010611581285293306, 1462.0)
+application_logic -> application_logic
+count: 34
+Average cc/chain = 43.0
+257: ('writev', None, 0.01423895574458077, 1453.0)
+kernel -> application_logic
+count: 974
+Average cc/chain = 1.4917864476386038
+258: ('LZ4_compress_limitedOutput', 'Java_net_jpountz_lz4_LZ4JNI_LZ4_1compress_1limitedOutput', 0.001367902752729046, 1366.0)
+application_logic -> application_logic
+count: 33
+Average cc/chain = 41.39393939393939
+259: ('JVM_FindSignal', 'JVM_Clone', 5.3332235463354595e-05, 1355.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 451.6666666666667
+260: ('operator new[](unsigned long)', None, 0.019156482904203225, 1334.0)
+mem -> application_logic
+count: 1008
+Average cc/chain = 1.3234126984126984
+261: ('', 'Java_net_jpountz_lz4_LZ4JNI_LZ4_1compress_1limitedOutput', 3.1516466741983837e-06, 1316.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1316.0
+262: ('__pthread_cond_init', '', 0.0019080300177153249, 1300.0)
+sync -> application_logic
+count: 2
+Average cc/chain = 650.0
+263: ('', '__pthread_cond_init', 3.0366929961121206e-06, 1268.0)
+application_logic -> sync
+count: 1
+Average cc/chain = 1268.0
+264: ('nallocm', 'malloc', 0.10021097046413502, 1235.0)
+application_logic -> mem
+count: 7
+Average cc/chain = 176.42857142857142
+265: ('__errno_location', 'JVM_FindSignal', 0.672665916760405, 1196.0)
+c_libraries -> application_logic
+count: 4
+Average cc/chain = 299.0
+266: ('??', 'JNI_GetCreatedJavaVMs', 1.613942276908402e-05, 1194.0)
+application_logic -> application_logic
+count: 63
+Average cc/chain = 18.952380952380953
+267: ('__lseek_nocancel', '', 0.14872182344792848, 1181.0)
+application_logic -> application_logic
+count: 28
+Average cc/chain = 42.17857142857143
+268: ('_IO_setb', '_IO_str_pbackfail', 1.0, 1180.0)
+mem -> mem
+count: 7
+Average cc/chain = 168.57142857142858
+269: ('_L_cond_lock_886', '__lll_lock_wait', 1.0, 1176.0)
+application_logic -> sync
+count: 19
+Average cc/chain = 61.89473684210526
+270: ('', '_L_unlock_554', 2.8139702448199856e-06, 1175.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1175.0
+271: ('nallocm', '', 0.0949367088607595, 1170.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1170.0
+272: ('__vsnprintf_chk', '', 0.5651515151515152, 1119.0)
+c_libraries -> application_logic
+count: 1
+Average cc/chain = 1119.0
+273: ('LZ4_decompress_fast', 'Java_net_jpountz_lz4_LZ4JNI_LZ4_1decompress_1fast', 0.00044020363654706946, 1117.0)
+application_logic -> application_logic
+count: 34
+Average cc/chain = 32.85294117647059
+274: ('Java_sun_nio_ch_FileDispatcherImpl_write0', 'Java_sun_nio_ch_IOUtil_iovMax', 0.9339542760372566, 1103.0)
+kernel -> application_logic
+count: 57
+Average cc/chain = 19.350877192982455
+275: ('JVM_GetCallerClass', 'JNI_GetCreatedJavaVMs', 0.8766025641025641, 1094.0)
+application_logic -> application_logic
+count: 6
+Average cc/chain = 182.33333333333334
+276: ('__nss_passwd_lookup', '??', 0.0017672072922013957, 1019.0)
+c_libraries -> application_logic
+count: 7
+Average cc/chain = 145.57142857142858
+277: ('', '__pthread_enable_asynccancel', 2.4188169763984555e-06, 1010.0)
+application_logic -> kernel
+count: 1
+Average cc/chain = 1010.0
+278: ('', '__pthread_self', 2.416422108104992e-06, 1009.0)
+application_logic -> sync
+count: 1
+Average cc/chain = 1009.0
+279: ('strlen', 'JVM_handle_linux_signal', 0.6879286694101509, 1002.9999999999999)
+c_libraries -> application_logic
+count: 3
+Average cc/chain = 334.3333333333333
+280: ('', 'posix_fadvise', 2.39007855687689e-06, 998.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 998.0
+281: ('__fxstat64', '', 1.0, 988.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 988.0
+282: ('_IO_str_pbackfail', '_IO_setb', 0.8907103825136612, 978.0)
+mem -> mem
+count: 7
+Average cc/chain = 139.71428571428572
+283: ('nallocm', None, 0.07724764686790003, 952.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 476.0
+284: ('fwrite', 'JVM_handle_linux_signal', 0.3342736248236953, 948.0)
+kernel -> application_logic
+count: 5
+Average cc/chain = 189.6
+285: ('_IO_vfprintf', '??', 0.10904675166970249, 898.0)
+c_libraries -> application_logic
+count: 5
+Average cc/chain = 179.6
+286: ('AsyncGetCallTrace', 'JVM_IsThreadAlive', 2.735312048850582e-05, 811.0)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 202.75
+287: ('', 'getpriority', 1.927868976238373e-06, 805.0000000000001)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 805.0000000000001
+288: ('nallocm', '??', 0.06458941901979877, 796.0)
+application_logic -> application_logic
+count: 5
+Average cc/chain = 159.2
+289: ('__read_nocancel', None, 0.013747862800516417, 788.0)
+application_logic -> application_logic
+count: 597
+Average cc/chain = 1.3199329983249581
+290: ('JNI_GetCreatedJavaVMs', 'JVM_IsInterrupted', 0.00042626610041410315, 757.0)
+application_logic -> application_logic
+count: 15
+Average cc/chain = 50.46666666666667
+291: ('operator new(unsigned long)', '', 0.008554115315397407, 751.0)
+mem -> application_logic
+count: 1
+Average cc/chain = 751.0
+292: ('cuserid', '_IO_vfprintf', 1.0, 746.0)
+application_logic -> c_libraries
+count: 11
+Average cc/chain = 67.81818181818181
+293: ('fflush', '_IO_file_sync', 1.0, 712.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 712.0
+294: ('pthread_setcanceltype', '', 0.0012565400424525957, 708.0)
+sync -> application_logic
+count: 1
+Average cc/chain = 708.0
+295: ('', '__xstat64', 1.6428796493161787e-06, 686.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 686.0
+296: ('eventfd_read', None, 0.0347986285246405, 680.0000000000001)
+application_logic -> application_logic
+count: 232
+Average cc/chain = 2.931034482758621
+297: ('JVM_handle_linux_signal', 'JVM_IHashCode', 6.85335125347483e-07, 671.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 223.66666666666666
+298: ('__open_nocancel', '__pthread_enable_asynccancel', 0.8627187079407806, 641.0)
+application_logic -> kernel
+count: 1
+Average cc/chain = 641.0
+299: ('_IO_file_write', '__write', 1.0, 634.0)
+kernel -> kernel
+count: 1
+Average cc/chain = 634.0
+300: ('JVM_Clone', 'JVM_FindSignal', 0.6746849942726232, 589.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 294.5
+301: ('_IO_vfprintf', '__vsnprintf_chk', 0.07091681845780207, 584.0)
+c_libraries -> c_libraries
+count: 10
+Average cc/chain = 58.4
+302: ('__errno_location', None, 0.32733408323959506, 582.0)
+c_libraries -> application_logic
+count: 3
+Average cc/chain = 194.0
+303: ('__pthread_mutex_unlock_usercnt', 'JVM_FindSignal', 0.00032275853932840624, 580.0)
+sync -> application_logic
+count: 5
+Average cc/chain = 116.0
+304: ('__vsnprintf_chk', '_IO_default_doallocate', 0.28939393939393937, 573.0)
+c_libraries -> application_logic
+count: 5
+Average cc/chain = 114.6
+305: ('__GI___pthread_getspecific', 'AsyncGetCallTrace', 0.00016481662415650754, 570.0)
+sync -> application_logic
+count: 19
+Average cc/chain = 30.0
+306: ('index', 'JVM_handle_linux_signal', 1.0, 522.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 261.0
+307: ('LZ4_compress_generic.constprop.1', 'LZ4_compress_limitedOutput', 0.00018822050339049794, 521.0)
+application_logic -> application_logic
+count: 33
+Average cc/chain = 15.787878787878787
+308: ('_IO_vfprintf', '_IO_padn', 0.06120218579234973, 504.0)
+c_libraries -> application_logic
+count: 4
+Average cc/chain = 126.0
+309: ('Java_sun_nio_ch_FileChannelImpl_unmap0', '??', 1.0, 501.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 501.0
+310: ('JNI_GetCreatedJavaVMs', 'JVM_InternString', 0.00027760790951671447, 493.0)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 61.625
+311: ('jio_vsnprintf', '??', 0.9349112426035503, 474.0)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 59.25
+312: ('JVM_Sleep', None, 0.025409179352180383, 444.0)
+application_logic -> application_logic
+count: 23
+Average cc/chain = 19.304347826086957
+313: ('strlen', '??', 0.3010973936899863, 439.0)
+c_libraries -> application_logic
+count: 1
+Average cc/chain = 439.0
+314: ('AsyncGetCallTrace', 'JVM_IsInterrupted', 1.39632452308772e-05, 414.0)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 51.75
+315: ('posix_fadvise', None, 1.0, 411.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 411.0
+316: ('free', 'JVM_FindSignal', 0.0017683849184505827, 408.0)
+mem -> application_logic
+count: 16
+Average cc/chain = 25.5
+317: (None, 'Java_sun_nio_ch_FileChannelImpl_unmap0', 1.789604561798965e-07, 384.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 384.0
+318: ('__restore_rt', '', 1.0, 369.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 184.5
+319: ('__GI___pthread_getspecific', None, 0.00010438386196578811, 361.0)
+sync -> application_logic
+count: 4
+Average cc/chain = 90.25
+320: ('__lseek_nocancel', '__pthread_disable_asynccancel', 0.044956554590102005, 357.0)
+application_logic -> kernel
+count: 22
+Average cc/chain = 16.227272727272727
+321: ('mempcpy', '_IO_file_xsputn', 0.6318681318681318, 345.0)
+application_logic -> application_logic
+count: 5
+Average cc/chain = 69.0
+322: ('memset', 'JVM_Clone', 4.6772671995933094e-05, 343.0)
+mem -> application_logic
+count: 1
+Average cc/chain = 343.0
+323: ('JVM_FindSignal', 'JVM_RawMonitorCreate', 1.2595066677692599e-05, 320.0)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 40.0
+324: ('JVM_RawMonitorCreate', 'JVM_GetCallerClass', 0.47604790419161674, 318.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 159.0
+325: ('??', '_IO_vfprintf', 4.217336602976729e-06, 312.0)
+application_logic -> c_libraries
+count: 5
+Average cc/chain = 62.4
+326: ('__read', 'eventfd_read', 0.010668912753562153, 304.0)
+application_logic -> application_logic
+count: 218
+Average cc/chain = 1.3944954128440368
+327: ('memset', 'JVM_FindSignal', 4.104540603724741e-05, 301.0)
+mem -> application_logic
+count: 12
+Average cc/chain = 25.083333333333332
+328: ('JVM_handle_linux_signal', 'JVM_GetCallerClass', 3.043664193048434e-07, 298.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 298.0
+329: ('JVM_Clone', '??', 0.3115693012600229, 272.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 136.0
+330: ('Java_sun_nio_ch_FileChannelImpl_position0', '??', 0.006737845962475381, 260.0)
+application_logic -> application_logic
+count: 23
+Average cc/chain = 11.304347826086957
+331: ('jio_snprintf', 'jio_vsnprintf', 0.9142857142857143, 256.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 256.0
+332: ('??', None, 3.244105079212868e-06, 240.0)
+application_logic -> application_logic
+count: 5
+Average cc/chain = 48.0
+333: ('JNI_GetCreatedJavaVMs', 'JVM_IHashCode', 0.00013345451228288302, 237.0)
+application_logic -> application_logic
+count: 6
+Average cc/chain = 39.5
+334: ('__write_nocancel', 'Java_sun_nio_ch_FileDispatcherImpl_write0', 0.017556125223335665, 226.0)
+kernel -> kernel
+count: 180
+Average cc/chain = 1.2555555555555555
+335: ('JVM_RawMonitorCreate', 'AsyncGetCallTrace', 0.33682634730538924, 225.0)
+application_logic -> application_logic
+count: 7
+Average cc/chain = 32.142857142857146
+336: ('_IO_file_sync', '_IO_do_write', 1.0, 225.0)
+application_logic -> kernel
+count: 1
+Average cc/chain = 225.0
+337: ('AsyncGetCallTrace', 'JVM_RawMonitorCreate', 7.082805551894232e-06, 210.0)
+application_logic -> application_logic
+count: 5
+Average cc/chain = 42.0
+338: ('mempcpy', '_IO_default_xsputn', 0.3553113553113553, 194.0)
+application_logic -> c_libraries
+count: 2
+Average cc/chain = 97.0
+339: ('_IO_do_write', '_IO_file_setbuf', 1.0, 187.0)
+kernel -> application_logic
+count: 1
+Average cc/chain = 187.0
+340: ('JVM_FindSignal', '__restore_rt', 7.3208825064088225e-06, 186.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 93.0
+341: ('_IO_file_xsputn', 'mempcpy', 0.7991266375545851, 183.0)
+application_logic -> application_logic
+count: 6
+Average cc/chain = 30.5
+342: ('_IO_default_xsputn', '_IO_padn', 0.06986027944111776, 175.0)
+c_libraries -> application_logic
+count: 3
+Average cc/chain = 58.333333333333336
+343: ('JVM_Sleep', 'JVM_handle_linux_signal', 0.009957651367746366, 174.0)
+application_logic -> application_logic
+count: 6
+Average cc/chain = 29.0
+344: ('JVM_IsInterrupted', 'JVM_handle_linux_signal', 0.08484551250613045, 173.0)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 21.625
+345: ('__pthread_mutex_unlock_usercnt', 'nallocm', 9.404516059741492e-05, 169.0)
+sync -> application_logic
+count: 3
+Average cc/chain = 56.333333333333336
+346: ('_IO_default_doallocate', '__vsnprintf_chk', 0.06414797323888233, 163.0)
+application_logic -> c_libraries
+count: 7
+Average cc/chain = 23.285714285714285
+347: ('JNI_GetCreatedJavaVMs', 'JVM_IsThreadAlive', 8.953277406320001e-05, 159.0)
+application_logic -> application_logic
+count: 9
+Average cc/chain = 17.666666666666668
+348: ('AsyncGetCallTrace', 'JVM_GetClassModifiers', 4.957963886325962e-06, 147.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 73.5
+349: ('_IO_padn', '_IO_default_xsputn', 0.8630952380952381, 145.0)
+application_logic -> c_libraries
+count: 3
+Average cc/chain = 48.333333333333336
+350: ('JVM_IsInterrupted', 'AsyncGetCallTrace', 0.06032368808239333, 123.0)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 15.375
+351: ('_IO_str_pbackfail', '__vsnprintf_chk', 0.1092896174863388, 120.0)
+mem -> c_libraries
+count: 6
+Average cc/chain = 20.0
+352: ('JVM_IsThreadAlive', 'JNI_GetCreatedJavaVMs', 0.9083969465648855, 119.0)
+application_logic -> application_logic
+count: 10
+Average cc/chain = 11.9
+353: ('JVM_DoPrivileged', 'AsyncGetCallTrace', 0.5925925925925926, 112.0)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 28.0
+354: (None, 'JVM_IHashCode', 5.079867115523104e-08, 109.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 109.0
+355: ('__vsnprintf_chk', 'jio_vsnprintf', 0.05303030303030303, 105.0)
+c_libraries -> application_logic
+count: 6
+Average cc/chain = 17.5
+356: ('JVM_GetCallerClass', 'JVM_handle_linux_signal', 0.08253205128205128, 103.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 51.5
+357: ('__pthread_disable_asynccancel', '__close_nocancel', 5.6783288431330796e-05, 92.0)
+kernel -> c_libraries
+count: 2
+Average cc/chain = 46.0
+358: ('JVM_RawMonitorCreate', 'JVM_FindSignal', 0.1347305389221557, 90.0)
+application_logic -> application_logic
+count: 5
+Average cc/chain = 18.0
+359: ('_IO_default_xsputn', 'mempcpy', 0.035528942115768465, 89.0)
+c_libraries -> application_logic
+count: 2
+Average cc/chain = 44.5
+360: ('JVM_NewArray', 'JNI_GetCreatedJavaVMs', 0.9659090909090909, 85.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 85.0
+361: ('__vsnprintf_chk', 'JVM_handle_linux_signal', 0.04242424242424243, 84.0)
+c_libraries -> application_logic
+count: 5
+Average cc/chain = 16.8
+362: ('__vsnprintf_chk', '_IO_str_pbackfail', 0.04090909090909091, 81.0)
+c_libraries -> mem
+count: 7
+Average cc/chain = 11.571428571428571
+363: ('__pthread_disable_asynccancel', '__open_nocancel', 4.875956289212101e-05, 79.0)
+kernel -> application_logic
+count: 2
+Average cc/chain = 39.5
+364: ('Java_sun_nio_ch_FileDispatcherImpl_write0', '??', 0.06604572396274344, 78.0)
+kernel -> application_logic
+count: 58
+Average cc/chain = 1.3448275862068966
+365: ('__printf_fp', 'strlen', 0.4304635761589404, 65.0)
+c_libraries -> c_libraries
+count: 1
+Average cc/chain = 65.0
+366: ('__printf_fp', '_IO_vfprintf', 0.41721854304635764, 63.0)
+c_libraries -> c_libraries
+count: 1
+Average cc/chain = 63.0
+367: ('__lseek_nocancel', 'Java_sun_nio_ch_FileChannelImpl_position0', 0.007681652184863367, 61.0)
+application_logic -> application_logic
+count: 46
+Average cc/chain = 1.326086956521739
+368: ('__open_nocancel', '__pthread_disable_asynccancel', 0.08075370121130551, 59.99999999999999)
+application_logic -> kernel
+count: 2
+Average cc/chain = 29.999999999999996
+369: ('JNI_GetCreatedJavaVMs', 'JVM_GetCallerClass', 3.209665485284528e-05, 56.99999999999999)
+application_logic -> application_logic
+count: 6
+Average cc/chain = 9.499999999999998
+370: ('__pthread_enable_asynccancel', '__open_nocancel', 0.00017172568412014436, 53.99999999999999)
+kernel -> application_logic
+count: 1
+Average cc/chain = 53.99999999999999
+371: ('__pthread_cond_wait', '__lll_unlock_wake', 0.00026381021592617295, 53.0)
+sync -> sync
+count: 1
+Average cc/chain = 53.0
+372: ('tzset', 'JVM_FindSignal', 1.0, 53.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 53.0
+373: ('__close_nocancel', '__pthread_disable_asynccancel', 0.9615384615384616, 50.0)
+c_libraries -> kernel
+count: 2
+Average cc/chain = 25.0
+374: ('JNI_GetCreatedJavaVMs', 'JVM_GetComponentType', 2.759186118928805e-05, 49.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 16.333333333333332
+375: ('JVM_handle_linux_signal', 'JVM_DoPrivileged', 4.9025463512189536e-08, 48.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 16.0
+376: ('_IO_file_xsputn', 'fwrite', 0.20087336244541484, 46.0)
+application_logic -> kernel
+count: 5
+Average cc/chain = 9.2
+377: ('_IO_file_setbuf', '_IO_file_write', 1.0, 46.0)
+application_logic -> kernel
+count: 1
+Average cc/chain = 46.0
+378: ('JVM_DoPrivileged', 'JVM_handle_linux_signal', 0.21164021164021163, 40.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 20.0
+379: ('__open_nocancel', '', 0.052489905787348586, 39.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 39.0
+380: ('??', 'fork1', 5.001328663786505e-07, 37.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 37.0
+381: ('JVM_handle_linux_signal', 'JVM_InternString', 3.779046145731277e-08, 37.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 18.5
+382: ('__xstat64', None, 1.0, 37.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 37.0
+383: ('JVM_GetComponentType', 'JNI_GetCreatedJavaVMs', 0.9024390243902439, 37.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 12.333333333333334
+384: ('JVM_GetCallerClass', None, 0.026442307692307692, 33.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 33.0
+385: ('jio_vsnprintf', 'jio_snprintf', 0.0650887573964497, 33.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 16.5
+386: ('JVM_FindSignal', 'JVM_NewArray', 1.2201470844014704e-06, 31.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 31.0
+387: ('??', 'JVM_RawMonitorCreate', 4.190302393983288e-07, 31.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 15.5
+388: ('AsyncGetCallTrace', 'JVM_DoPrivileged', 1.0455570100415295e-06, 31.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 10.333333333333334
+389: (None, 'JVM_IsThreadAlive', 1.3981285639054414e-08, 30.0)
+application_logic -> application_logic
+count: 6
+Average cc/chain = 5.0
+390: ('strerror_l', 'JVM_FindSignal', 2.1358652354471042e-05, 30.0)
+application_logic -> application_logic
+count: 5
+Average cc/chain = 6.0
+391: ('JVM_FindSignal', 'jio_snprintf', 1.062708750930313e-06, 27.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 27.0
+392: ('JVM_DoPrivileged', '??', 0.14285714285714285, 27.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 13.5
+393: ('__lll_lock_wait', '__pthread_cond_wait', 0.0006258448906023131, 25.0)
+sync -> sync
+count: 1
+Average cc/chain = 25.0
+394: ('_IO_padn', '_IO_vfprintf', 0.13690476190476192, 23.000000000000004)
+application_logic -> c_libraries
+count: 3
+Average cc/chain = 7.666666666666668
+395: ('AsyncGetCallTrace', 'JVM_InternString', 7.757358461598445e-07, 23.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 11.5
+396: ('__printf_fp', 'mempcpy', 0.152317880794702, 23.0)
+c_libraries -> application_logic
+count: 1
+Average cc/chain = 23.0
+397: ('??', 'JVM_Clone', 2.9737629892784624e-07, 22.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 22.0
+398: ('??', 'jio_vsnprintf', 2.8385919443112594e-07, 21.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 7.0
+399: ('JVM_GetClassModifiers', 'JNI_GetCreatedJavaVMs', 0.84, 21.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 21.0
+400: ('JVM_InternString', 'JVM_FindSignal', 0.0050323508267433505, 21.0)
+application_logic -> application_logic
+count: 6
+Average cc/chain = 3.5
+401: ('JNI_GetCreatedJavaVMs', 'JVM_NewArray', 1.1261984158893082e-05, 20.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 20.0
+402: ('JNI_GetCreatedJavaVMs', 'JVM_DoPrivileged', 1.0698884950948428e-05, 19.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 19.0
+403: ('JVM_RawMonitorCreate', 'JVM_DoPrivileged', 0.02844311377245509, 19.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 19.0
+404: ('JVM_IsInterrupted', None, 0.009318293281020108, 19.0)
+application_logic -> application_logic
+count: 7
+Average cc/chain = 2.7142857142857144
+405: ('JNI_GetCreatedJavaVMs', 'JVM_Clone', 1.0135785743003774e-05, 18.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 9.0
+406: ('__vsnprintf_chk', '_IO_vfprintf', 0.00909090909090909, 18.0)
+c_libraries -> c_libraries
+count: 7
+Average cc/chain = 2.5714285714285716
+407: ('??', 'JVM_DoPrivileged', 2.2979077644424483e-07, 17.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 8.5
+408: ('getpriority', 'fork1', 1.0, 17.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 17.0
+409: ('JVM_RawMonitorCreate', '??', 0.023952095808383235, 16.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 8.0
+410: ('strlen', '__printf_fp', 0.010973936899862825, 15.999999999999998)
+c_libraries -> c_libraries
+count: 1
+Average cc/chain = 15.999999999999998
+411: ('JVM_GetCallerClass', 'JVM_RawMonitorCreate', 0.01201923076923077, 15.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 7.5
+412: ('JVM_InternString', None, 0.0035945363048166786, 15.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 7.5
+413: ('jio_snprintf', '??', 0.05, 14.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 14.0
+414: ('vprintf', 'swapcontext', 0.6842105263157895, 13.0)
+c_libraries -> application_logic
+count: 1
+Average cc/chain = 13.0
+415: ('JVM_InternString', 'JVM_handle_linux_signal', 0.002875629043853343, 12.0)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 3.0
+416: (None, 'JVM_GetComponentType', 4.660428546351471e-09, 10.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 10.0
+417: ('jio_snprintf', 'JVM_FindSignal', 0.03571428571428571, 10.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 10.0
+418: ('JVM_DoPrivileged', None, 0.042328042328042326, 8.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 8.0
+419: ('JVM_handle_linux_signal', 'JVM_GetComponentType', 8.170910585364922e-09, 7.999999999999999)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 7.999999999999999
+420: ('JNI_GetCreatedJavaVMs', 'JVM_GetClassModifiers', 3.941694455612579e-06, 7.000000000000001)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 7.000000000000001
+421: ('mempcpy', '__printf_fp', 0.01282051282051282, 7.0)
+application_logic -> c_libraries
+count: 1
+Average cc/chain = 7.0
+422: ('vprintf', '__printf_fp', 0.3157894736842105, 6.0)
+c_libraries -> c_libraries
+count: 1
+Average cc/chain = 6.0
+423: ('JVM_IsThreadAlive', 'AsyncGetCallTrace', 0.04580152671755725, 6.0)
+application_logic -> application_logic
+count: 5
+Average cc/chain = 1.2
+424: ('JVM_IsThreadAlive', None, 0.04580152671755725, 6.0)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 1.5
+425: ('AsyncGetCallTrace', 'JVM_GetCallerClass', 1.6863822742605316e-07, 5.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 5.0
+426: ('AsyncGetCallTrace', 'JVM_Clone', 1.6863822742605316e-07, 5.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 5.0
+427: ('JVM_IHashCode', None, 0.002680965147453083, 5.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 1.6666666666666667
+428: ('swapcontext', 'vprintf', 1.0, 5.0)
+application_logic -> c_libraries
+count: 1
+Average cc/chain = 5.0
+429: ('JVM_Clone', 'JNI_GetCreatedJavaVMs', 0.0057273768613974796, 5.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 2.5
+430: ('JVM_FindSignal', 'JVM_GetCallerClass', 1.5743833347115747e-07, 4.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 4.0
+431: ('JVM_Clone', None, 0.004581901489117984, 4.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 4.0
+432: ('JVM_InternString', 'AsyncGetCallTrace', 0.0007189072609633358, 3.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 1.5
+433: ('__open_nocancel', None, 0.004037685060565276, 3.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 1.5
+434: ('JVM_IHashCode', 'JVM_handle_linux_signal', 0.0016085790884718498, 3.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 1.0
+435: ('Java_sun_nio_ch_FileDispatcherImpl_close0', None, 1.0, 3.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 3.0
+436: ('JVM_Clone', 'AsyncGetCallTrace', 0.003436426116838488, 3.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 3.0
+437: ('JVM_GetCallerClass', 'JVM_FindSignal', 0.0016025641025641025, 2.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 2.0
+438: ('JVM_GetClassModifiers', None, 0.08, 2.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 2.0
+439: ('JVM_GetClassModifiers', 'AsyncGetCallTrace', 0.08, 2.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 2.0
+440: ('JVM_NewArray', 'JVM_handle_linux_signal', 0.022727272727272728, 2.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 2.0
+441: ('JVM_GetComponentType', None, 0.04878048780487805, 2.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 2.0
+442: ('JVM_GetComponentType', 'JVM_handle_linux_signal', 0.04878048780487805, 2.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 2.0
+443: ('JVM_DoPrivileged', 'JNI_GetCreatedJavaVMs', 0.010582010582010581, 2.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 2.0
+444: ('JVM_GetCallerClass', 'AsyncGetCallTrace', 0.0008012820512820513, 1.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1.0
+445: ('__write_nocancel', None, 7.768197001475957e-05, 1.0)
+kernel -> application_logic
+count: 1
+Average cc/chain = 1.0
+446: ('__close_nocancel', None, 0.019230769230769232, 1.0)
+c_libraries -> application_logic
+count: 1
+Average cc/chain = 1.0
+447: ('__close_nocancel', 'Java_sun_nio_ch_FileDispatcherImpl_close0', 0.019230769230769232, 1.0)
+c_libraries -> application_logic
+count: 1
+Average cc/chain = 1.0
+448: ('JVM_NewArray', 'JVM_FindSignal', 0.011363636363636364, 1.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1.0

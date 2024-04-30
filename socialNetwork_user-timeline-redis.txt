@@ -1,0 +1,2181 @@
+Parsing Proto
+loading symbolize
+loading ip_to_func_name.pkl
+loading functionJumps.pkl and functionJumpCounts.pkl and func_to_ip.pkl
+Total number of cycles: 21145472
+0: ('', '', 0.8522272114384346, 8077597.0)
+application_logic -> application_logic
+count: 320075
+Average cc/chain = 25.236575802546277
+1: (None, None, 0.6291387375157037, 1379169.0)
+application_logic -> application_logic
+count: 44065
+Average cc/chain = 31.298513559514355
+2: (None, '', 0.3708612624842963, 812985.0000000001)
+application_logic -> application_logic
+count: 20307
+Average cc/chain = 40.03471709262816
+3: ('zslRandomLevel', '??', 1.0, 765515.0)
+application_logic -> application_logic
+count: 578
+Average cc/chain = 1324.4204152249135
+4: ('??', '??', 0.8722453781782553, 434441.0)
+application_logic -> application_logic
+count: 10195
+Average cc/chain = 42.613143697891125
+5: ('', None, 0.04434725085511836, 420332.99999999994)
+application_logic -> application_logic
+count: 21161
+Average cc/chain = 19.86356977458532
+6: ('', 'epoll_wait', 0.03819999957797983, 362068.0)
+application_logic -> kernel
+count: 470
+Average cc/chain = 770.3574468085106
+7: ('', 'read', 0.033034261707366994, 313106.0)
+application_logic -> application_logic
+count: 436
+Average cc/chain = 718.1330275229358
+8: ('siphash', 'dictRehash', 0.6134510362806183, 312503.0)
+application_logic -> application_logic
+count: 2007
+Average cc/chain = 155.70652715495766
+9: ('', '__write', 0.028649155643148187, 271543.0)
+application_logic -> kernel
+count: 368
+Average cc/chain = 737.8885869565217
+10: ('dictRehash', 'dictGetNext', 0.6383161599414104, 251014.0)
+application_logic -> application_logic
+count: 1970
+Average cc/chain = 127.41827411167513
+11: ('dictGetNext', 'dictRehash', 0.9962715544057013, 232204.0)
+application_logic -> application_logic
+count: 1835
+Average cc/chain = 126.541689373297
+12: ('strtof64', 'strtof64', 0.7073527182973564, 196023.0)
+application_logic -> application_logic
+count: 2401
+Average cc/chain = 81.64223240316535
+13: ('__nss_database_lookup', 'zaddGenericCommand', 0.2038414777211356, 191134.0)
+application_logic -> application_logic
+count: 3149
+Average cc/chain = 60.69672912035567
+14: ('clock_gettime', 'clock_gettime', 0.9624196631955744, 189281.0)
+kernel -> kernel
+count: 3324
+Average cc/chain = 56.94374247894103
+15: ('tzset', 'adjtime', 0.6933303748081582, 187480.0)
+application_logic -> application_logic
+count: 1282
+Average cc/chain = 146.2402496099844
+16: ('dictSdsKeyCompare', '??', 0.9211807208064725, 170330.0)
+serialization -> application_logic
+count: 1782
+Average cc/chain = 95.58361391694724
+17: ('sdsMakeRoomFor', '_sdsMakeRoomFor', 1.0, 168511.0)
+serialization -> serialization
+count: 519
+Average cc/chain = 324.68400770712907
+18: ('dictGetKey', 'dictFind', 0.9330329406891877, 148676.0)
+application_logic -> application_logic
+count: 2624
+Average cc/chain = 56.66006097560975
+19: ('siphash', 'dictFind', 0.2734748281372076, 139313.0)
+application_logic -> application_logic
+count: 1486
+Average cc/chain = 93.75033647375504
+20: ('_dictRehashStep', 'dictRehash', 1.0, 135596.0)
+application_logic -> application_logic
+count: 1332
+Average cc/chain = 101.7987987987988
+21: ('je_malloc_usable_size', 'ztrymalloc_usable_internal', 0.5879842537066333, 127856.0)
+mem -> mem
+count: 4049
+Average cc/chain = 31.577179550506298
+22: ('je_malloc', 'ztrymalloc_usable_internal', 1.0, 119639.0)
+mem -> mem
+count: 3998
+Average cc/chain = 29.924712356178087
+23: ('dictFind', 'dictGetKey', 0.4628059491275173, 115664.0)
+application_logic -> application_logic
+count: 2616
+Average cc/chain = 44.21406727828746
+24: ('dictRehash', '_dictRehashStep', 0.2924291279714376, 114996.00000000001)
+application_logic -> application_logic
+count: 887
+Average cc/chain = 129.64599774520858
+25: ('__nss_database_lookup', 'adjtime', 0.12190986071710429, 114310.0)
+application_logic -> application_logic
+count: 1190
+Average cc/chain = 96.05882352941177
+26: ('__nss_database_lookup', 'dictSdsKeyCompare', 0.11980995243478447, 112341.0)
+application_logic -> serialization
+count: 1754
+Average cc/chain = 64.0484606613455
+27: ('__nss_database_lookup', 'dictSdsKeyCaseCompare', 0.10004799180939786, 93811.0)
+application_logic -> serialization
+count: 1036
+Average cc/chain = 90.5511583011583
+28: ('__nss_database_lookup', 'processMultibulkBuffer', 0.09788196147857432, 91780.0)
+application_logic -> serialization
+count: 1808
+Average cc/chain = 50.76327433628319
+29: ('zfree', 'je_malloc_usable_size', 1.0, 91734.0)
+mem -> mem
+count: 2717
+Average cc/chain = 33.762973868237026
+30: ('je_malloc_usable_size', 'zfree', 0.3889619587211655, 84579.0)
+mem -> mem
+count: 2793
+Average cc/chain = 30.28249194414608
+31: ('getMonotonicUs_posix', '??', 0.7756473839812791, 80544.0)
+application_logic -> application_logic
+count: 3403
+Average cc/chain = 23.668527769615046
+32: ('sdssubstr', 'processInputBuffer', 1.0, 78208.0)
+serialization -> application_logic
+count: 390
+Average cc/chain = 200.53333333333333
+33: ('processMultibulkBuffer', 'createStringObject', 0.4786295519210056, 76877.0)
+serialization -> serialization
+count: 1397
+Average cc/chain = 55.03006442376521
+34: ('__nss_database_lookup', 'processCommand', 0.08125759870315466, 76192.0)
+application_logic -> application_logic
+count: 720
+Average cc/chain = 105.82222222222222
+35: ('dictFind', 'zsetAdd', 0.28110307739707663, 70253.0)
+application_logic -> application_logic
+count: 894
+Average cc/chain = 78.58277404921701
+36: ('wcstof128', 'tzset', 1.0, 68740.0)
+application_logic -> application_logic
+count: 597
+Average cc/chain = 115.14237855946399
+37: ('_sdsnewlen.constprop.0', 'ztrymalloc_usable_internal', 0.7273374619683664, 67414.0)
+serialization -> mem
+count: 891
+Average cc/chain = 75.66105499438832
+38: ('zsetAdd', 'dictFind', 0.6794512137027195, 64183.0)
+application_logic -> application_logic
+count: 930
+Average cc/chain = 69.01397849462366
+39: ('siphash_nocase', 'dictFind', 1.0, 61571.0)
+application_logic -> application_logic
+count: 306
+Average cc/chain = 201.21241830065358
+40: ('je_free', 'freeClientArgv', 0.6099036364915242, 60697.0)
+mem -> mem
+count: 1997
+Average cc/chain = 30.394091136705057
+41: ('afterSleep', 'getMonotonicUs_posix', 0.8909216481514136, 60629.0)
+application_logic -> application_logic
+count: 495
+Average cc/chain = 122.48282828282828
+42: ('__nss_database_lookup', 'tzset', 0.06272316191370006, 58813.0)
+application_logic -> application_logic
+count: 575
+Average cc/chain = 102.28347826086957
+43: ('strtof64', '??', 0.20888273034980984, 57886.0)
+application_logic -> application_logic
+count: 496
+Average cc/chain = 116.70564516129032
+44: ('__nss_database_lookup', 'ctl_arena_clear', 0.061481773777275345, 57649.0)
+application_logic -> application_logic
+count: 80
+Average cc/chain = 720.6125
+45: ('siphash', 'dictFindPositionForInsert', 0.11307413558217416, 57602.0)
+application_logic -> application_logic
+count: 431
+Average cc/chain = 133.64733178654294
+46: ('epoll_wait', '__libc_alloca_cutoff', 0.7352620370851296, 56624.0)
+kernel -> kernel
+count: 828
+Average cc/chain = 68.38647342995169
+47: ('readQueryFromClient', 'processInputBuffer', 0.6054413489411609, 54721.0)
+application_logic -> application_logic
+count: 366
+Average cc/chain = 149.51092896174865
+48: ('string2ll', 'processMultibulkBuffer', 0.534086056742237, 53783.00000000001)
+application_logic -> serialization
+count: 1735
+Average cc/chain = 30.998847262247843
+49: ('callHandler', 'readQueryFromClient', 1.0, 52663.0)
+application_logic -> application_logic
+count: 624
+Average cc/chain = 84.39583333333333
+50: ('dictFind', 'sdslen', 0.2062268174888664, 51540.0)
+application_logic -> application_logic
+count: 1891
+Average cc/chain = 27.25542041248017
+51: ('lookupKey.constprop.0', 'checkType', 0.5725536699146427, 51180.0)
+application_logic -> application_logic
+count: 743
+Average cc/chain = 68.8829071332436
+52: ('aeApiPoll', 'aeProcessEvents', 0.7267626108445995, 49994.0)
+application_logic -> application_logic
+count: 435
+Average cc/chain = 114.9287356321839
+53: ('_addReplyToBuffer', '??', 1.0, 48378.0)
+application_logic -> application_logic
+count: 333
+Average cc/chain = 145.27927927927928
+54: ('string2ll', 'string2ll', 0.4659139432577631, 46918.0)
+application_logic -> application_logic
+count: 1435
+Average cc/chain = 32.695470383275264
+55: ('processMultibulkBuffer', '??', 0.2915719808988974, 46832.0)
+serialization -> application_logic
+count: 1809
+Average cc/chain = 25.888336097291322
+56: ('sdsIncrLen', 'readQueryFromClient', 1.0, 44701.0)
+serialization -> application_logic
+count: 422
+Average cc/chain = 105.92654028436019
+57: ('aeProcessEvents', 'connSocketEventHandler', 0.39319022422000816, 44436.0)
+application_logic -> application_logic
+count: 648
+Average cc/chain = 68.57407407407408
+58: ('read', '__libc_alloca_cutoff', 0.658836892321672, 43503.0)
+application_logic -> kernel
+count: 920
+Average cc/chain = 47.28586956521739
+59: ('__xpg_basename', 'strtof64', 1.0, 41351.0)
+application_logic -> application_logic
+count: 1041
+Average cc/chain = 39.7223823246878
+60: ('random', 'random_r', 0.7746418123171555, 41307.0)
+application_logic -> application_logic
+count: 560
+Average cc/chain = 73.7625
+61: ('updateCommandLatencyHistogram', 'hdr_record_value', 1.0, 41107.0)
+application_logic -> application_logic
+count: 285
+Average cc/chain = 144.23508771929824
+62: ('handleClientsWithPendingWrites', 'writeToClient.constprop.0', 0.6857789577589435, 40295.0)
+application_logic -> kernel
+count: 427
+Average cc/chain = 94.36768149882904
+63: ('ustime', '??', 0.999950149551346, 40118.0)
+application_logic -> application_logic
+count: 1896
+Average cc/chain = 21.15928270042194
+64: ('__errno_location', 'string2d', 1.0, 39827.0)
+c_libraries -> serialization
+count: 525
+Average cc/chain = 75.86095238095238
+65: ('__nss_database_lookup', 'createEmbeddedStringObject', 0.0417080818207026, 39108.0)
+application_logic -> serialization
+count: 1587
+Average cc/chain = 24.64272211720227
+66: ('processCommand', 'call', 0.3745170311372867, 37900.0)
+application_logic -> application_logic
+count: 352
+Average cc/chain = 107.67045454545455
+67: ('ztrymalloc_usable_internal', 'imalloc_fastpath', 0.8092445670921007, 37536.0)
+mem -> mem
+count: 3985
+Average cc/chain = 9.419322459222084
+68: ('__nss_database_lookup', '_sdsnewlen.constprop.0', 0.03974041763539023, 37263.0)
+application_logic -> serialization
+count: 1022
+Average cc/chain = 36.46086105675147
+69: ('tzset', '??', 0.13062998095449418, 35323.0)
+application_logic -> application_logic
+count: 587
+Average cc/chain = 60.17546848381601
+70: ('__ctype_b_loc', 'string2d', 1.0, 34870.0)
+kernel -> serialization
+count: 556
+Average cc/chain = 62.71582733812949
+71: ('keyIsExpired', 'getExpire', 1.0, 34841.0)
+application_logic -> application_logic
+count: 772
+Average cc/chain = 45.130829015544045
+72: ('ctl_arena_stats_sdmerge', 'je_hpa_shard_stats_accum', 0.9962111426849221, 34707.0)
+application_logic -> application_logic
+count: 12
+Average cc/chain = 2892.25
+73: ('adjtime', 'tzset', 0.6180387517699988, 34481.0)
+application_logic -> application_logic
+count: 1243
+Average cc/chain = 27.74014481094127
+74: ('??', 'clock_gettime', 0.06810862686519219, 33923.0)
+application_logic -> kernel
+count: 3298
+Average cc/chain = 10.285930867192238
+75: ('usUntilEarliestTimer', 'getMonotonicUs_posix', 1.0, 33538.0)
+application_logic -> application_logic
+count: 423
+Average cc/chain = 79.28605200945627
+76: ('zaddGenericCommand', '??', 0.490613633697055, 33452.0)
+application_logic -> application_logic
+count: 3164
+Average cc/chain = 10.572692793931733
+77: ('__nss_database_lookup', 'strtof64', 0.0350734807926114, 32887.0)
+application_logic -> application_logic
+count: 482
+Average cc/chain = 68.23029045643153
+78: ('connSocketRead', '??', 0.6694910000206659, 32396.0)
+application_logic -> application_logic
+count: 518
+Average cc/chain = 62.54054054054054
+79: ('updateClientMemUsageAndBucket', 'processCommandAndResetClient', 0.772842518178339, 32311.0)
+application_logic -> application_logic
+count: 473
+Average cc/chain = 68.3107822410148
+80: ('aeProcessEvents', 'afterSleep', 0.28370821314173467, 32063.0)
+application_logic -> application_logic
+count: 515
+Average cc/chain = 62.258252427184466
+81: ('writeToClient.constprop.0', 'getClientType', 0.5876307749282473, 31734.999999999996)
+kernel -> application_logic
+count: 304
+Average cc/chain = 104.39144736842104
+82: ('__write', '__libc_alloca_cutoff', 0.602054741110418, 30883.000000000004)
+kernel -> kernel
+count: 727
+Average cc/chain = 42.48005502063274
+83: ('processInputBuffer', 'processMultibulkBuffer', 0.46246642759614087, 30822.0)
+application_logic -> serialization
+count: 342
+Average cc/chain = 90.12280701754386
+84: ('moduleCallCommandFilters', 'processCommand', 1.0, 30316.0)
+application_logic -> application_logic
+count: 407
+Average cc/chain = 74.48648648648648
+85: ('processCommand', 'moduleCallCommandFilters', 0.29931717343399505, 30289.999999999996)
+application_logic -> application_logic
+count: 390
+Average cc/chain = 77.66666666666666
+86: ('notifyKeyspaceEvent', 'call', 1.0, 29871.0)
+application_logic -> application_logic
+count: 313
+Average cc/chain = 95.43450479233226
+87: ('clientHasPendingReplies', 'prepareClientToWrite', 0.8615169683916409, 29600.0)
+application_logic -> application_logic
+count: 362
+Average cc/chain = 81.76795580110497
+88: ('string2d', '??', 0.5950389908719044, 29530.0)
+serialization -> application_logic
+count: 1634
+Average cc/chain = 18.07221542227662
+89: ('_sdsMakeRoomFor', 'readQueryFromClient', 1.0, 28352.0)
+serialization -> application_logic
+count: 507
+Average cc/chain = 55.92110453648915
+90: ('zmalloc', 'createEmbeddedStringObject', 0.48470764356711404, 27845.0)
+mem -> serialization
+count: 1509
+Average cc/chain = 18.452617627567925
+91: ('beforeSleep', 'getMonotonicUs_posix', 0.3377412740970798, 27839.0)
+application_logic -> application_logic
+count: 2140
+Average cc/chain = 13.008878504672897
+92: ('ACLCheckAllUserCommandPerm', 'ACLSelectorCheckCmd', 0.9274165447069482, 26615.0)
+application_logic -> application_logic
+count: 329
+Average cc/chain = 80.8966565349544
+93: ('getExpire', 'keyIsExpired', 1.0, 26236.0)
+application_logic -> application_logic
+count: 766
+Average cc/chain = 34.25065274151436
+94: ('beforeSleep', 'aeProcessEvents', 0.31663168621932136, 26099.000000000004)
+application_logic -> application_logic
+count: 451
+Average cc/chain = 57.86917960088692
+95: ('dictSdsKeyCaseCompare', '??', 0.8472022955523673, 25982.0)
+serialization -> application_logic
+count: 1119
+Average cc/chain = 23.218945487042003
+96: ('getDoubleFromObject', 'string2d', 0.779885005569102, 25907.0)
+serialization -> serialization
+count: 532
+Average cc/chain = 48.69736842105263
+97: ('connTypeProcessPendingData', 'tlsProcessPendingData', 1.0, 25176.0)
+application_logic -> application_logic
+count: 269
+Average cc/chain = 93.59107806691449
+98: ('lookupKey.constprop.0', 'dictFind', 0.2778306055554934, 24834.999999999996)
+application_logic -> application_logic
+count: 618
+Average cc/chain = 40.18608414239482
+99: ('decrRefCount', 'decrRefCount', 1.0, 24821.0)
+application_logic -> application_logic
+count: 1928
+Average cc/chain = 12.873962655601659
+100: ('__libc_alloca_cutoff', 'epoll_wait', 0.50280893138036, 24613.0)
+kernel -> kernel
+count: 821
+Average cc/chain = 29.979293544457978
+101: ('zslInsert', 'zsetAdd', 0.7629764292878636, 24342.0)
+application_logic -> application_logic
+count: 438
+Average cc/chain = 55.57534246575342
+102: ('processInputBuffer', 'sdslen', 0.360091226911939, 23999.0)
+application_logic -> application_logic
+count: 455
+Average cc/chain = 52.745054945054946
+103: ('je_free', 'zaddGenericCommand', 0.24048674122529365, 23933.0)
+mem -> application_logic
+count: 322
+Average cc/chain = 74.32608695652173
+104: ('checkGoodReplicasStatus', 'processCommand', 1.0, 22256.0)
+application_logic -> application_logic
+count: 363
+Average cc/chain = 61.31129476584022
+105: ('connSocketEventHandler', 'aeProcessEvents', 1.0, 22077.0)
+application_logic -> application_logic
+count: 412
+Average cc/chain = 53.58495145631068
+106: ('addReply', 'prepareClientToWrite', 1.0, 22015.0)
+application_logic -> application_logic
+count: 400
+Average cc/chain = 55.0375
+107: ('tlsProcessPendingData', 'connTypeProcessPendingData', 1.0, 21946.0)
+application_logic -> application_logic
+count: 250
+Average cc/chain = 87.784
+108: ('touchWatchedKey', 'signalModifiedKey', 1.0, 21762.0)
+application_logic -> application_logic
+count: 346
+Average cc/chain = 62.895953757225435
+109: ('adjtime', '??', 0.38196124823000127, 21310.0)
+application_logic -> application_logic
+count: 1230
+Average cc/chain = 17.32520325203252
+110: ('dictRehash', '_dictExpandIfNeeded', 0.05317055059962771, 20909.0)
+application_logic -> application_logic
+count: 333
+Average cc/chain = 62.789789789789786
+111: ('sdsavail', 'readQueryFromClient', 1.0, 20424.0)
+application_logic -> application_logic
+count: 516
+Average cc/chain = 39.58139534883721
+112: ('string2d', 'getDoubleFromObject', 0.4049610091280956, 20097.0)
+serialization -> serialization
+count: 571
+Average cc/chain = 35.19614711033275
+113: ('_writeToClient', 'writeToClient.constprop.0', 1.0, 19822.0)
+kernel -> kernel
+count: 321
+Average cc/chain = 61.75077881619938
+114: ('read', '', 0.2975011358473421, 19644.0)
+application_logic -> application_logic
+count: 483
+Average cc/chain = 40.67080745341615
+115: ('processMultibulkBuffer', 'string2ll', 0.11847913385091427, 19030.0)
+serialization -> application_logic
+count: 302
+Average cc/chain = 63.01324503311258
+116: ('aeProcessEvents', 'processTimeEvents', 0.1674571292052312, 18925.0)
+application_logic -> application_logic
+count: 322
+Average cc/chain = 58.77329192546584
+117: ('aeApiPoll', '??', 0.27323738915540047, 18795.999999999996)
+application_logic -> application_logic
+count: 409
+Average cc/chain = 45.95599022004889
+118: ('updateFailoverStatus', 'beforeSleep', 1.0, 18737.0)
+application_logic -> application_logic
+count: 418
+Average cc/chain = 44.82535885167464
+119: ('alsoPropagate', 'call', 1.0, 18236.0)
+application_logic -> application_logic
+count: 307
+Average cc/chain = 59.40065146579805
+120: ('zmalloc_usable', 'extend_to_usable', 0.9455291826745961, 17966.0)
+mem -> application_logic
+count: 966
+Average cc/chain = 18.598343685300208
+121: ('tzset', 'updateCachedTimeWithUs', 0.06611933950925464, 17879.0)
+application_logic -> application_logic
+count: 590
+Average cc/chain = 30.303389830508475
+122: ('ctl_arena_clear', '??', 0.6356095129592708, 17853.0)
+application_logic -> application_logic
+count: 78
+Average cc/chain = 228.8846153846154
+123: ('createEmbeddedStringObject', 'ztrymalloc_usable_internal', 0.6788418533485032, 17303.0)
+serialization -> mem
+count: 1415
+Average cc/chain = 12.228268551236749
+124: ('getCommandFlags', 'processCommand', 1.0, 17256.0)
+application_logic -> application_logic
+count: 384
+Average cc/chain = 44.9375
+125: ('readQueryFromClient', 'sdsIncrLen', 0.1893076054966697, 17110.0)
+application_logic -> serialization
+count: 453
+Average cc/chain = 37.77041942604856
+126: ('connSocketWrite', '_writeToClient', 0.5557100297914598, 16788.0)
+application_logic -> kernel
+count: 332
+Average cc/chain = 50.566265060240966
+127: ('__write', '', 0.3256979101684342, 16707.0)
+kernel -> application_logic
+count: 367
+Average cc/chain = 45.52316076294278
+128: ('connRead', 'connSocketRead', 1.0, 16673.0)
+application_logic -> application_logic
+count: 539
+Average cc/chain = 30.93320964749536
+129: ('__libc_alloca_cutoff', '__write', 0.3385221956650528, 16571.0)
+kernel -> kernel
+count: 707
+Average cc/chain = 23.43847241867044
+130: ('_sdsnewlen.constprop.0', 'zsetAdd', 0.1786246034999892, 16556.0)
+serialization -> application_logic
+count: 1019
+Average cc/chain = 16.24730127576055
+131: ('tzset', 'tzset', 0.06035761173055232, 16321.0)
+application_logic -> application_logic
+count: 1217
+Average cc/chain = 13.410846343467544
+132: ('connSocketRead', 'readQueryFromClient', 0.33050899997933414, 15993.0)
+application_logic -> application_logic
+count: 443
+Average cc/chain = 36.10158013544018
+133: ('ACLCheckAllPerm', 'ACLCheckAllUserCommandPerm', 1.0, 15444.0)
+application_logic -> application_logic
+count: 370
+Average cc/chain = 41.74054054054054
+134: ('epoll_wait', '', 0.19983898613203138, 15390.0)
+kernel -> application_logic
+count: 381
+Average cc/chain = 40.39370078740158
+135: ('pthread_mutex_trylock', 'malloc_mutex_lock', 0.7009763286359031, 15221.0)
+sync -> mem
+count: 116
+Average cc/chain = 131.2155172413793
+136: ('writeToClient.constprop.0', '_writeToClient', 0.28034441255439313, 15140.000000000002)
+kernel -> kernel
+count: 414
+Average cc/chain = 36.57004830917875
+137: ('je_free', 'resetClient', 0.14960962228318211, 14889.0)
+mem -> application_logic
+count: 472
+Average cc/chain = 31.54449152542373
+138: ('__nss_database_lookup', '_addReplyToBuffer', 0.015861826248320287, 14873.0)
+application_logic -> application_logic
+count: 320
+Average cc/chain = 46.478125
+139: ('trackingInvalidateKey', 'zaddGenericCommand', 1.0, 14590.0)
+application_logic -> application_logic
+count: 339
+Average cc/chain = 43.03834808259587
+140: ('readQueryFromClient', 'connDecrRefs', 0.16103870239649487, 14555.0)
+application_logic -> application_logic
+count: 421
+Average cc/chain = 34.572446555819475
+141: ('handleClientsBlockedOnKeys', 'handleClientsBlockedOnKeys', 0.5978468700640119, 14383.0)
+application_logic -> application_logic
+count: 214
+Average cc/chain = 67.21028037383178
+142: ('firePostExecutionUnitJobs', 'postExecutionUnitOperations', 1.0, 14022.0)
+application_logic -> application_logic
+count: 288
+Average cc/chain = 48.6875
+143: ('ACLSelectorCheckCmd', 'ACLCheckAllUserCommandPerm', 1.0, 13976.0)
+application_logic -> application_logic
+count: 331
+Average cc/chain = 42.22356495468278
+144: ('writeCommandsDeniedByDiskError', 'processCommand', 1.0, 13735.0)
+kernel -> application_logic
+count: 335
+Average cc/chain = 41.0
+145: ('freeClientsInAsyncFreeQueue', 'beforeSleep', 1.0, 13585.0)
+mem -> application_logic
+count: 213
+Average cc/chain = 63.779342723004696
+146: ('aeProcessEvents', 'aeApiPoll', 0.12002937689135859, 13565.0)
+application_logic -> application_logic
+count: 425
+Average cc/chain = 31.91764705882353
+147: ('connSocketWrite', '??', 0.4442899702085402, 13422.0)
+application_logic -> application_logic
+count: 410
+Average cc/chain = 32.73658536585366
+148: ('tzset', 'wcstof128', 0.04956269299754073, 13402.0)
+application_logic -> application_logic
+count: 572
+Average cc/chain = 23.43006993006993
+149: ('strtof64', 'string2d', 0.04823868188018274, 13368.0)
+application_logic -> serialization
+count: 566
+Average cc/chain = 23.618374558303888
+150: ('prepareClientToWrite', 'getClientType', 0.7136655948553055, 13317.0)
+application_logic -> application_logic
+count: 394
+Average cc/chain = 33.7994923857868
+151: ('dictSdsKeyCompare', 'dictFind', 0.07121533336217713, 13168.0)
+serialization -> application_logic
+count: 1597
+Average cc/chain = 8.24546023794615
+152: ('zaddGenericCommand', 'addReplyLongLong', 0.18741933591458407, 12779.0)
+application_logic -> application_logic
+count: 405
+Average cc/chain = 31.553086419753086
+153: ('expireIfNeeded', 'lookupKey.constprop.0', 1.0, 12511.0)
+application_logic -> application_logic
+count: 765
+Average cc/chain = 16.35424836601307
+154: ('__nss_database_lookup', 'ctl_lookup', 0.013324659258153276, 12494.0)
+application_logic -> application_logic
+count: 133
+Average cc/chain = 93.93984962406014
+155: ('zsetAdd', 'zslInsert', 0.131935255073415, 12463.000000000002)
+application_logic -> application_logic
+count: 1023
+Average cc/chain = 12.182795698924734
+156: ('commandProcessed', 'resetClient', 0.6648832684824902, 12303.0)
+application_logic -> application_logic
+count: 361
+Average cc/chain = 34.0803324099723
+157: ('beforeSleep', 'blockedBeforeSleep', 0.1482038652383321, 12216.0)
+application_logic -> application_logic
+count: 220
+Average cc/chain = 55.527272727272724
+158: ('random', 'zslRandomLevel', 0.2253581876828445, 12017.0)
+application_logic -> application_logic
+count: 560
+Average cc/chain = 21.458928571428572
+159: ('handleClientsWithPendingWrites', 'getClientType', 0.20065352803022568, 11790.0)
+application_logic -> application_logic
+count: 329
+Average cc/chain = 35.83586626139817
+160: ('??', 'ustime', 0.023516680319311263, 11713.0)
+application_logic -> application_logic
+count: 759
+Average cc/chain = 15.432147562582346
+161: ('zaddGenericCommand', 'zsetAdd', 0.17067053854276662, 11637.0)
+application_logic -> application_logic
+count: 937
+Average cc/chain = 12.419423692636073
+162: ('ctl_arena_refresh', 'arenas_i', 0.9624906847727085, 11624.0)
+application_logic -> application_logic
+count: 15
+Average cc/chain = 774.9333333333333
+163: ('createStringObject', 'processMultibulkBuffer', 1.0, 11606.0)
+serialization -> serialization
+count: 1621
+Average cc/chain = 7.159777914867366
+164: ('hdr_record_values', 'updateCommandLatencyHistogram', 0.5936312275295326, 11558.0)
+application_logic -> application_logic
+count: 309
+Average cc/chain = 37.40453074433657
+165: ('lookupKeyWriteWithFlags', 'lookupKey.constprop.0', 1.0, 10994.0)
+application_logic -> application_logic
+count: 615
+Average cc/chain = 17.87642276422764
+166: ('??', 'updateCachedTimeWithUs', 0.021824153937583322, 10870.0)
+application_logic -> application_logic
+count: 705
+Average cc/chain = 15.418439716312056
+167: ('tcache_alloc_small', 'je_tcache_bin_flush_stashed', 0.9850593912397921, 10615.0)
+application_logic -> application_logic
+count: 30
+Average cc/chain = 353.8333333333333
+168: ('getMonotonicUs_posix', 'beforeSleep', 0.10104871871418804, 10493.0)
+application_logic -> application_logic
+count: 1323
+Average cc/chain = 7.931216931216931
+169: ('tlsHasPendingData', 'connTypeHasPendingData', 1.0, 10322.0)
+application_logic -> application_logic
+count: 241
+Average cc/chain = 42.829875518672196
+170: ('processCommand', 'processCommandAndResetClient', 0.09988438392442464, 10108.0)
+application_logic -> application_logic
+count: 371
+Average cc/chain = 27.245283018867923
+171: ('call', 'processCommand', 0.3001967330392274, 10071.0)
+application_logic -> application_logic
+count: 315
+Average cc/chain = 31.97142857142857
+172: ('updateCachedTimeWithUs', '??', 1.0, 9933.0)
+application_logic -> application_logic
+count: 703
+Average cc/chain = 14.129445234708392
+173: ('evictClients', 'processCommand', 0.6613275417401927, 9744.0)
+application_logic -> application_logic
+count: 325
+Average cc/chain = 29.981538461538463
+174: ('zmalloc', 'zaddGenericCommand', 0.16876425226730726, 9695.0)
+mem -> application_logic
+count: 529
+Average cc/chain = 18.32703213610586
+175: ('handleClientsBlockedOnKeys', 'moduleCount', 0.402153129935988, 9675.0)
+application_logic -> application_logic
+count: 199
+Average cc/chain = 48.618090452261306
+176: ('dictFetchValue', 'dictFind', 1.0, 9642.0)
+application_logic -> application_logic
+count: 368
+Average cc/chain = 26.20108695652174
+177: ('popcount_lu', '__popcountdi2', 1.0, 9521.0)
+application_logic -> application_logic
+count: 51
+Average cc/chain = 186.68627450980392
+178: ('get_bucket_index', 'get_sub_bucket_index', 1.0, 9491.0)
+application_logic -> application_logic
+count: 289
+Average cc/chain = 32.84083044982699
+179: ('processMultibulkBuffer', 'processInputBuffer', 0.0583430353818664, 9371.0)
+serialization -> application_logic
+count: 380
+Average cc/chain = 24.660526315789475
+180: ('dictFindPositionForInsert', 'sdslen', 0.3422132649322096, 9339.0)
+application_logic -> application_logic
+count: 457
+Average cc/chain = 20.435448577680525
+181: ('', '__nss_database_lookup', 0.0009841510325778468, 9328.0)
+application_logic -> application_logic
+count: 9
+Average cc/chain = 1036.4444444444443
+182: ('strtof64', '__xpg_basename', 0.03310094471027201, 9173.0)
+application_logic -> application_logic
+count: 479
+Average cc/chain = 19.150313152400834
+183: ('dictFindPositionForInsert', 'dictAddRaw', 0.33048735800659584, 9019.0)
+application_logic -> application_logic
+count: 345
+Average cc/chain = 26.142028985507245
+184: ('trackingHandlePendingKeyInvalidations', 'afterCommand', 1.0, 8887.0)
+application_logic -> application_logic
+count: 291
+Average cc/chain = 30.539518900343644
+185: ('processCommandAndResetClient', 'processCommand', 0.6687320538008161, 8850.0)
+application_logic -> application_logic
+count: 395
+Average cc/chain = 22.40506329113924
+186: ('ztrymalloc_usable_internal', 'je_malloc_usable_size', 0.19075543290789929, 8848.0)
+mem -> mem
+count: 4117
+Average cc/chain = 2.1491377216419725
+187: ('connTypeHasPendingData', 'tlsHasPendingData', 1.0, 8765.0)
+application_logic -> application_logic
+count: 250
+Average cc/chain = 35.06
+188: ('_sdsnewlen.constprop.0', '??', 0.09403793453164448, 8716.0)
+serialization -> application_logic
+count: 1017
+Average cc/chain = 8.57030481809243
+189: ('resetClient', 'commandProcessed', 1.0, 8585.0)
+application_logic -> application_logic
+count: 475
+Average cc/chain = 18.073684210526316
+190: ('lookupKey.constprop.0', 'expireIfNeeded', 0.0947767622414391, 8472.0)
+application_logic -> application_logic
+count: 779
+Average cc/chain = 10.875481386392812
+191: ('afterCommand', 'call', 0.8952991452991453, 8380.0)
+application_logic -> application_logic
+count: 306
+Average cc/chain = 27.38562091503268
+192: ('connWrite', 'connSocketWrite', 1.0, 8329.0)
+application_logic -> application_logic
+count: 421
+Average cc/chain = 19.783847980997624
+193: ('createEmbeddedStringObject', '??', 0.3211581466514967, 8186.0)
+serialization -> application_logic
+count: 1559
+Average cc/chain = 5.250801796023092
+194: ('zmalloc', 'zslCreateNode', 0.14167841662750014, 8139.0)
+mem -> application_logic
+count: 445
+Average cc/chain = 18.28988764044944
+195: ('call', 'afterCommand', 0.24001430785739836, 8052.0)
+application_logic -> application_logic
+count: 299
+Average cc/chain = 26.929765886287626
+196: ('signalModifiedKey', 'touchWatchedKey', 1.0, 7937.0)
+application_logic -> application_logic
+count: 350
+Average cc/chain = 22.677142857142858
+197: ('processMultibulkBuffer', 'ztrymalloc_usable_internal', 0.04935281629197044, 7927.0)
+serialization -> mem
+count: 279
+Average cc/chain = 28.412186379928315
+198: ('hdr_record_values', 'counts_index_for', 0.4063687724704674, 7912.0)
+application_logic -> application_logic
+count: 295
+Average cc/chain = 26.82033898305085
+199: ('call', 'alsoPropagate', 0.23572195063789197, 7908.0)
+application_logic -> application_logic
+count: 311
+Average cc/chain = 25.427652733118972
+200: ('processCommand', 'getCommandFlags', 0.0771959643072423, 7812.0)
+application_logic -> application_logic
+count: 406
+Average cc/chain = 19.24137931034483
+201: ('activeExpireCycle', 'beforeSleep', 0.7785, 7785.0)
+application_logic -> application_logic
+count: 427
+Average cc/chain = 18.23185011709602
+202: ('zsetAdd', 'sdslen', 0.08078295205530207, 7631.0)
+application_logic -> application_logic
+count: 897
+Average cc/chain = 8.507246376811594
+203: ('malloc_mutex_trylock_final', '??', 1.0, 7556.0)
+mem -> application_logic
+count: 122
+Average cc/chain = 61.9344262295082
+204: ('__libc_alloca_cutoff', 'read', 0.15413372556229699, 7545.0)
+kernel -> application_logic
+count: 927
+Average cc/chain = 8.13915857605178
+205: ('blockedBeforeSleep', 'beforeSleep', 1.0, 7543.0)
+application_logic -> application_logic
+count: 191
+Average cc/chain = 39.49214659685864
+206: ('call', 'zaddCommand', 0.2240670084654823, 7517.0)
+application_logic -> application_logic
+count: 438
+Average cc/chain = 17.162100456621005
+207: ('dictGetKey', 'dictRehash', 0.0470106120604718, 7491.0)
+application_logic -> application_logic
+count: 2086
+Average cc/chain = 3.5910834132310643
+208: ('zslInsert', '', 0.23429663991975927, 7475.0)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 934.375
+209: ('afterSleep', 'aeProcessEvents', 0.10907835184858637, 7423.0)
+application_logic -> application_logic
+count: 590
+Average cc/chain = 12.58135593220339
+210: ('clock_gettime', 'getMonotonicUs_posix', 0.03755999837292548, 7387.0)
+kernel -> application_logic
+count: 3385
+Average cc/chain = 2.182274741506647
+211: ('zmalloc', 'dictInsertAtPosition', 0.1278221665187042, 7343.000000000001)
+mem -> application_logic
+count: 394
+Average cc/chain = 18.637055837563455
+212: ('dictAdd', 'zsetAdd', 0.8070814030443415, 7317.0)
+application_logic -> application_logic
+count: 415
+Average cc/chain = 17.631325301204818
+213: ('getDoubleFromObject', 'getDoubleFromObjectOrReply', 0.220114994430898, 7312.0)
+serialization -> serialization
+count: 582
+Average cc/chain = 12.563573883161512
+214: ('processTimeEvents', 'aeMain', 0.7114192977279433, 7233.0)
+application_logic -> application_logic
+count: 297
+Average cc/chain = 24.353535353535353
+215: ('??', 'enterExecutionUnit', 0.014305160699657881, 7125.0)
+application_logic -> application_logic
+count: 438
+Average cc/chain = 16.267123287671232
+216: ('dictAddRaw', 'dictFindPositionForInsert', 0.7060939060939061, 7068.0)
+application_logic -> application_logic
+count: 444
+Average cc/chain = 15.91891891891892
+217: ('strtol', 'get_proc_stat_ll.constprop.0', 1.0, 7013.0)
+application_logic -> application_logic
+count: 15
+Average cc/chain = 467.53333333333336
+218: ('updateClientMemUsageAndBucket', 'processInputBuffer', 0.15700344431687716, 6564.0)
+application_logic -> application_logic
+count: 399
+Average cc/chain = 16.451127819548873
+219: ('dictSetVal', 'dictAdd', 1.0, 6563.0)
+application_logic -> application_logic
+count: 409
+Average cc/chain = 16.04645476772616
+220: ('ctl_arena_clear', 'ctl_refresh', 0.23316006835659356, 6549.0)
+application_logic -> application_logic
+count: 16
+Average cc/chain = 409.3125
+221: ('dictFindPositionForInsert', 'dictGetKey', 0.23763283253939171, 6485.0)
+application_logic -> application_logic
+count: 254
+Average cc/chain = 25.531496062992126
+222: ('zaddGenericCommand', 'ztrymalloc_usable_internal', 0.09484629825178928, 6467.0)
+application_logic -> mem
+count: 496
+Average cc/chain = 13.038306451612904
+223: ('processInputBuffer', 'readQueryFromClient', 0.0944378591684547, 6294.0)
+application_logic -> application_logic
+count: 421
+Average cc/chain = 14.950118764845605
+224: ('zsetAdd', 'zaddGenericCommand', 0.06642812529773562, 6275.0)
+application_logic -> application_logic
+count: 415
+Average cc/chain = 15.120481927710843
+225: ('commandProcessed', 'commandProcessed', 0.3351167315175097, 6200.999999999999)
+application_logic -> application_logic
+count: 862
+Average cc/chain = 7.1937354988399065
+226: ('dictInsertAtPosition', 'ztrymalloc_usable_internal', 0.46107513928625204, 6124.0)
+application_logic -> mem
+count: 382
+Average cc/chain = 16.031413612565444
+227: ('je_psset_stats_accum', 'hpa_shard_nonderived_stats_accum', 1.0, 6092.0)
+application_logic -> application_logic
+count: 9
+Average cc/chain = 676.8888888888889
+228: ('handleClientsWithPendingWrites', 'beforeSleep', 0.10361142312536166, 6088.0)
+application_logic -> application_logic
+count: 257
+Average cc/chain = 23.688715953307394
+229: ('malloc_mutex_unlock', '??', 1.0, 5808.0)
+mem -> application_logic
+count: 80
+Average cc/chain = 72.6
+230: ('dictGetVal', 'lookupKey.constprop.0', 1.0, 5707.0)
+application_logic -> application_logic
+count: 769
+Average cc/chain = 7.421326397919376
+231: ('clientsCronResizeQueryBuffer', 'clientsCron', 1.0, 5703.0)
+application_logic -> application_logic
+count: 40
+Average cc/chain = 142.575
+232: ('malloc_mutex_prof_merge', 'je_nstime_add', 0.9410888631474433, 5687.0)
+mem -> application_logic
+count: 169
+Average cc/chain = 33.650887573964496
+233: ('processInputBuffer', 'updateClientMemUsageAndBucket', 0.08300448632346542, 5532.0)
+application_logic -> application_logic
+count: 388
+Average cc/chain = 14.257731958762887
+234: ('beforeSleep', 'activeExpireCycle', 0.06543972242105135, 5394.0)
+application_logic -> application_logic
+count: 449
+Average cc/chain = 12.01336302895323
+235: ('random_r', 'random', 1.0, 5382.0)
+application_logic -> application_logic
+count: 562
+Average cc/chain = 9.576512455516013
+236: ('prepareClientToWrite', 'addReply', 0.28633440514469455, 5343.0)
+application_logic -> application_logic
+count: 360
+Average cc/chain = 14.841666666666667
+237: ('processCommand', 'checkGoodReplicasStatus', 0.05263001867644298, 5326.0)
+application_logic -> application_logic
+count: 339
+Average cc/chain = 15.710914454277287
+238: ('je_ctl_byname', 'ctl_lookup', 0.8980548801667245, 5171.0)
+application_logic -> application_logic
+count: 18
+Average cc/chain = 287.27777777777777
+239: ('getMonotonicUs_posix', 'durationAddSample', 0.049556533546479715, 5146.0)
+application_logic -> application_logic
+count: 851
+Average cc/chain = 6.047003525264395
+240: ('epoll_wait', 'aeApiPoll', 0.06489897678283904, 4998.0)
+kernel -> application_logic
+count: 452
+Average cc/chain = 11.057522123893806
+241: ('evictClients', 'beforeSleep', 0.33867245825980724, 4990.0)
+application_logic -> application_logic
+count: 429
+Average cc/chain = 11.631701631701631
+242: ('dictFind', 'dictSdsKeyCompare', 0.01977840820425818, 4943.0)
+application_logic -> serialization
+count: 1598
+Average cc/chain = 3.093241551939925
+243: ('lookupKey.constprop.0', 'dictGetVal', 0.05483896228842475, 4902.0)
+application_logic -> application_logic
+count: 618
+Average cc/chain = 7.932038834951456
+244: ('dictInsertAtPosition', '', 0.3656828790844752, 4857.0)
+application_logic -> application_logic
+count: 6
+Average cc/chain = 809.5
+245: ('processCommand', 'writeCommandsDeniedByDiskError', 0.0475211715762325, 4809.0)
+application_logic -> kernel
+count: 331
+Average cc/chain = 14.528700906344412
+246: ('dictSdsKeyCaseCompare', 'dictFind', 0.15279770444763272, 4686.0)
+serialization -> application_logic
+count: 1079
+Average cc/chain = 4.342910101946247
+247: ('counts_index_for', 'get_bucket_index', 0.749714844386508, 4601.0)
+application_logic -> application_logic
+count: 299
+Average cc/chain = 15.387959866220736
+248: ('zmalloc', 'processMultibulkBuffer', 0.07702752101937438, 4425.0)
+mem -> serialization
+count: 236
+Average cc/chain = 18.75
+249: ('processCommandAndResetClient', 'updateClientMemUsageAndBucket', 0.3312679461991839, 4384.0)
+application_logic -> application_logic
+count: 490
+Average cc/chain = 8.946938775510205
+250: ('dictRehash', 'sdslen', 0.011115236341813226, 4371.0)
+application_logic -> application_logic
+count: 2127
+Average cc/chain = 2.055007052186178
+251: ('beforeSleep', 'handleClientsWithPendingWritesUsingThreads', 0.05238574738859839, 4318.0)
+application_logic -> application_logic
+count: 391
+Average cc/chain = 11.043478260869565
+252: ('beforeSleep', 'updateFailoverStatus', 0.04976524682446286, 4102.0)
+application_logic -> application_logic
+count: 427
+Average cc/chain = 9.60655737704918
+253: ('aeProcessEvents', 'beforeSleep', 0.035615056541667404, 4025.0)
+application_logic -> application_logic
+count: 296
+Average cc/chain = 13.597972972972974
+254: ('lookupCommandLogic', 'processCommand', 1.0, 4005.0)
+application_logic -> application_logic
+count: 414
+Average cc/chain = 9.673913043478262
+255: ('readQueryFromClient', 'sdsavail', 0.04421234316567458, 3996.0)
+application_logic -> application_logic
+count: 504
+Average cc/chain = 7.928571428571429
+256: ('ctl_lookup', '??', 0.745257966616085, 3929.0)
+application_logic -> application_logic
+count: 132
+Average cc/chain = 29.765151515151516
+257: ('writeToClient.constprop.0', 'handleClientsWithPendingWrites', 0.07230811961855384, 3905.0)
+kernel -> application_logic
+count: 312
+Average cc/chain = 12.51602564102564
+258: ('clientHasPendingReplies', 'handleClientsWithPendingWrites', 0.1104255195296583, 3794.0)
+application_logic -> application_logic
+count: 322
+Average cc/chain = 11.782608695652174
+259: ('__write', 'connSocketWrite', 0.07224734872114785, 3706.0000000000005)
+kernel -> application_logic
+count: 344
+Average cc/chain = 10.77325581395349
+260: ('ctl_arena_clear', 'ctl_arena_refresh', 0.13123041868413557, 3686.0)
+application_logic -> application_logic
+count: 9
+Average cc/chain = 409.55555555555554
+261: ('ctl_background_thread_stats_read', 'je_background_thread_stats_read', 1.0, 3537.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 3537.0
+262: ('je_malloc_usable_size', 'clientsCronTrackExpansiveClients', 0.016114197417313566, 3504.0000000000005)
+mem -> application_logic
+count: 39
+Average cc/chain = 89.84615384615385
+263: ('getClientMemoryUsage', 'getClientType', 0.988221081244337, 3272.0)
+application_logic -> application_logic
+count: 38
+Average cc/chain = 86.10526315789474
+264: ('zsetAdd', 'dictAdd', 0.034140351248637034, 3225.0)
+application_logic -> application_logic
+count: 442
+Average cc/chain = 7.296380090497737
+265: ('writeToClient.constprop.0', 'updateClientMemUsageAndBucket', 0.059716692898805664, 3225.0)
+kernel -> application_logic
+count: 305
+Average cc/chain = 10.573770491803279
+266: ('getDoubleFromObjectOrReply', 'getDoubleFromObject', 1.0, 3217.0)
+serialization -> serialization
+count: 533
+Average cc/chain = 6.0356472795497185
+267: ('', 'zslInsert', 0.00033782714475924806, 3202.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 1067.3333333333333
+268: ('processCommand', 'evictClients', 0.031107641530875422, 3148.0)
+application_logic -> application_logic
+count: 328
+Average cc/chain = 9.597560975609756
+269: ('getMonotonicUs_posix', 'afterSleep', 0.029949634537417783, 3110.0)
+application_logic -> application_logic
+count: 496
+Average cc/chain = 6.270161290322581
+270: ('', 'dictInsertAtPosition', 0.00032769866071899576, 3106.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 1035.3333333333333
+271: ('ctl_refresh', 'ctl_arena_clear', 0.9879753006174845, 3040.0)
+application_logic -> application_logic
+count: 18
+Average cc/chain = 168.88888888888889
+272: ('dictFind', 'lookupKey.constprop.0', 0.011963876295919879, 2990.0)
+application_logic -> application_logic
+count: 612
+Average cc/chain = 4.88562091503268
+273: ('dictAddRaw', 'dictInsertAtPosition', 0.2939060939060939, 2942.0)
+application_logic -> application_logic
+count: 343
+Average cc/chain = 8.577259475218659
+274: ('read', 'connSocketRead', 0.0432985006815084, 2859.0)
+application_logic -> application_logic
+count: 448
+Average cc/chain = 6.381696428571429
+275: ('processTimeEvents', 'getMonotonicUs_posix', 0.2773679551490115, 2820.0)
+application_logic -> application_logic
+count: 319
+Average cc/chain = 8.84012539184953
+276: ('clientsCron', 'clientsCronResizeQueryBuffer', 0.7361366622864651, 2801.0)
+application_logic -> application_logic
+count: 42
+Average cc/chain = 66.69047619047619
+277: ('zaddGenericCommand', 'zfree', 0.04064003285228206, 2771.0)
+application_logic -> mem
+count: 339
+Average cc/chain = 8.174041297935103
+278: ('je_arena_decay_ms_get', 'je_pa_decay_ms_get', 1.0, 2728.0)
+application_logic -> application_logic
+count: 18
+Average cc/chain = 151.55555555555554
+279: ('__nss_database_lookup', 'get_proc_stat_ll.constprop.0', 0.00290403771089734, 2723.0)
+application_logic -> application_logic
+count: 63
+Average cc/chain = 43.22222222222222
+280: ('updateClientMemUsageAndBucket', 'writeToClient.constprop.0', 0.06477229238423268, 2708.0)
+application_logic -> kernel
+count: 305
+Average cc/chain = 8.878688524590164
+281: ('getMonotonicUs_posix', 'usUntilEarliestTimer', 0.024768636665671556, 2572.0)
+application_logic -> application_logic
+count: 433
+Average cc/chain = 5.939953810623557
+282: ('dictFindPositionForInsert', 'dictSdsKeyCompare', 0.08966654452180285, 2447.0)
+application_logic -> serialization
+count: 257
+Average cc/chain = 9.521400778210117
+283: ('pthread_mutex_trylock', 'je_arena_cache_bin_fill_small', 0.10725799023671365, 2329.0)
+sync -> application_logic
+count: 16
+Average cc/chain = 145.5625
+284: ('dictInsertAtPosition', 'dictAdd', 0.1732419816292727, 2301.0)
+application_logic -> application_logic
+count: 392
+Average cc/chain = 5.869897959183674
+285: ('dictFind', 'dictSdsKeyCaseCompare', 0.008970906573729889, 2242.0)
+application_logic -> serialization
+count: 1091
+Average cc/chain = 2.054995417048579
+286: ('zslCreateNode', 'ztrymalloc_usable_internal', 0.7247340425531915, 2180.0)
+application_logic -> mem
+count: 418
+Average cc/chain = 5.215311004784689
+287: ('', 'clock_gettime', 0.0002267303354427308, 2149.0)
+application_logic -> kernel
+count: 2
+Average cc/chain = 1074.5
+288: ('', 'zslCreateNode', 0.0002256752850218712, 2139.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 1069.5
+289: ('', 'dictGetKey', 0.00022303765896972217, 2114.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 1057.0
+290: ('ACLCheckAllUserCommandPerm', 'processCommand', 0.07258345529305178, 2083.0)
+application_logic -> application_logic
+count: 333
+Average cc/chain = 6.255255255255255
+291: ('ecache_nextents_get', 'atomic_load_zu', 1.0, 2065.0)
+application_logic -> sync
+count: 269
+Average cc/chain = 7.676579925650557
+292: ('activeExpireCycle', 'ustime', 0.2023, 2023.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 1011.5
+293: ('dictRehash', 'dictGetKey', 0.0049689251457110594, 1953.9999999999998)
+application_logic -> application_logic
+count: 1850
+Average cc/chain = 1.056216216216216
+294: ('getMonotonicUs_posix', 'processTimeEvents', 0.018489806531138953, 1920.0)
+application_logic -> application_logic
+count: 305
+Average cc/chain = 6.295081967213115
+295: ('', '__open64', 0.00019360175222773895, 1835.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 917.5
+296: ('__nss_database_lookup', '', 0.001955932854126229, 1834.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 917.0
+297: ('processCommand', '??', 0.0178266154135004, 1804.0)
+application_logic -> application_logic
+count: 788
+Average cc/chain = 2.2893401015228427
+298: ('pthread_mutex_trylock', 'je_arena_stats_merge', 0.08059316569954868, 1750.0)
+sync -> application_logic
+count: 41
+Average cc/chain = 42.68292682926829
+299: ('dictAdd', 'dictSetVal', 0.1929185969556585, 1749.0)
+application_logic -> application_logic
+count: 404
+Average cc/chain = 4.329207920792079
+300: ('normalize_index', 'counts_inc_normalised', 1.0, 1744.0)
+application_logic -> application_logic
+count: 305
+Average cc/chain = 5.718032786885246
+301: ('_addReplyToBufferOrList', 'zaddGenericCommand', 1.0, 1688.0)
+application_logic -> application_logic
+count: 329
+Average cc/chain = 5.130699088145897
+302: ('__popcountdi2', 'arena_slab_reg_alloc_batch', 1.0, 1688.0)
+application_logic -> application_logic
+count: 51
+Average cc/chain = 33.09803921568628
+303: ('postExecutionUnitOperations', 'firePostExecutionUnitJobs', 0.8287841191066998, 1670.0)
+application_logic -> application_logic
+count: 299
+Average cc/chain = 5.585284280936455
+304: ('dictGetKey', '', 0.010222972506542326, 1629.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 814.5
+305: ('dictFind', 'dictFetchValue', 0.0063420548257635476, 1585.0)
+application_logic -> application_logic
+count: 391
+Average cc/chain = 4.053708439897698
+306: ('dictGetKey', 'dictFindPositionForInsert', 0.009733474743798126, 1551.0)
+application_logic -> application_logic
+count: 255
+Average cc/chain = 6.08235294117647
+307: ('counts_index_for', 'hdr_record_values', 0.25028515561349196, 1536.0000000000002)
+application_logic -> application_logic
+count: 294
+Average cc/chain = 5.224489795918368
+308: ('ecache_nbytes_get', 'atomic_load_zu', 1.0, 1454.0)
+application_logic -> sync
+count: 259
+Average cc/chain = 5.613899613899614
+309: ('je_tcache_bin_flush_stashed', 'tcache_alloc_small', 0.9217557251908397, 1449.0)
+application_logic -> application_logic
+count: 30
+Average cc/chain = 48.3
+310: ('beforeSleep', 'freeClientsInAsyncFreeQueue', 0.017470003760903588, 1440.0)
+application_logic -> mem
+count: 235
+Average cc/chain = 6.127659574468085
+311: ('arenas_i', 'ctl_arena_refresh', 1.0, 1440.0)
+application_logic -> application_logic
+count: 14
+Average cc/chain = 102.85714285714286
+312: ('je_tcache_alloc_small_hard', 'je_arena_cache_bin_fill_small', 0.8899196042053185, 1439.0)
+application_logic -> application_logic
+count: 30
+Average cc/chain = 47.96666666666667
+313: ('je_eset_nbytes_get', 'ecache_nbytes_get', 0.8796758104738155, 1411.0)
+application_logic -> application_logic
+count: 215
+Average cc/chain = 6.562790697674418
+314: ('freeClientArgv', 'zfree', 1.0, 1369.0)
+mem -> mem
+count: 474
+Average cc/chain = 2.888185654008439
+315: ('sdsZmallocSize', 'je_malloc_usable_size', 1.0, 1369.0)
+mem -> mem
+count: 79
+Average cc/chain = 17.329113924050635
+316: ('je_pac_decay_ms_get', 'je_arena_decay_ms_get', 0.9805194805194806, 1359.0)
+application_logic -> application_logic
+count: 9
+Average cc/chain = 151.0
+317: ('ctl_lookup', 'je_ctl_byname', 0.25474203338391505, 1343.0000000000002)
+application_logic -> application_logic
+count: 22
+Average cc/chain = 61.045454545454554
+318: ('tryResizeHashTables', 'databasesCron', 1.0, 1320.0)
+application_logic -> application_logic
+count: 43
+Average cc/chain = 30.697674418604652
+319: ('lookupCommand', 'lookupCommandLogic', 1.0, 1232.0)
+application_logic -> application_logic
+count: 362
+Average cc/chain = 3.403314917127072
+320: ('sdscmp', '??', 1.0, 1219.0)
+serialization -> application_logic
+count: 1
+Average cc/chain = 1219.0
+321: ('je_eset_nextents_get', 'ecache_nextents_get', 0.8009383378016086, 1195.0)
+application_logic -> application_logic
+count: 223
+Average cc/chain = 5.358744394618834
+322: ('je_hpa_shard_stats_accum', 'je_psset_stats_accum', 0.9651821862348178, 1192.0)
+application_logic -> application_logic
+count: 12
+Average cc/chain = 99.33333333333333
+323: ('propagatePendingCommands', 'modulePostExecutionUnitOperations', 1.0, 1177.0)
+application_logic -> application_logic
+count: 306
+Average cc/chain = 3.84640522875817
+324: ('je_eset_npages_get', 'ecache_npages_get', 1.0, 1159.0)
+application_logic -> application_logic
+count: 32
+Average cc/chain = 36.21875
+325: ('', 'siphash', 0.00011985372780965203, 1136.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1136.0
+326: ('', 'connSocketRead', 0.00011848216226253453, 1123.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1123.0
+327: ('', 'sdslen', 0.00011478948578952588, 1088.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1088.0
+328: ('', 'dictFind', 0.000114472970663268, 1085.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1085.0
+329: ('zaddGenericCommand', 'signalModifiedKey', 0.015810160741522937, 1078.0)
+application_logic -> application_logic
+count: 349
+Average cc/chain = 3.0888252148997135
+330: ('', 'siphash_nocase', 0.0001131014051161505, 1072.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1072.0
+331: ('', 'zsetAdd', 0.00011289039503197858, 1070.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1070.0
+332: ('__open64', '__libc_alloca_cutoff', 0.7938760268857357, 1063.0)
+application_logic -> kernel
+count: 6
+Average cc/chain = 177.16666666666666
+333: ('', 'atomic_store_p', 0.00011046377906400146, 1047.0)
+application_logic -> sync
+count: 1
+Average cc/chain = 1047.0
+334: ('', 'freeStringObject', 0.00010972524376939974, 1040.0)
+application_logic -> mem
+count: 1
+Average cc/chain = 1040.0
+335: ('', 'processCommand', 0.00010961973872731377, 1039.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1039.0
+336: ('zmalloc_usable', '_sdsnewlen.constprop.0', 0.054470817325403924, 1035.0)
+mem -> serialization
+count: 1011
+Average cc/chain = 1.0237388724035608
+337: ('beforeSleep', 'evictClients', 0.012362454050250524, 1019.0)
+application_logic -> application_logic
+count: 424
+Average cc/chain = 2.4033018867924527
+338: ('zmalloc_get_allocator_info', 'je_mallctl', 1.0, 1004.0)
+mem -> application_logic
+count: 17
+Average cc/chain = 59.05882352941177
+339: ('extend_to_usable', 'zmalloc_usable', 1.0, 982.0)
+application_logic -> mem
+count: 980
+Average cc/chain = 1.0020408163265306
+340: ('afterCommand', 'trackingHandlePendingKeyInvalidations', 0.1047008547008547, 980.0)
+application_logic -> application_logic
+count: 306
+Average cc/chain = 3.2026143790849675
+341: ('clientHasPendingReplies', 'writeToClient.constprop.0', 0.02805751207870074, 964.0)
+application_logic -> kernel
+count: 304
+Average cc/chain = 3.1710526315789473
+342: ('clientsCronResizeOutputBuffer', 'clientsCron', 1.0, 953.0)
+application_logic -> application_logic
+count: 40
+Average cc/chain = 23.825
+343: ('getLRUClock', 'mstime', 1.0, 889.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 444.5
+344: ('databasesCron', 'serverCron', 0.7022292993630573, 882.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 441.0
+345: ('je_malloc_usable_size', 'multiStateMemOverhead', 0.004010154151797211, 872.0)
+mem -> application_logic
+count: 38
+Average cc/chain = 22.94736842105263
+346: ('dictGetNext', '', 0.003728445594298782, 869.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 869.0
+347: ('sysconf', 'getpagesize', 0.9454949944382648, 850.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 425.0
+348: ('arena_bin_slabs_nonfull_tryget', 'ph_remove_first', 1.0, 840.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 280.0
+349: ('te_event_advance', 'je_te_event_trigger', 1.0, 829.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 276.3333333333333
+350: ('zslCreateNode', '', 0.2752659574468085, 827.9999999999999)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 827.9999999999999
+351: ('get_proc_stat_ll.constprop.0', '??', 0.62578125, 801.0)
+application_logic -> application_logic
+count: 78
+Average cc/chain = 10.26923076923077
+352: ('dictSdsKeyCompare', 'dictFindPositionForInsert', 0.004299528403928525, 794.9999999999999)
+serialization -> application_logic
+count: 258
+Average cc/chain = 3.081395348837209
+353: ('serverCron', 'clientsCron', 0.2995301487862177, 765.0)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 191.25
+354: ('je_te_event_trigger', 'je_tcache_gc_new_event_wait', 0.7622868605817452, 760.0)
+application_logic -> mem
+count: 3
+Average cc/chain = 253.33333333333334
+355: ('dictSetNext', '', 1.0, 735.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 735.0
+356: ('pthread_mutex_trylock', 'atomic_load_zu', 0.03380307635626784, 733.9999999999999)
+sync -> sync
+count: 7
+Average cc/chain = 104.85714285714285
+357: ('serverCron', 'getMonotonicUs_posix', 0.27956147220046984, 714.0)
+application_logic -> application_logic
+count: 6
+Average cc/chain = 119.0
+358: ('dictFind', '', 0.0028089100868681455, 702.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 702.0
+359: ('counts_inc_normalised', 'normalize_index', 1.0, 693.0)
+application_logic -> application_logic
+count: 304
+Average cc/chain = 2.2796052631578947
+360: ('je_nstime_add', 'malloc_mutex_prof_merge', 0.86375, 691.0)
+application_logic -> mem
+count: 177
+Average cc/chain = 3.903954802259887
+361: ('zsetAdd', '', 0.007262102622190699, 686.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 686.0
+362: ('strtof64', '', 0.0024249247623790242, 672.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 672.0
+363: ('je_malloc_usable_size', 'getClientMemoryUsage', 0.002929436003090394, 637.0)
+mem -> application_logic
+count: 39
+Average cc/chain = 16.333333333333332
+364: ('je_nstime_compare', 'malloc_mutex_prof_merge', 0.7514934289127837, 629.0)
+application_logic -> mem
+count: 180
+Average cc/chain = 3.4944444444444445
+365: ('dictSdsKeyCompare', '', 0.003304417427421797, 611.0)
+serialization -> application_logic
+count: 1
+Average cc/chain = 611.0
+366: ('durationAddSample', '', 1.0, 610.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 610.0
+367: ('handleClientsWithPendingWrites', '', 0.009956091085469214, 585.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 585.0
+368: ('__close', '__libc_alloca_cutoff', 0.8333333333333334, 585.0)
+application_logic -> kernel
+count: 3
+Average cc/chain = 195.0
+369: ('processMultibulkBuffer', '', 0.0036234816553458804, 582.0)
+serialization -> application_logic
+count: 1
+Average cc/chain = 582.0
+370: ('getpagesize', 'sysconf', 1.0, 572.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 286.0
+371: ('serverCron', 'updatePausedActions', 0.19772905246671887, 505.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 252.5
+372: ('je_edata_heap_remove_first', 'base_alloc_impl', 0.601907032181168, 505.0)
+application_logic -> application_logic
+count: 32
+Average cc/chain = 15.78125
+373: ('pthread_mutex_trylock', 'je_pa_shard_mtx_stats_read', 0.022427926683245832, 487.0)
+sync -> application_logic
+count: 9
+Average cc/chain = 54.111111111111114
+374: ('je_ctl_byname', 'epoch_ctl', 0.08440430705105939, 486.0)
+application_logic -> application_logic
+count: 18
+Average cc/chain = 27.0
+375: ('get_proc_stat_ll.constprop.0', 'zmalloc_get_rss', 0.37421875, 479.0)
+application_logic -> mem
+count: 15
+Average cc/chain = 31.933333333333334
+376: ('je_malloc_default', 'ztrymalloc_usable_internal', 1.0, 460.0)
+mem -> mem
+count: 18
+Average cc/chain = 25.555555555555557
+377: ('je_sz_psz_quantize_ceil', 'sz_psz2ind', 1.0, 451.0)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 112.75
+378: ('zmalloc_get_rss', '??', 0.9623059866962306, 434.0)
+mem -> application_logic
+count: 3
+Average cc/chain = 144.66666666666666
+379: ('je_edata_heap_first', 'eset_first_fit', 1.0, 394.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 197.0
+380: ('je_arena_cache_bin_fill_small', 'cache_bin_alloc_impl', 0.9948717948717949, 388.0)
+application_logic -> application_logic
+count: 15
+Average cc/chain = 25.866666666666667
+381: ('clientsCron', 'closeClientOnOutputBufferLimitReached', 0.10065703022339027, 383.0)
+application_logic -> application_logic
+count: 38
+Average cc/chain = 10.078947368421053
+382: ('ctl_arena_refresh', 'ctl_arena_stats_amerge', 0.030885153597747784, 373.0)
+application_logic -> application_logic
+count: 9
+Average cc/chain = 41.44444444444444
+383: ('je_emap_split_prepare', 'extent_split_impl', 1.0, 371.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 123.66666666666667
+384: ('malloc_mutex_prof_merge', 'je_nstime_compare', 0.058911136852556674, 356.0)
+mem -> application_logic
+count: 180
+Average cc/chain = 1.9777777777777779
+385: ('postExecutionUnitOperations', 'propagatePendingCommands', 0.17121588089330025, 345.0)
+application_logic -> application_logic
+count: 301
+Average cc/chain = 1.1461794019933556
+386: ('clientsCron', 'clientsCronResizeOutputBuffer', 0.09040735873850198, 344.0)
+application_logic -> application_logic
+count: 40
+Average cc/chain = 8.6
+387: ('databasesCron', 'tryResizeHashTables', 0.2730891719745223, 343.0)
+application_logic -> application_logic
+count: 43
+Average cc/chain = 7.976744186046512
+388: ('pai_alloc', 'pac_alloc_impl', 1.0, 335.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 167.5
+389: ('je_edata_heap_remove_first', 'arena_bin_slabs_nonfull_tryget', 0.39809296781883197, 334.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 111.33333333333333
+390: ('base_alloc_impl', 'ph_remove_first', 0.9724770642201835, 318.0)
+application_logic -> application_logic
+count: 29
+Average cc/chain = 10.96551724137931
+391: ('closeClientOnOutputBufferLimitReached', 'clientsCron', 1.0, 306.0)
+application_logic -> application_logic
+count: 39
+Average cc/chain = 7.846153846153846
+392: ('moduleFireServerEvent', 'serverCron', 1.0, 304.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 152.0
+393: ('base_extent_bump_alloc_post', 'je_edata_heap_insert', 0.6855203619909502, 303.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 101.0
+394: ('je_eset_nextents_get', 'ecache_nbytes_get', 0.19906166219839141, 297.0)
+application_logic -> application_logic
+count: 41
+Average cc/chain = 7.2439024390243905
+395: ('pthread_mutex_trylock', 'je_background_thread_stats_read', 0.013493598599981579, 293.0)
+sync -> application_logic
+count: 5
+Average cc/chain = 58.6
+396: ('serverCron', 'stopThreadedIOIfNeeded', 0.1096319498825372, 280.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 140.0
+397: ('arena_slab_alloc', 'je_pa_alloc', 0.8208469055374593, 252.0)
+mem -> application_logic
+count: 2
+Average cc/chain = 126.0
+398: ('clientsCron', 'updateClientMemUsageAndBucket', 0.06622864651773981, 251.99999999999997)
+application_logic -> application_logic
+count: 39
+Average cc/chain = 6.461538461538461
+399: ('extent_recycle_extract', 'je_eset_fit', 1.0, 246.0)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 61.5
+400: ('je_edata_heap_insert', 'base_extent_bump_alloc_post', 0.8864468864468864, 242.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 80.66666666666667
+401: ('pthread_mutex_trylock', 'stats_allocated_ctl', 0.01091461729759602, 237.0)
+sync -> application_logic
+count: 4
+Average cc/chain = 59.25
+402: ('updatePausedActions', 'serverCron', 1.0, 226.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 113.0
+403: ('updateClientMemUsageAndBucket', 'clientsCron', 0.005381745120551091, 225.00000000000003)
+application_logic -> application_logic
+count: 39
+Average cc/chain = 5.76923076923077
+404: ('__nss_database_lookup', 'je_bitmap_init', 0.000238892562336028, 224.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 224.0
+405: ('eset_first_fit', 'ph_first', 0.8774703557312253, 222.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 111.0
+406: ('ctl_arena_stats_amerge', 'ctl_arena_refresh', 0.7631578947368421, 203.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 203.0
+407: ('je_nstime_compare', 'malloc_mutex_prof_accum', 0.23894862604540024, 200.0)
+application_logic -> mem
+count: 41
+Average cc/chain = 4.878048780487805
+408: ('tcache_event', 'je_tcache_bin_flush_stashed', 1.0, 199.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 99.5
+409: ('je_eset_nbytes_get', 'je_pa_shard_stats_merge', 0.12032418952618454, 193.0)
+application_logic -> application_logic
+count: 49
+Average cc/chain = 3.938775510204082
+410: ('je_peak_alloc_event_handler', 'je_malloc_default', 1.0, 193.0)
+application_logic -> mem
+count: 2
+Average cc/chain = 96.5
+411: ('activeExpireCycle', 'databasesCron', 0.0192, 191.99999999999997)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 95.99999999999999
+412: ('pac_ehooks_get', 'je_base_ehooks_get', 1.0, 188.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 188.0
+413: ('serverCron', 'moduleFireServerEvent', 0.07243539545810493, 185.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 92.5
+414: ('__open64', '', 0.13293502613890965, 178.00000000000003)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 44.50000000000001
+415: ('je_tcache_alloc_small_hard', 'tcache_alloc_small', 0.11008039579468151, 178.0)
+application_logic -> application_logic
+count: 15
+Average cc/chain = 11.866666666666667
+416: ('je_eset_remove', 'extent_activate_locked', 0.5207100591715976, 176.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 176.0
+417: ('je_nstime_copy', 'je_arena_stats_merge', 1.0, 174.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 87.0
+418: ('je_base_ehooks_get', 'san_slab_extent_decide_guard', 0.9941520467836257, 170.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 85.0
+419: ('je_ecache_alloc', 'extent_recycle', 0.9027027027027027, 167.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 83.5
+420: ('je_emap_split_commit', 'extent_split_impl', 1.0, 163.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 54.333333333333336
+421: ('tcache_alloc_small', 'je_tcache_alloc_small_hard', 0.01494060876020787, 161.0)
+application_logic -> application_logic
+count: 30
+Average cc/chain = 5.366666666666666
+422: ('__nss_database_lookup', 'zslInsert', 0.00016743809056587677, 157.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 157.0
+423: ('je_ehooks_default_split_impl', 'ehooks_split', 1.0, 149.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 49.666666666666664
+424: ('pac_alloc_real', 'je_ecache_alloc_grow', 0.5156794425087108, 148.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 74.0
+425: ('pthread_mutex_trylock', 'malloc_mutex_trylock', 0.0066316662061342915, 144.0)
+sync -> mem
+count: 3
+Average cc/chain = 48.0
+426: ('nstime_get', '??', 1.0, 144.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 72.0
+427: ('je_eset_fit', 'extent_recycle_extract', 1.0, 143.0)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 35.75
+428: ('je_eset_insert', 'je_sz_psz_quantize_floor', 0.501779359430605, 141.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 47.0
+429: ('__libc_alloca_cutoff', '__open64', 0.00286000286000286, 140.0)
+kernel -> application_logic
+count: 6
+Average cc/chain = 23.333333333333332
+430: ('je_tcache_gc_new_event_wait', 'je_te_event_trigger', 1.0, 140.0)
+mem -> application_logic
+count: 2
+Average cc/chain = 70.0
+431: ('pthread_mutex_trylock', 'extent_recycle', 0.006401400018421295, 139.0)
+sync -> application_logic
+count: 2
+Average cc/chain = 69.5
+432: ('cronUpdateMemoryStats', 'serverCron', 1.0, 139.0)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 34.75
+433: ('base_extent_bump_alloc_post', 'base_alloc_impl', 0.31447963800904977, 139.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 46.333333333333336
+434: ('pthread_mutex_trylock', 'base_alloc_impl', 0.006171133830708299, 134.0)
+sync -> application_logic
+count: 3
+Average cc/chain = 44.666666666666664
+435: ('je_emap_update_edata_state', 'extent_deactivate_locked_impl', 1.0, 133.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 44.333333333333336
+436: ('ctl_arena_stats_sdmerge', 'ctl_refresh', 0.00378885731507793, 132.0)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 16.5
+437: ('je_te_event_trigger', 'tcache_available', 0.13139418254764293, 131.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 65.5
+438: ('stopThreadedIOIfNeeded', 'serverCron', 1.0, 131.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 65.5
+439: ('je_tcache_bin_flush_stashed', 'cache_bin_low_water_get_internal', 0.07824427480916031, 123.00000000000001)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 61.50000000000001
+440: ('malloc_mutex_prof_accum', 'je_nstime_add', 0.7349397590361446, 122.0)
+mem -> application_logic
+count: 40
+Average cc/chain = 3.05
+441: ('__close', '', 0.16666666666666666, 117.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 39.0
+442: ('processTimeEvents', 'serverCron', 0.011212747123045146, 114.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 57.0
+443: ('pthread_mutex_trylock', 'epoch_ctl', 0.005250069079856314, 114.0)
+sync -> application_logic
+count: 2
+Average cc/chain = 57.0
+444: ('je_emap_register_interior', 'je_pa_alloc', 1.0, 113.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 113.0
+445: ('je_arena_stats_merge', 'nstime_update_impl', 0.6416184971098265, 110.99999999999999)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 55.49999999999999
+446: ('je_nstime_add', 'malloc_mutex_prof_accum', 0.13625, 109.00000000000001)
+application_logic -> mem
+count: 41
+Average cc/chain = 2.658536585365854
+447: ('ecache_npages_get', 'atomic_load_zu', 1.0, 108.0)
+application_logic -> sync
+count: 33
+Average cc/chain = 3.272727272727273
+448: ('je_arena_get_ehooks', 'je_base_ehooks_get', 1.0, 107.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 107.0
+449: ('je_te_event_trigger', 'je_peak_alloc_new_event_wait', 0.10631895687061184, 106.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 53.0
+450: ('base_extent_bump_alloc', 'base_extent_bump_alloc_post', 1.0, 106.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 35.333333333333336
+451: ('je_peak_alloc_new_event_wait', 'je_te_event_trigger', 1.0, 106.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 53.0
+452: ('__open64', 'get_proc_stat_ll.constprop.0', 0.07318894697535475, 98.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 49.0
+453: ('epoch_ctl', 'ctl_refresh', 0.9326923076923077, 97.0)
+application_logic -> application_logic
+count: 18
+Average cc/chain = 5.388888888888889
+454: ('pac_alloc_real', 'pac_alloc_impl', 0.33797909407665505, 97.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 97.0
+455: ('updateClientMemoryUsage', 'getClientMemoryUsage', 1.0, 90.0)
+application_logic -> application_logic
+count: 39
+Average cc/chain = 2.3076923076923075
+456: ('zslInsert', '??', 0.0027269307923771316, 87.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 87.0
+457: ('je_bitmap_init', '??', 0.8269230769230769, 86.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 86.0
+458: ('je_edata_heap_remove', 'je_eset_remove', 1.0, 85.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 85.0
+459: ('__libc_alloca_cutoff', '__close', 0.0016751445322873895, 82.0)
+kernel -> application_logic
+count: 3
+Average cc/chain = 27.333333333333332
+460: ('je_eset_remove', 'je_edata_heap_remove', 0.24260355029585798, 82.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 82.0
+461: ('extent_split_impl', 'je_emap_split_commit', 0.4426229508196721, 81.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 27.0
+462: ('pthread_mutex_trylock', 'malloc_mutex_trylock_final', 0.003592152528322741, 78.0)
+sync -> mem
+count: 1
+Average cc/chain = 78.0
+463: ('je_tcache_gc_event_handler', 'je_te_event_trigger', 1.0, 75.0)
+mem -> application_logic
+count: 2
+Average cc/chain = 37.5
+464: ('ctl_arena_refresh', 'ctl_arena_clear', 0.006044547486958682, 73.0)
+application_logic -> application_logic
+count: 14
+Average cc/chain = 5.214285714285714
+465: ('je_eset_remove', 'je_sz_psz_quantize_floor', 0.21301775147928995, 72.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 36.0
+466: ('__nss_database_lookup', 'sdscmp', 7.145447177015122e-05, 67.0)
+application_logic -> serialization
+count: 1
+Average cc/chain = 67.0
+467: ('je_sz_psz_quantize_floor', 'je_eset_remove', 0.5076923076923077, 66.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 66.0
+468: ('extent_split_impl', 'je_emap_split_prepare', 0.36065573770491804, 66.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 22.0
+469: ('je_background_thread_stats_read', 'je_nstime_idivide', 0.9558823529411765, 65.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 65.0
+470: ('je_sz_psz_quantize_floor', 'je_eset_insert', 0.49230769230769234, 64.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 32.0
+471: ('ehooks_split', 'je_ehooks_default_split_impl', 1.0, 64.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 21.333333333333332
+472: ('ctl_arena_stats_amerge', 'je_arena_stats_merge', 0.23684210526315788, 63.0)
+application_logic -> application_logic
+count: 9
+Average cc/chain = 7.0
+473: ('je_eset_insert', 'extent_recycle_split', 0.2206405693950178, 62.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 31.0
+474: ('serverCron', 'processTimeEvents', 0.023884103367267033, 61.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 30.5
+475: ('getMonotonicUs_posix', 'serverCron', 0.0005392860238248861, 56.0)
+application_logic -> application_logic
+count: 5
+Average cc/chain = 11.2
+476: ('pthread_mutex_trylock', 'ctl_refresh', 0.0024868748273003593, 54.0)
+sync -> application_logic
+count: 1
+Average cc/chain = 54.0
+477: ('sysconf', 'zmalloc_get_rss', 0.054505005561735265, 49.0)
+application_logic -> mem
+count: 2
+Average cc/chain = 24.5
+478: ('je_nstime_idivide', 'je_background_thread_stats_read', 1.0, 49.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 49.0
+479: ('je_ctl_byname', 'stats_allocated_ctl', 0.008162556443209448, 47.0)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 11.75
+480: ('extent_split_interior', 'extent_recycle_split', 1.0, 45.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 15.0
+481: ('malloc_mutex_prof_accum', 'je_nstime_compare', 0.26506024096385544, 44.0)
+mem -> application_logic
+count: 41
+Average cc/chain = 1.0731707317073171
+482: ('je_hpa_shard_stats_accum', 'sec_stats_accum', 0.034817813765182185, 43.0)
+application_logic -> application_logic
+count: 9
+Average cc/chain = 4.777777777777778
+483: ('pac_alloc_real', 'je_ecache_alloc', 0.14634146341463414, 42.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 21.0
+484: ('arena_slab_alloc', 'je_bitmap_size', 0.13680781758957655, 42.0)
+mem -> application_logic
+count: 1
+Average cc/chain = 42.0
+485: ('je_eset_insert', 'je_edata_heap_empty', 0.1494661921708185, 42.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 21.0
+486: ('serverCron', 'cronUpdateMemoryStats', 0.01605324980422866, 41.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 13.666666666666666
+487: ('getClientMemoryUsage', 'je_malloc_usable_size', 0.011778918755662941, 39.0)
+application_logic -> mem
+count: 39
+Average cc/chain = 1.0
+488: ('je_ctl_byname', 'zmalloc_get_allocator_info', 0.006599513720041681, 38.0)
+application_logic -> mem
+count: 2
+Average cc/chain = 19.0
+489: ('ctl_refresh', 'epoch_ctl', 0.012024699382515438, 37.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 18.5
+490: ('je_pa_shard_basic_stats_merge', 'je_arena_stats_merge', 1.0, 37.0)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 4.625
+491: ('extent_deactivate_locked_impl', 'je_emap_update_edata_state', 0.8222222222222222, 37.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 12.333333333333334
+492: ('je_eset_insert', 'je_edata_heap_insert', 0.12811387900355872, 36.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 18.0
+493: ('extent_split_impl', 'extent_split_interior', 0.19672131147540983, 36.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 12.0
+494: ('extent_recycle', 'je_ecache_alloc', 1.0, 34.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 17.0
+495: ('je_arena_stats_merge', 'ctl_arena_stats_amerge', 0.19653179190751446, 34.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 34.0
+496: ('eset_first_fit', 'sz_psz2ind', 0.1225296442687747, 31.0)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 7.75
+497: ('je_edata_heap_insert', 'atomic_load_zu', 0.11355311355311355, 31.0)
+application_logic -> sync
+count: 2
+Average cc/chain = 15.5
+498: ('databasesCron', 'activeExpireCycle', 0.02308917197452229, 28.999999999999996)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 28.999999999999996
+499: ('je_pac_decay_ms_get', 'je_arena_basic_stats_merge', 0.01948051948051948, 27.0)
+application_logic -> application_logic
+count: 9
+Average cc/chain = 3.0
+500: ('mstime', 'getLRUClock', 1.0, 26.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 8.666666666666666
+501: ('clientsCron', 'serverCron', 0.006570302233902759, 25.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 25.0
+502: ('read', 'get_proc_stat_ll.constprop.0', 0.0003634711494775102, 24.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 8.0
+503: ('je_arena_stats_merge', 'je_base_stats_get', 0.1329479768786127, 22.999999999999996)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 2.8749999999999996
+504: ('je_emap_remap', 'edata_szind_set', 1.0, 22.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 22.0
+505: ('je_pa_alloc', 'je_emap_remap', 0.5405405405405406, 20.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 20.0
+506: ('activeDefragCycle', 'databasesCron', 1.0, 19.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 19.0
+507: ('je_ecache_alloc', 'pac_alloc_real', 0.0972972972972973, 18.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 9.0
+508: ('je_arena_basic_stats_merge', 'je_pa_shard_basic_stats_merge', 1.0, 18.0)
+application_logic -> application_logic
+count: 9
+Average cc/chain = 2.0
+509: ('je_bitmap_init', 'arena_slab_alloc', 0.17307692307692307, 18.0)
+application_logic -> mem
+count: 1
+Average cc/chain = 18.0
+510: ('zmalloc_get_rss', 'get_proc_stat_ll.constprop.0', 0.037694013303769404, 17.0)
+mem -> application_logic
+count: 4
+Average cc/chain = 4.25
+511: ('je_pa_shard_mtx_stats_read', 'pa_shard_mtx_stats_read_single', 0.8095238095238095, 17.0)
+application_logic -> application_logic
+count: 8
+Average cc/chain = 2.125
+512: ('je_ctl_byname', 'cronUpdateMemoryStats', 0.0027787426189649182, 16.0)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 4.0
+513: ('arena_slab_alloc', 'malloc_mutex_trylock_final', 0.04234527687296417, 13.0)
+mem -> mem
+count: 1
+Average cc/chain = 13.0
+514: ('nstime_update_impl', 'je_arena_stats_merge', 1.0, 13.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 6.5
+515: ('extent_alloc_retained', 'extent_recycle', 1.0, 12.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 6.0
+516: ('je_base_alloc_edata', 'extent_split_impl', 1.0, 12.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 4.0
+517: ('je_pa_alloc', 'arena_slab_alloc', 0.32432432432432434, 12.0)
+application_logic -> mem
+count: 1
+Average cc/chain = 12.0
+518: ('je_edata_heap_empty', 'je_eset_remove', 0.7142857142857143, 10.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 10.0
+519: ('base_alloc_impl', 'je_base_alloc_edata', 0.027522935779816515, 9.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 3.0
+520: ('je_eset_remove', 'je_edata_heap_empty', 0.023668639053254437, 8.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 8.0
+521: ('stats_allocated_ctl', 'je_ctl_byname', 1.0, 8.0)
+application_logic -> application_logic
+count: 4
+Average cc/chain = 2.0
+522: ('extent_deactivate_locked_impl', 'je_eset_insert', 0.17777777777777778, 8.0)
+application_logic -> application_logic
+count: 3
+Average cc/chain = 2.6666666666666665
+523: ('je_nstime_compare', 'malloc_mutex_prof_max_update', 0.009557945041816009, 7.999999999999999)
+application_logic -> mem
+count: 1
+Average cc/chain = 7.999999999999999
+524: ('epoch_ctl', 'je_ctl_byname', 0.0673076923076923, 7.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 3.5
+525: ('ctl_arena_refresh', 'ctl_arena_stats_sdmerge', 0.000579614142585079, 7.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 7.0
+526: ('extent_activate_locked', 'je_eset_remove', 1.0, 6.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 3.0
+527: ('je_pa_alloc', 'je_emap_register_interior', 0.13513513513513514, 5.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 5.0
+528: ('pac_alloc_impl', 'je_pa_alloc', 0.5555555555555556, 5.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 5.0
+529: ('je_edata_heap_empty', 'je_eset_insert', 0.2857142857142857, 4.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 2.0
+530: ('pac_alloc_impl', 'pac_alloc_real', 0.4444444444444444, 4.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 4.0
+531: ('je_nstime_subtract', 'je_arena_stats_merge', 1.0, 4.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 2.0
+532: ('je_pa_shard_mtx_stats_read', 'je_arena_stats_merge', 0.19047619047619047, 4.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 2.0
+533: ('clock_gettime', 'je_nstime_init2', 2.0338431500162706e-05, 3.9999999999999996)
+kernel -> application_logic
+count: 2
+Average cc/chain = 1.9999999999999998
+534: ('serverCron', 'databasesCron', 0.0011746280344557558, 3.0000000000000004)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 3.0000000000000004
+535: ('nstime_init_zero', 'je_nstime_copy', 1.0, 3.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 3.0
+536: ('je_background_thread_stats_read', 'ctl_background_thread_stats_read', 0.04411764705882353, 3.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 3.0
+537: ('ustime', 'activeExpireCycle', 4.9850448654037884e-05, 2.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 1.0
+538: ('databasesCron', 'activeDefragCycle', 0.0015923566878980893, 2.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 1.0
+539: ('je_arena_cache_bin_fill_small', 'arena_slab_alloc', 0.005128205128205128, 2.0)
+application_logic -> mem
+count: 1
+Average cc/chain = 2.0
+540: ('je_arena_stats_merge', 'je_nstime_subtract', 0.011560693641618497, 2.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 1.0
+541: ('je_arena_stats_merge', 'je_nstime_copy', 0.011560693641618497, 2.0)
+application_logic -> application_logic
+count: 2
+Average cc/chain = 1.0
+542: ('je_base_ehooks_get', 'pac_alloc_impl', 0.005847953216374269, 1.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1.0
+543: ('je_arena_stats_merge', 'je_pa_shard_mtx_stats_read', 0.005780346820809248, 1.0)
+application_logic -> application_logic
+count: 1
+Average cc/chain = 1.0

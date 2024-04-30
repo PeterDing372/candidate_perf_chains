@@ -1,0 +1,571 @@
+__wt_                          # WiredTiger functions
+std::vector<mongo::BSONElement, std::allocator<mongo::BSONElement> >::operator=  
+operator new[]  
+__config_next  
+StringData::StringData  
+IndexEntry::IndexEntry  
+mongo::(anonymous namespace)::receivedCommands  
+__session_begin_transaction  
+DiagnosticListener::onQuickLock  
+mutablebson::Element::rightSibling  
+BSONElement::woCompare  
+Document::Impl::resolveLeftChild  
+ServiceContext::makeOperationContext  
+LockManager::Partition::find  
+BufReader::skip  
+mongo::validateBSON  
+BSONElement::computeSize  
+transport::ServiceExecutorSynchronous::schedule   # Potentially a transport (kernel) or synchronization keyword 
+storage_validation::storageValid  
+QueryPlanner::plan  
+IndexScan::doWork  
+PlanExecutorImpl::_getNextImpl  
+BSONElement::BSONElement  
+FindCmd::Invocation::run  
+ServiceEntryPointCommon::handleRequest  
+__curfile_search_near  
+__curfile_search  
+__curfile_insert  
+__curfile_close  
+__cursor_reset  
+__curfile_reset  
+__curfile_next  
+__session_open_cursor  
+FailPoint::shouldFail  
+ServiceContext::_delistOperation  
+LockerImpl::getLockMode  
+indexEntryFromIndexCatalogEntry  
+QueryRequest::parseFromFindCommand  
+SystemClockSource::now  
+mongo::SystemTickSource::get() #  is related to MongoDB’s system tick source, which is used for tracking time in the system. This function retrieves the current system tick. 
+DatabaseHolderImpl::getDb  
+IndexCatalog::ReadyIndexesIterator::_advance  
+mongo::(anonymous namespace)::runCommandImpl  
+DiagnosticListener::onUnlock  
+BSONObjIterator::next  
+ServiceStateMachine::_processMessage  
+LogicalSessionCacheImpl::vivify  
+WiredTigerSessionDeleter::operator()  
+AuthorizationSessionImpl::startRequest  
+TransportLayerASIO::makeBaton  
+TransportLayerASIO::BatonASIO::detachImpl  
+IndexEntryComparison::makeKeyStringFromSeekPointForSeek  
+mongo::buildStages  
+KeyString::(anonymous namespace)::toBsonValue  
+DecorationRegistry<mongo::OperationContext>::constructAt  
+mongo::isGenericArgument  
+repl::ReplicationCoordinator::get  
+ServiceStateMachine::_scheduleNextWithGuard  
+UniqueOperationIdRegistry::acquireSlot  
+StorageEngineImpl::newRecoveryUnit  
+ServiceStateMachine::_sourceCallback  
+Document::Impl::writeElement  
+__config_getraw.constprop.1  
+CommandHelpers::findCommand  
+OperationContext::OperationContext  
+AutoGetCollection::AutoGetCollection  
+LogComponentSettings::shouldLog  
+Element::getFieldName  
+BackgroundThreadClockSource::now  
+DecimalCounter<unsigned int>::operator++  
+IndexBoundsChecker::checkKey  
+mongo::make_intrusive  
+BSONObjBuilder::BSONObjBuilder  
+logv2::LogManager::global  
+Client::getCurrent  
+::prepareExecution  
+::parseProtected  
+Status::Status  
+LogManager::getGlobalSettings  
+ThreadGuard::ThreadGuard   # Can't find it in Mongo source code
+fillOutPlannerParams  
+__session_transaction_pinned_range  
+ServiceStateMachine::_sinkMessage  
+BSONObjBuilder::_done  
+__config_process_value  
+WiredTigerCursor::WiredTigerCursor  
+OperationContext::checkForInterruptNoAssert  
+ReplicationCoordinatorImpl::getReplicationMode  
+LockRequest::initNew  
+QueryPlannerAnalysis::analyzeDataAccess  
+CurOp::completeAndLogOperation  
+BatonASIO::notify  
+PlanStage::work  
+BSONObjIterator::BSONObjIterator  
+ElementPath::init  
+FindAndModifyRequest::parseFromBSON  
+mongo::PushNode::init                   # 
+mongo::ExpressionContext::ExpressionContext# 
+mongo::(anonymous namespace)::encodeKeyForMatch# 
+__curfile_reopen                        # 
+mongo::DocumentStorageIterator::advance # Entire function is a small do-while loop
+::buildProjectionExecutor                # 
+mongo::BtreeKeyGenerator::getKeys        # 
+mongo::latch_detail::Mutex::Mutex        # 
+mongo::DatabaseHolder::get               # 
+mongo::(anonymous namespace)::_todb      # Not in the Mongo source code
+mongo::RequiresIndexStage::RequiresIndexStage # 
+mongo::InExhaustIsMaster::setInExhaustIsMaster # Not found in Mongo source code
+mongo::Timer::Timer                      # 
+mongo::QueryRequest::QueryRequest        # 
+getOrMakeLatchData                       # 
+mongo::TrafficRecorder::get              # 
+mongo::IndexCatalogEntryImpl::getMinimumVisibleSnapshot # 
+mongo::transport::TransportLayerASIO::ASIOSession::ensureSync # 
+::canAcceptWritesForDatabase_UNSAFE      # 
+mongo::canonical_query_encoder::encode   # Calls a lot of encoder functions
+MongodCommandInvocationHooks::onAfterRun # 
+mongo::DatabaseShardingState::get        # 
+mongo::ServiceLiaisonMongod::now         # 
+mongo::AutoGetDb::AutoGetDb              # 
+mongo::AutoGetCollectionForRead::AutoGetCollectionForRead # 
+mongo::ServiceEntryPointMongod::handleRequest # 
+mongo::Indexability::nodeCanUseIndexOnOwnField # 
+mongo::IndexDescriptor::isMultikey       # 
+mongo::LockerImpl::isLocked              # 
+mongo::LogicalClock::get                 # 
+mongo::getErrorLabels                    # 
+mongo::(anonymous namespace)::StorageClientObserver::onCreateOperationContext # 
+mongo::WiredTigerKVEngine::haveDropsQueued # 
+mongo::AbstractIndexAccessMethod::newCursor # 
+__session_reset                          # 
+mongo::Value::getDocument                # 
+mongo::OperationShardingState::initializeClientRoutingVersionsFromCommand # Can not find in Mongo source code
+mongo::Explain::getSummaryStats          # 
+mongo::AuthorizationManagerImpl::isAuthEnabled # 
+mongo::AuthorizationSessionImpl::getAuthorizationManager # 
+mongo::PlanYieldPolicy::shouldYieldOrInterrupt # 
+mongo::ServiceContext::OperationContextDeleter::operator() # 
+namespace)::setPrepareConflictBehaviorForReadConcernImpl mongo::(anonymous namespace)::setPrepareConflictBehaviorForReadConcernImpl # 
+mongo::FetchStage::doWork                # 
+mongo::KeyString::BuilderBase<mongo::StackBufBuilderBase<512ul> >::_transition # 
+mongo::CursorResponseBuilder::done       # 
+mongo::LogicalSessionCache::get          # 
+mongo::PlanExecutorImpl::getNext         # 
+mongo::CanonicalQuery::init              # 
+mongo::Client::makeOperationContext      # 
+mongo::WiredTigerRecoveryUnit::_txnClose # 
+mongo::FetchStage::stageType             # 
+mongo::(anonymous namespace)::onDestroy<mongo::OperationContext, __gnu_cxx::__normal_iterator<mongo::ServiceContext::ClientObserverHolder const*, std::vector<mongo::ServiceContext::ClientObserverHolder, std::allocator<mongo::ServiceContext::ClientObserverHolder> > > > # 
+mongo::QueryPlannerIXSelect::_rateIndices # 
+mongo::ShardingState::get                # 
+mongo::StandardWiredTigerRecordStore::getCursor # 
+mongo::transport::TransportLayerASIO::ASIOSession::sourceMessage # 
+mongo::QueryPlannerIXSelect::_compatible # 
+::_extractReadConcern                    # 
+mongo::IdleThreadBlock::endIdleThreadBlock # 
+mongo::OpMsg::flags                      # 
+mongo::BSONObj::getOwned                 # 
+mongo::LockerImpl::isLockHeldForMode     # 
+__session_rollback_transaction           # 
+mongo::Value::addToBsonArray             # 
+mongo::AbstractIndexAccessMethod::insertKeys # 
+mongo::(anonymous namespace)::WiredTigerIndexCursorBase::seek # 
+mongo::getStatusFromCommandResult        # 
+mongo::transport::futurize               # 
+mongo::(anonymous namespace)::WiredTigerIndexCursorBase::updatePosition # 
+mongo::CollectionCatalog::lookupCollectionByNamespace # 
+mongo::CollectionImpl::ns                # 
+mongo::transport::TransportLayerASIO::ASIOSession::remote # 
+mongo::IndexCatalogImpl::findIdIndex     # 
+mongo::mozjs::MozJSScriptEngine::interrupt # 
+mongo::FetchStage::isEOF                 # 
+mongo::KeyString::getKeySize             # 
+mongo::SystemTickSource::getTicksPerSecond # 
+mongo::ServiceStateMachine::ThreadGuard::release # 
+mongo::OID::init                         # 
+mongo::PlanExecutorImpl::getPostBatchResumeToken # 
+mongo::NamespaceString::NamespaceString  # 
+mongo::BSONObjBuilder::append<long long, void> # 
+mongo::PlanEnumerator::enumerateOneIndex # 
+mongo::LockerImpl::inAWriteUnitOfWork    # 
+mongo::NetworkCounter::hitLogicalOut     # 
+mongo::BasicBufBuilder<mongo::SharedBufferAllocator>::appendNumImpl<char> # 
+mongo::IndexBoundsBuilder::_translatePredicate # 
+mongo::ServiceStateMachine::_runNextInGuard # 
+mongo::AutoGetCollectionForReadCommand::AutoGetCollectionForReadCommand # 
+mongo::(anonymous namespace)::getStageByType # 
+mongo::OpObserverImpl::onInserts         # 
+mongo::OperationContextSession::get      # 
+mongo::WiredTigerRecordStoreCursorBase::seekExact # 
+mongo::CollectionShardingState::get      # 
+mongo::WiredTigerRecordStoreStandardCursor::setKey # 
+mongo::IndexEntryComparison::makeKeyStringFromBSONKeyForSeek # 
+mongo::RecoveryUnit::assignNextSnapshotId # 
+mongo::LockerImpl::_acquireTicket        # 
+mongo::OperationContext::markKilled      # 
+mongo::CursorResponseBuilder::CursorResponseBuilder # 
+mongo::AuthorizationSession::get         # 
+mongo::CollationIndexKey::collationAwareIndexKeyAppend # 
+mongo::CollectionImpl::_insertDocuments  # 
+mongo::(anonymous namespace)::computeSortsForScan # 
+mongo::StorageEngineImpl::supportsDocLocking() # 
+mongo::ShardedConnectionInfo::get        # 
+mongo::ValueStorage::ValueStorage        # 
+__curfile_remove                         # 
+mongo::(anonymous namespace)::WiredTigerIndexUniqueCursor::updateIdAndTypeBits # 
+mongo::CollectionImpl::insertDocuments   # 
+mongo::extractWriteConcern               # 
+mongo::waitForReadConcern                # 
+mongo::Explain::getPlanSummary[abi:cxx11] # 
+mongo::BSONElement::fieldNameStringData  # 
+mongo::IndexCatalogEntryImpl::getMultikeyPaths # 
+mongo::IndexCatalogImpl::_indexFilteredRecords # 
+mongo::QueryPlannerAccess::makeLeafNode  # 
+mongo::waitForWriteConcern               # 
+mongo::CollectionCatalog::getDatabaseProfileSettings # 
+mongo::CollectionImpl::getCursor         # 
+mongo::LockerImpl::_unlockImpl           # 
+mongo::FlowControlTicketholder::get      # 
+mongo::Status::unref                     # 
+mongo::LastError::startRequest           # 
+mongo::ServiceEntryPointMongod::Hooks::setPrepareConflictBehaviorForReadConcern # 
+mpark::detail::visitation::base::dispatcher<0ul>::impl<mpark::detail::dtor&&, mpark::detail::base<(mpark::detail::Trait)1, mongo::Lock::SharedLock, mongo::Lock::ExclusiveLock>&>::dispatch # 
+mongo::CollectionIndexUsageTracker::recordCollectionScans # 
+mongo::LockerImpl::unlockGlobal          # 
+mongo::OperationContext::markKillOnClientDisconnect # 
+mongo::fixDocumentForInsert              # 
+__free_skip_list                         # 
+mongo::userAllowedCreateNS               # 
+mongo::(anonymous namespace)::serializeReply # 
+mongo::(anonymous namespace)::waitForReadConcernImpl # 
+mongo::CommandHelpers::extractOrAppendOk # 
+mongo::ServiceStateMachine::_sourceMessage # 
+__rec_row_leaf_insert                    # 
+mongo::RecoveryUnit::commitRegisteredChanges # 
+mongo::IDLParserErrorContext::parseNSCollectionRequired # 
+mongo::KeyPattern::isIdKeyPattern        # 
+__cursor_skip_prev                       # 
+mongo::WiredTigerRecordStore::_insertRecords # 
+mongo::ServiceStateMachine::_sinkCallback # 
+mongo::CommandInvocation::supportsReadConcern # 
+mongo::OpMsg::shareOwnershipWith         # 
+::checkAuthorizationImplPreParse # 
+mongo::ServiceEntryPointMongod::Hooks::waitForWriteConcern # 
+mongo::AuthorizationManagerImpl::logOp   # 
+mongo::OpObserverRegistry::onInserts     # 
+mongo::ListOfMatchExpression::numChildren # 
+mongo::PathMatchExpression::matches      # 
+mongo::getFieldDottedOrArray             # 
+mongo::ElemMatchObjectMatchExpression::numChildren # 
+mongo::ListOfMatchExpression::getChild   # 
+mongo::BSONElementIterator::more         # 
+::CmdInsert::Invocation::ns # 
+mongo::IndexEntry::pathHasMultikeyComponent # 
+mongo::WiredTigerRecoveryUnit::getSession # 
+mongo::QueryPlanner::cacheDataFromTaggedTree # 
+mongo::WiredTigerIndex::setKey           # 
+::makeExpressionContext # 
+mongo::prepareForAccessPlanning # 
+WiredTigerIndexCursorBase::updateIdAndTypeBits # 
+mongo::OpMsgBuilder::resumeBody          # 
+mongo::ErrorLabelBuilder::isResumableChangeStreamError # 
+mongo::OpObserver::ReservedTimes::ReservedTimes # 
+mongo::repl::ReadConcernArgs::get        # 
+mongo::WiredTigerRecordStore::insertRecords # 
+mongo::future_details::FutureImpl<void>::makeReady # 
+mongo::WiredTigerIndexUnique::_keyExists # 
+mongo::WiredTigerRecoveryUnit::assertInActiveTxn # 
+mongo::ImpersonationSessionGuard::ImpersonationSessionGuard # 
+mongo::KeyString::TypeBits::appendBit    # 
+long, std::less<unsigned long>, std::allocator<unsigned long> >, std::allocator<std::set<unsigned long, std::less<unsigned long>, std::allocator<unsigned long> > > >::vector std::vector<std::set<unsigned long, std::less<unsigned long>, std::allocator<unsigned long> >, std::allocator<std::set<unsigned long, std::less<unsigned long>, std::allocator<unsigned long> > > >::vector # 
+mongo::ServiceEntryPointMongod::Hooks::advanceConfigOpTimeFromRequestMetadata # 
+mongo::FreeMonOpObserver::onInserts      # 
+const*, __gnu_cxx::__ops::_Iter_pred<mongo::procparser::parseProcStat(std::vector<mongo::StringData, std::allocator<mongo::StringData> > const&, mongo::StringData, long, mongo::BSONObjBuilder*)::{lambda(char)#1}> > std::__find_if<char const*, __gnu_cxx::__ops::_Iter_pred<mongo::procparser::parseProcStat(std::vector<mongo::StringData, std::allocator<mongo::StringData> > const&, mongo::StringData, long, mongo::BSONObjBuilder*)::{lambda(char)#1}> > # 
+namespace)::checkFailCollectionInsertsFailPoint mongo::(anonymous namespace)::checkFailCollectionInsertsFailPoint # 
+mongo::QueryPlannerIXSelect::findRelevantIndices # 
+mongo::IndexBoundsBuilder::isSingleInterval # 
+mongo::PlanExecutorImpl::PlanExecutorImpl # 
+mongo::ExtensionsCallbackReal::ExtensionsCallbackReal # 
+>::appendRecordId mongo::KeyString::BuilderBase<mongo::StackBufBuilderBase<512ul> >::appendRecordId # 
+long, std::pair<unsigned long const, std::vector<mongo::MatchExpression*, std::allocator<mongo::MatchExpression*> > >, std::_Select1st<std::pair<unsigned long const, std::vector<mongo::MatchExpression*, std::allocator<mongo::MatchExpression*> > > >, mongo::PlanEnumerator::CmpByIndexID, std::allocator<std::pair<unsigned long const, std::vector<mongo::MatchExpression*, std::allocator<mongo::MatchExpression*> > > > >::_M_erase std::_Rb_tree<unsigned long, std::pair<unsigned long const, std::vector<mongo::MatchExpression*, std::allocator<mongo::MatchExpression*> > >, std::_Select1st<std::pair<unsigned long const, std::vector<mongo::MatchExpression*, std::allocator<mongo::MatchExpression*> > > >, mongo::PlanEnumerator::CmpByIndexID, std::allocator<std::pair<unsigned long const, std::vector<mongo::MatchExpression*, std::allocator<mongo::MatchExpression*> > > > >::_M_erase # 
+mongo::fixLockModeForSystemDotViewsChanges # 
+mongo::PlanCache::computeKey             # 
+mongo::repl::ReplicationCoordinatorImpl::checkCanServeReadsFor_UNSAFE # 
+mongo::IndexCatalogImpl::findIndexByName # 
+std::pair<mongo::Date_t const, mongo::transport::TransportLayerASIO::BatonASIO::Timer>, std::_Select1st<std::pair<mongo::Date_t const, mongo::transport::TransportLayerASIO::BatonASIO::Timer> >, std::less<mongo::Date_t>, std::allocator<std::pair<mongo::Date_t const, mongo::transport::TransportLayerASIO::BatonASIO::Timer> > >::_M_erase std::_Rb_tree<mongo::Date_t, std::pair<mongo::Date_t const, mongo::transport::TransportLayerASIO::BatonASIO::Timer>, std::_Select1st<std::pair<mongo::Date_t const, mongo::transport::TransportLayerASIO::BatonASIO::Timer> >, std::less<mongo::Date_t>, std::allocator<std::pair<mongo::Date_t const, mongo::transport::TransportLayerASIO::BatonASIO::Timer> > >::_M_erase # 
+const*, std::allocator<mongo::BSONElement const*> >::_M_default_append std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> >::_M_default_append # 
+mongo::BSONObjBuilder::asTempObj         # 
+std::vector<std::unique_ptr<mongo::QuerySolution, std::default_delete<mongo::QuerySolution> >, std::allocator<std::unique_ptr<mongo::QuerySolution, std::default_delete<mongo::QuerySolution> > > >::emplace_back<std::unique_ptr<mongo::QuerySolution, std::default_delete<mongo::QuerySolution> > > # 
+std::vector<mongo::BSONElement, std::allocator<mongo::BSONElement> > >, __gnu_cxx::__ops::_Iter_comp_iter<mongo::BSONComparatorInterfaceBase<mongo::BSONElement>::LessThan> > std::__is_sorted_until<__gnu_cxx::__normal_iterator<mongo::BSONElement*, std::vector<mongo::BSONElement, std::allocator<mongo::BSONElement> > >, __gnu_cxx::__ops::_Iter_comp_iter<mongo::BSONComparatorInterfaceBase<mongo::BSONElement>::LessThan> > # 
+mongo::KeyString::BuilderBase<mongo::BasicBufBuilder<mongo::SharedBufferAllocator> >::_appendNumberLong # 
+mongo::WiredTigerIndexUnique::_insert    # 
+mongo::repl::SpeculativeMajorityReadInfo::get # 
+mongo::IndexBoundsChecker::IndexBoundsChecker # 
+mongo::is2DIndex                         # 
+mongo::OperationShardingState::getDbVersion # 
+mongo::TicketHolder::waitForTicket       # 
+mongo::IndexScan::initIndexScan          # 
+mongo::OpCounters::_checkWrap            # 
+mongo::ErrorLabelBuilder::build          # 
+mongo::IdleThreadBlock::beginIdleThreadBlock # 
+mongo::CurOp::setNS_inlock               # 
+namespace)::intervalCmp mongo::(anonymous namespace)::intervalCmp # 
+mongo::MessageCompressorManager::forSession # 
+1000l>, std::ratio<1l, 1000l>, mongo::Duration<std::ratio<1l, 1000l> > > mongo::operator+<std::ratio<1l, 1000l>, std::ratio<1l, 1000l>, mongo::Duration<std::ratio<1l, 1000l> > > # 
+mongo::PathMatchExpression::path         # 
+mongo::CollectionCatalog::get            # 
+mongo::KeyString::toBsonSafe             # Reads through a bit buffer, potentially a memory operation
+mongo::CurOp::ensureStarted              # 
+mongo::WriteUnitOfWork::WriteUnitOfWork  # 
+::encodeIndexabilityForDiscriminators # 
+mongo::AuthorizationSessionImpl::_buildAuthenticatedRolesVector # 
+mongo::OperationContext::hasDeadlineExpired # 
+::parseInExpression # 
+mongo::PlanEnumerator::allocateAssignment # 
+::isKeyAheadOfInterval # 
+mongo::ReadWriteConcernProvenance::setSource # 
+mongo::NetworkCounter::append            # 
+mongo::ComparisonMatchExpressionBase::ComparisonMatchExpressionBase # 
+mongo::repl::ReadConcernArgs::ReadConcernArgs # 
+mongo::BasicBufBuilder<mongo::SharedBufferAllocator>::BasicBufBuilder # 
+::FindCmd::Invocation::ns # 
+mongo::future_details::SharedStateBase::setError # 
+mongo::repl::ReplicationCoordinatorImpl::shouldRelaxIndexConstraints # 
+mongo::KeyString::decodeRecordId         # 
+namespace)::extractMetricsFromDocument mongo::FTDCBSONUtil::(anonymous namespace)::extractMetricsFromDocument # 
+namespace)::parseSubField mongo::(anonymous namespace)::parseSubField # 
+mongo::IndexCatalog::IndexIterator::more # 
+mongo::CommandInvocation::set            # 
+mongo::IndexBoundsChecker::findLeftmostProblem # 
+mongo::IndexCatalogImpl::_indexRecords   # 
+mongo::CanonicalQuery::isValid           # 
+mongo::KeyString::BuilderBase<mongo::StackBufBuilderBase<512ul> >::appendDiscriminator # 
+mongo::ServiceEntryPointMongod::Hooks::appendReplyMetadata # 
+>::_transition mongo::KeyString::BuilderBase<mongo::BasicBufBuilder<mongo::SharedBufferAllocator> >::_transition # 
+mongo::BSONObj::begin                    # 
+mongo::DatabaseShardingState::checkDbVersion # 
+namespace)::parseSub mongo::(anonymous namespace)::parseSub # 
+mongo::PlanExecutorImpl::_shouldListenForInserts # 
+mongo::WiredTigerBeginTxnBlock::done     # 
+mongo::BSONObjBuilderValueStream::BSONObjBuilderValueStream # 
+mongo::WiredTigerIndex::insert           # 
+mongo::QueryPlannerIXSelect::expandIndexes # 
+mongo::KeyString::TypeBits::readSizeFromBuffer # 
+mongo::DbMessage::DbMessage              # 
+mongo::WiredTigerRecordStore::_increaseDataSize # 
+mongo::Status::ErrorInfo::create         # 
+mongo::Interval::isPoint                 # 
+mongo::getLogicalSessionUserDigestForLoggedInUser # 
+mongo::BSONElement::numberLong           # 
+mongo::PlanExecutorImpl::dispose         # 
+mongo::ServiceEntryPointMongod::Hooks::waitForReadConcern # 
+mongo::WorkingSet::registerIndexAccessMethod # 
+mongo::QueryPlannerIXSelect::stripUnneededAssignments # 
+mongo::LockerImpl::endWriteUnitOfWork    # 
+mongo::repl::ReplicationCoordinatorImpl::checkCanServeReadsFor # 
+mongo::PlanExecutorImpl::_pickBestPlan   # 
+mongo::SessionTxnRecord::SessionTxnRecord # 
+mongo::OperationContext::getExpirationDateForWaitForValue # 
+namespace)::WiredTigerIndexCursorBase::getKey mongo::(anonymous namespace)::WiredTigerIndexCursorBase::getKey # 
+namespace)::isExpressionDocument mongo::(anonymous namespace)::isExpressionDocument # 
+mongo::LockerImpl::isW                   # 
+void> mongo::BSONObjBuilder::append<int, void> # 
+mongo::ServiceEntryPointMongod::Hooks::waitForSpeculativeMajorityReadConcern # 
+mongo::Date_t::now                       # 
+mongo::StringData::substr                # 
+mongo::repl::ReplicationCoordinatorImpl::canAcceptWritesFor_UNSAFE # 
+mongo::PlanEnumerator::getIndexedPreds   # 
+namespace)::appendClusterAndOperationTime mongo::(anonymous namespace)::appendClusterAndOperationTime # 
+mongo::BtreeKeyGenerator::_extractNextElement # 
+mongo::CurOpFailpointHelpers::waitWhileFailPointEnabled # 
+mongo::LockerImpl::getFlowControlTicket  # 
+namespace)::CmdInsert::Invocation::runImpl mongo::(anonymous namespace)::CmdInsert::Invocation::runImpl # 
+mongo::AuthorizationSessionImpl::isUsingLocalhostBypass # 
+mongo::PlanExecutorImpl::make            # 
+mongo::IndexBounds::isValidFor           # 
+, 0>(mongo::BackgroundThreadClockSource::_startTimerThread()::{lambda()#1})::{lambda()#1}> > >::_M_run 0 # 
+mongo::IndexCatalogImpl::prepareInsertDeleteOptions # 
+mongo::ServiceEntryPointMongod::Hooks::waitForLinearizableReadConcern # 
+mongo::OperationShardingState::initializeClientRoutingVersions # 
+mongo::WiredTigerRecoveryUnit::_commit   # 
+mongo::CollectionImpl::isCommitted       # 
+namespace)::StorageClientObserver::onDestroyOperationContext mongo::(anonymous namespace)::StorageClientObserver::onDestroyOperationContext # 
+mongo::curTimeMicros64                   # 
+mongo::RecoveryUnit::RecoveryUnit        # 
+mongo::repl::ReplicationCoordinatorImpl::canAcceptWritesForDatabase # 
+mongo::WiredTigerBeginTxnBlock::WiredTigerBeginTxnBlock # 
+mongo::OpDebug::AdditiveMetrics::incrementKeysInserted # 
+namespace)::getClientOperationTime mongo::(anonymous namespace)::getClientOperationTime # 
+mongo::FindCommon::waitInFindBeforeMakingBatch # 
+mongo::globalCommandRegistry             # 
+mongo::repl::ReplicationCoordinatorImpl::populateUnsetWriteConcernOptionsSyncMode # 
+mongo::CommandHelpers::uassertShouldAttemptParse # 
+namespace)::CmdInsert::parse mongo::(anonymous namespace)::CmdInsert::parse # 
+mongo::validateWriteConcern              # 
+namespace)::WriteCommand::InvocationBase::run mongo::(anonymous namespace)::WriteCommand::InvocationBase::run # 
+mongo::ErrorExtraInfo::parserFor         # 
+namespace)::_openCursor mongo::(anonymous namespace)::_openCursor # 
+mongo::UUID::parse                       # 
+namespace)::WriteCommand::secondaryAllowed mongo::(anonymous namespace)::WriteCommand::secondaryAllowed # 
+mongo::supportsDocLocking                # 
+mongo::WorkingSetMember::clear           # 
+namespace)::insertDocuments mongo::(anonymous namespace)::insertDocuments # 
+mongo::WorkingSetMember::resetDocument   # 
+mongo::Variables::setRuntimeConstants    # 
+mongo::AuthOpObserver::onInserts         # 
+mongo::QueryPlannerCommon::hasNode       # 
+mongo::AbstractIndexAccessMethod::shouldMarkIndexAsMultikey # 
+mongo::CollectionImpl::checkValidation   # 
+mongo::IndexBoundsBuilder::translate     # 
+namespace)::WiredTigerIndexCursorBase::advanceWTCursor mongo::(anonymous namespace)::WiredTigerIndexCursorBase::advanceWTCursor # 
+mongo::WiredTigerSession::getCachedCursor # 
+>::_appendAllElementsForIndexing mongo::KeyString::BuilderBase<mongo::StackBufBuilderBase<512ul> >::resetToKey # 
+mongo::PlanEnumerator::PlanEnumerator    # 
+mongo::CollectionImpl::uuid              # 
+mongo::FieldRef::clear                   # 
+mongo::PlanEnumerator::assignPredicate   # 
+mongo::OID::Increment::next              # 
+mongo::recordCurOpMetrics                # 
+mongo::SessionKiller::Matcher::Matcher   # 
+mongo::repl::ReplicationCoordinatorImpl::_populateUnsetWriteConcernOptionsSyncMode # 
+mongo::IndexScan::stageType              # 
+mongo::Indexability::isBoundsGenerating  # 
+mongo::IndexBoundsChecker::findIntervalForField # 
+mongo::getExecutor                       # 
+mongo::repl::ReadConcernArgs::initialize # 
+mongo::IndexScanNode::IndexScanNode      # 
+mongo::ServiceEntryPointMongod::Hooks::attachCurOpErrInfo # 
+mongo::CanonicalQuery::countNodes        # 
+mongo::Lock::GlobalLock::GlobalLock      # 
+mongo::QueryPlannerIXSelect::stripInvalidAssignments # 
+mongo::IndexCatalogImpl::indexRecords    # 
+mongo::validateSessionOptions            # 
+mongo::ClientMetadataIsMasterState::readFromMetadata # 
+mongo::DisableDocumentValidationIfTrue::DisableDocumentValidationIfTrue # 
+mongo::OperationContext::setLogicalSessionId # 
+mongo::SessionCatalog::get               # 
+mongo::IndexBoundsBuilder::alignBounds   # 
+namespace)::CmdHello::runWithReplyBuilder mongo::repl::(anonymous namespace)::CmdHello::runWithReplyBuilder # 
+mongo::FailPoint::_shouldFailOpenBlock<decltype(nullptr)> # 
+mongo::transport::Session::getTags       # 
+mongo::ServerReadConcernMetrics::get     # 
+mongo::OperationSessionInfoFromClient::parse # 
+mongo::ListOfMatchExpression::add        # 
+mongo::NamespaceString::coll             # 
+mongo::QueryPlannerAnalysis::getSortPattern # 
+mongo::endQueryOp                        # 
+mongo::PathMatchExpression::PathMatchExpression # 
+mongo::ElapsedTracker::intervalHasElapsed # 
+mongo::logv2::LogManager::getGlobalDomain # 
+mongo::AbstractIndexAccessMethod::getSortedDataInterface # 
+mongo::CollectionImpl::isCapped          # 
+mongo::WiredTigerRecoveryUnit::WiredTigerRecoveryUnit # 
+namespace)::ClientOutOfLineExecutorClientObserver::onDestroyOperationContext mongo::(anonymous namespace)::ClientOutOfLineExecutorClientObserver::onDestroyOperationContext # 
+namespace)::CollectionShardingStateStandalone::enterCriticalSectionCatchUpPhase mongo::(anonymous namespace)::CollectionShardingStateStandalone::enterCriticalSectionCatchUpPhase # 
+mongo::QueryPlannerAnalysis::analyzeGeo  # 
+mongo::Top::incrementGlobalLatencyStats  # 
+mongo::LogicalSessionId::LogicalSessionId # 
+mongo::ScopedOperationCompletionShardingActions::ScopedOperationCompletionShardingActions # 
+mongo::repl::logInsertOps                # 
+mongo::QueryRequest::makeFromFindCommand # 
+mongo::FindCommon::enoughForFirstBatch   # 
+mongo::CommandHelpers::parseNsFromCommand[abi:cxx11] # 
+mongo::TrafficRecorder::observe          # 
+mongo::FTDCBSONUtil::(anonymous namespace)::extractMetricsFromDocument
+mongo::BSONObjBuilder
+mongo::repl
+mongo::ClockSource
+mongo::AuthCounter
+mongo::FTDCBSONUtil
+mongo::DataType::Handler
+mongo::BasicLockableAdapter
+mongo::OpCounters
+mongo::getHostNameCached
+mongo::BackgroundThreadClockSource
+mongo::prettyHostName
+mongo::ServerStatusMetricField
+mongo::FTDCCollectorCollection
+mongo::WiredTigerServerStatusSection
+mongo::procparser
+mongo::NumberParser
+mongo::BSONElement
+mongo::WiredTigerKVEngine
+mongo::FlowControl
+mongo::Timestamp
+mongo::WiredTigerRecoveryUnit
+mongo::RecoveryUnit
+mongo::OperationContext
+mongo::ReadWriteConcernProvenanceBase
+mongo::DeadlineMonitor
+ClientOutOfLineExecutorClientObserver
+ngx_opentracing::
+jaegertracing::
+opentracing::
+ngx_
+lj_
+ngx_http_lua_read_bytes
+lua_bridge_tracer::
+lua_
+bipbuf_peek_all
+slabs_available_chunks
+assoc_start_expand
+fill_item_stats_automove_
+fill_item_stats_automove
+slab_automove_run
+lru_maintainer_thread
+lru_pull_tail
+fill_slab_stats_automove
+mongo::ClientMetadata::fieldName() # is related to MongoDB, a NoSQL database, and is used for handling data within the application. 
+mongo::ProfileFilter::getDefault() # is related to MongoDB’s profiling feature, which is used to collect data about MongoDB’s performance. This function retrieves the default profile filter. 
+mongo::WiredTigerIndexUnique::isTimestampSafeUniqueIdx() const # is related to MongoDB’s WiredTiger storage engine, which is used to store data in MongoDB. This function checks if the index is a unique index and if it is safe to use for a timestamp.
+mongo::ShardingState::enabled() const # is related to MongoDB’s sharding feature, which is used to distribute data across multiple machines. This function checks if sharding is enabled.
+mongo::OpMsgRequest::getDatabase() const
+mongo::KeyString::sizeWithoutRecordIdAtEnd(void const*, unsigned long) # is related to MongoDB’s KeyString class, which is used to represent keys in MongoDB. This function returns the size of the key string without the record ID at the end.
+mongo::(anonymous namespace)::WriteCommand::getReadWriteType() const
+mongo::Top::get(mongo::ServiceContext*)
+mongo::(anonymous namespace)::LastOpFixer::~LastOpFixer()
+mongo::CurOp::~CurOp()
+mongo::CommandInvocation::~CommandInvocation()
+mongo::(anonymous namespace)::CmdInsert::Invocation::~Invocation()
+mongo::getGlobalServiceContext()
+mongo::sizeRecoveryState(mongo::ServiceContext*)
+mongo::WiredTigerRecordStore::cappedAndNeedDelete() const
+mongo::ServiceEntryPointCommon::Hooks::~Hooks()
+mongo::CurOp::raiseDbProfileLevel(int)
+mongo::WriteUnitOfWork::commit()
+mongo::CollectionImpl::notifyCappedWaitersIfNeeded()
+mongo::WriteConcernOptions::extractWCFromCommand(mongo::BSONObj const&)
+mongo::OperationShardingState::~OperationShardingState()
+mongo::ErrorLabelBuilder::isTransientTransactionError() const
+mongo::DbResponse::~DbResponse()
+mongo::OperationShardingState::hasDbVersion() const
+mongo::OperationShardingState::hasShardVersion() const
+mongo::(anonymous namespace)::AuthzClientObserver::onDestroyClient(mongo::Client*)
+mongo::(anonymous namespace)::StorageClientObserver::onCreateClient(mongo::Client*)
+mongo::audit::logCommandAuthzCheck(mongo::Client*, mongo::OpMsgRequest const&, mongo::audit::CommandInterface const&, mongo::ErrorCodes::Error)
+mongo::ReadConcernSupportResult::ReadConcernSupportResult(boost::optional<mongo::Status>, boost::optional<mongo::Status>)
+mongo::hasGlobalServiceContext()
+mongo::IndexCatalog::IndexIterator::next()
+mongo::(anonymous namespace)::WriteCommand::shouldAffectCommandCounter() const
+mongo::(anonymous namespace)::WriteCommand::secondaryAllowed(mongo::ServiceContext*) const
+mongo::KeyString::BuilderBase<mongo::BasicBufBuilder<mongo::SharedBufferAllocator> >::appendRecordId(mongo::RecordId)
+mongo::KeyString::BuilderBase<mongo::BasicBufBuilder<mongo::SharedBufferAllocator> >::_transition(mongo::KeyString::BuildState)
+mongo::KeyString::BuilderBase<mongo::BasicBufBuilder<mongo::SharedBufferAllocator> >::_appendEnd()
+mongo::KeyString::BuilderBase<mongo::BasicBufBuilder<mongo::SharedBufferAllocator> >::_appendPreshiftedIntegerPortion(unsigned long, bool, bool)
+mongo::Ordering::get(int) const [clone .isra.162]
+mongo::transport::TransportLayerASIO::BatonASIO::~BatonASIO()
+mongo::OpDebug::AdditiveMetrics::incrementNinserted(long long)
+mongo::SingleWriteResult::SingleWriteResult()
+mongo::userAllowedWriteNS(mongo::StringData, mongo::StringData)
+mongo::userAllowedWriteNS(mongo::NamespaceString const&)
+mongo::KeyString::BuilderBase<mongo::StackBufBuilderBase<512ul> >::~BuilderBase()
+mongo::LogicalClock::isEnabled() const
+mongo::OperationShardingState::resetShardingOperationFailedStatus()
+mongo::InsertOp::parse(mongo::OpMsgRequest const&)
+mongo::Date_t::toSystemTimePoint() const
+mongo::InExhaustIsMaster::get(mongo::transport::Session*)
+mongo::KeyString::Value::getTypeBits() const
+mongo::KeyString::TypeBits::setRawSize(unsigned int)
+mongo::ServerTransactionCoordinatorsMetrics::updateStats(mongo::TransactionCoordinatorsStats*)
+mongo::TransactionCoordinatorsStats::TransactionCoordinatorsStats()
+mongo::ServiceContext::LockedClientsCursor::LockedClientsCursor(mongo::ServiceContext*) # This function is related to MongoDB’s service context, which is used to manage clients and their operations. This constructor creates a locked clients cursor for the given service context.
+__conn_dhandle_destroy
+__btree_clear
+__conn_dhandle_remove
+__sweep_server_run_chk
+__conn_dhandle_config_clear
+mongo::ReadConcernStats::ReadConcernStats()
+mongo::ServerTransactionsMetrics::updateStats(mongo::TransactionsStats*, bool)
+mongo::(anonymous namespace)::ReadWriteConcernDefaultsServerStatus::includeByDefault() const
+mongo::ItoA::ItoA(unsigned long)

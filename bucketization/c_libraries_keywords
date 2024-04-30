@@ -1,0 +1,201 @@
+strlen                         # CPP std::string op
+strcmp                         # ^
+strncmp                        # ^
+strncpy                        # ^
+basic_string                   # ^
+std::_Rb_tree_increment        # RB Tree operations
+strtoll                        # C++ string to int
+intrusive_ptr_                 # Boost faster pointers
+_M_insert_rval                 # std::vector insert
+__errno_location               # Address of errno vairable
+parsePathAcceptingKeyword      # Calls substr, Potentially application logic
+CurOp::get                     # Dereferencing a pointer
+Value::Value                   # Stores data representable in BSON, handles a lot of smart pointers
+Document::toBson               # Has a DocumentStorageIterator, array iterator (?)
+DocumentStorageIterator::shouldSkipDeleted     # Checks strings, iterates over _storate
+IndexScan::IndexScan           # Boost operations, vector operations
+mongo::FastMapNoAlloc          # Lot of vector operations to return pre-allocated memory blocks
+::LockStats                    # Goes through the vector ResourceTypesCount and resets
+WiredTigerIndexUnique::newCursor   # std::make_unique operation
+SharedBufferAllocator>::grow   # Reads individual bytes, Potentially a memory operation
+ServiceContext::killOperation  # C++ try catch
+_M_insert_unique               # Insert into std::_rb_tree
+BSONElement::embeddedObject    # std::stringstream
+MetricTree::appendTo           # C map operations
+mongo::LockRequestList::push_back       # Nullptr and linked list operations
+error_entry                             # Struct to store errors
+mongo::FTDCCompressor::addSample         # Vector clear, iterating ops
+vfprintf                                 # Sends formatted output to a file stream
+mongo::rpc::opMsgRequestFromAnyProtocol  # Entire function is a switch statement
+mongo::PlanEnumerator::prepMemo          # Vector iteration ops, unique_ptr
+longest_match                            # Get longest match in a hashed string using registers
+mongo::WiredTigerSessionCache::getSession # Lock_guard and pop_back ops
+mongo::BtreeKeyGenerator::_getKeysWithArray # std::vector and operations on it
+mongo::BSONElement::toString             # Convert to string
+mongo::CommandHelpers::runCommandInvocation # std::shared_ptr and switch statement
+mongo::initializeOperationSessionInfo    # Vector auto operations
+mongo::PlanCacheIndexabilityState::getDiscriminators[abi:cxx11] # Const iterator and check if end of vector
+mongo::transport::TransportLayerManager::makeBaton # std::make operation
+mongo::CollectionIndexUsageTracker::recordIndexAccess # Pointer operations, calls custom find operation
+_M_dispose                               # Dispose std::basic_string
+::filterKeyFromKeyString                 # Switch statement and endian:: calls
+mongo::WiredTigerRecoveryUnit::_txnOpen  # Switch statement
+mongo::OperationLatencyHistogram::increment # Switch statement and calls a function that increments variables
+mongo::WorkingSetCommon::fetch           # std::vector iterator, std::find_if, boost:: operations
+mongo::IndexCatalogImpl::getIndexIterator # std::make_unique, vector operations
+mongo::LeafMatchExpression::numChildren  # set::size()
+mongo::UncommittedCollections::getForTxn # Vector operations find(), end()
+__shared_ptr                             # 
+std::char_traits<char>::compare          # Compare operation for std::char_traints - basic character and string ops
+std::_Rb_tree_insert_and_rebalance       # red-black tree insert
+mongo::CanonicalQuery::canonicalize      # Lot of std::unique_ptr, std::move, boost::intrusive_ptr ops
+::optional_base				 # boost::optional_base
+::_appendBsonValue 			 # Switch statement
+mongo::canonicalizeBSONType              # std::numeric_limits::min()
+__dynamic_cast                           # Dynamic Casting C++
+mongo::DocumentMetadataFields::operator= # std:;move and std::make_unique
+mongo::CollectionCatalog::resolveNamespaceStringOrUUID # std::stream and std:;move
+std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >::~vector # 
+mongo::OperationContext::~OperationContext  
+BSONObjBuilder::~BSONObjBuilde  
+LockerImpl::~LockerImpl  
+DocumentStorage::~DocumentStorage  
+IndexEntry::~IndexEntry  
+WiredTigerCursor::~WiredTigerCursor  
+mongo::RCVector::~RCVector               # 
+mongo::latch_detail::Mutex::~Mutex       # 
+mongo::PlanEnumerator::~PlanEnumerator   # 
+mongo::WiredTigerRecoveryUnit::~WiredTigerRecoveryUnit # 
+mongo::PlanExecutorImpl::~PlanExecutorImpl # 
+std::vector<mongo::IndexEntry, std::allocator<mongo::IndexEntry> >::~vector # 
+mongo::IndexScan::~IndexScan             # 
+mongo::IndexScanNode::~IndexScanNode     # 
+mongo::StatusWith<mongo::Message>::~StatusWith # 
+mongo::ScopedOperationCompletionShardingActions::~ScopedOperationCompletionShardingActions # 
+mongo::IndexBounds::~IndexBounds         # 
+mongo::Lock::CollectionLock::~CollectionLock # 
+std::char_traits<char>::length           # 
+::_M_range_insert	#
+mongo::WriteUnitOfWork::~WriteUnitOfWork # 
+mongo::WiredTigerRecordStore::DataSizeChange::~DataSizeChange # 
+::reserve # 
+::_M_default_append # 
+std::__detail::_List_node_base::_M_unhook # 
+mongo::QueryPlannerParams::~QueryPlannerParams # 
+std::__detail::_List_node_base::_M_hook  # 
+::_M_fill_insert # 
+mongo::rpc::OpMsgReplyBuilder::~OpMsgReplyBuilder # 
+::~StatusWith # 
+long, std::less<unsigned long>, std::allocator<unsigned long> >, std::allocator<std::set<unsigned long, std::less<unsigned long>, std::allocator<unsigned long> > > >::~vector std::vector<std::set<unsigned long, std::less<unsigned long>, std::allocator<unsigned long> >, std::allocator<std::set<unsigned long, std::less<unsigned long>, std::allocator<unsigned long> > > >::~vector # 
+std::default_delete<mongo::QuerySolution> >, std::allocator<std::unique_ptr<mongo::QuerySolution, std::default_delete<mongo::QuerySolution> > > >::~vector std::vector<std::unique_ptr<mongo::QuerySolution, std::default_delete<mongo::QuerySolution> >, std::allocator<std::unique_ptr<mongo::QuerySolution, std::default_delete<mongo::QuerySolution> > > >::~vector # 
+mongo::Lock::DBLock::~DBLock             # 
+mongo::EqualityMatchExpression::~EqualityMatchExpression # 
+mongo::CanonicalQuery const&)::{lambda()#1}>::_M_manager std::_Function_base::_Base_manager<mongo::FindCommon::waitInFindBeforeMakingBatch(mongo::OperationContext*, mongo::CanonicalQuery const&)::{lambda()#1}>::_M_manager # 
+mongo::PathMatchExpression::~PathMatchExpression # 
+namespace)::ValidationObjectFrame, std::allocator<mongo::(anonymous namespace)::ValidationObjectFrame> >::emplace_back<mongo::(anonymous namespace)::ValidationObjectFrame> std::vector<mongo::(anonymous namespace)::ValidationObjectFrame, std::allocator<mongo::(anonymous namespace)::ValidationObjectFrame> >::emplace_back<mongo::(anonymous namespace)::ValidationObjectFrame> # 
+mongo::AutoGetCollection::~AutoGetCollection # 
+namespace)::WiredTigerIndexUniqueCursor::~WiredTigerIndexUniqueCursor mongo::(anonymous namespace)::WiredTigerIndexUniqueCursor::~WiredTigerIndexUniqueCursor # 
+strchr@plt                               # 
+mongo::ImpersonationSessionGuard::~ImpersonationSessionGuard # 
+mongo::IndexScanStats::~IndexScanStats   # 
+mongo::BSONObj, std::_Identity<mongo::BSONObj>, mongo::BSONComparatorInterfaceBase<mongo::BSONObj>::LessThan, std::allocator<mongo::BSONObj> >::_M_get_insert_unique_pos std::_Rb_tree<mongo::BSONObj, mongo::BSONObj, std::_Identity<mongo::BSONObj>, mongo::BSONComparatorInterfaceBase<mongo::BSONObj>::LessThan, std::allocator<mongo::BSONObj> >::_M_get_insert_unique_pos # 
+std::allocator<mongo::StatusWith<mongo::SingleWriteResult> > >::emplace_back<mongo::SingleWriteResult> std::vector<mongo::StatusWith<mongo::SingleWriteResult>, std::allocator<mongo::StatusWith<mongo::SingleWriteResult> > >::emplace_back<mongo::SingleWriteResult> # 
+mongo::future_details::FutureImpl<mongo::Message>::~FutureImpl # 
+::destroyAt	# Calls C++ ~ destroyer
+long, unsigned long, std::_Identity<unsigned long>, std::less<unsigned long>, std::allocator<unsigned long> >::_M_erase std::_Rb_tree<unsigned long, unsigned long, std::_Identity<unsigned long>, std::less<unsigned long>, std::allocator<unsigned long> >::_M_erase # 
+long, std::allocator<unsigned long> >::push_back std::vector<unsigned long, std::allocator<unsigned long> >::push_back # 
+, 0>(mongo::PeriodicRunnerImpl::PeriodicJobImpl::_run()::{lambda()#2})::{lambda()#1}> > >::_M_run 0xffffffffbc6735b4 # 
+long, std::allocator<unsigned long> >::emplace_back<long long> std::vector<unsigned long, std::allocator<unsigned long> >::emplace_back<long long> # 
+std::allocator<mongo::StatusWith<mongo::SingleWriteResult> > >::~vector std::vector<mongo::StatusWith<mongo::SingleWriteResult>, std::allocator<mongo::StatusWith<mongo::SingleWriteResult> > >::~vector # 
+mongo::RelevantTag::~RelevantTag         # 
+std::chrono::_V2::system_clock::now      # 
+mongo::IndexCatalog::ReadyIndexesIterator::~ReadyIndexesIterator # 
+(mongo::ServiceContext*), mongo::(anonymous namespace)::{lambda(mongo::ServiceContext*)#4}>::_M_invoke std::_Function_handler<void (mongo::ServiceContext*), mongo::(anonymous namespace)::{lambda(mongo::ServiceContext*)#4}>::_M_invoke # 
+mongo::BSONObj, std::_Identity<mongo::BSONObj>, mongo::BSONComparatorInterfaceBase<mongo::BSONObj>::LessThan, std::allocator<mongo::BSONObj> >::_M_insert_<mongo::BSONObj const&, std::_Rb_tree<mongo::BSONObj, mongo::BSONObj, std::_Identity<mongo::BSONObj>, mongo::BSONComparatorInterfaceBase<mongo::BSONObj>::LessThan, std::allocator<mongo::BSONObj> >::_Alloc_node> std::_Rb_tree<mongo::BSONObj, mongo::BSONObj, std::_Identity<mongo::BSONObj>, mongo::BSONComparatorInterfaceBase<mongo::BSONObj>::LessThan, std::allocator<mongo::BSONObj> >::_M_insert_<mongo::BSONObj const&, std::_Rb_tree<mongo::BSONObj, mongo::BSONObj, std::_Identity<mongo::BSONObj>, mongo::BSONComparatorInterfaceBase<mongo::BSONObj>::LessThan, std::allocator<mongo::BSONObj> >::_Alloc_node> # 
+runtime.(*lfstack).push                  # Golang's code to push to a lock-free stack
+runtime.heapBitsSetType                  # Golang's code to record the datatype held in any new allocation
+runtime.gentraceback                     # Golang's code to implement a generic traceback
+fmt.(*pp).printArg                       # a whole bunch of Golang switch statements to print a variable
+time.parse                               # Golang's code to convert string to time
+google::protobuf::MessageLite::ParseFromZeroCopyStream # ProtoBuf's code to parse a byte stream without copying at all
+time.Time.AppendFormat                   # Golang's code to format a time into a string
+time.nextStdChunk                        # Golang's code to parse a time string to find the occurace of a particular string
+encoding/json.(*decodeState).object      # Golang's code to consume some data from the json decoder and decodes it
+fmt.(*pp).doPrintf                       # Golang's code to print
+operator new@plt                         # C++'s allocation function
+operator delete@plt                      # C++'s default deallocation that matches operator new
+grpc_core::(anonymous namespace)::RetryFilter::CallData::CallAttempt::AddRetriableBatches # Golang's code
+sync.(*Map).Load                         # Golang's code to return value stored in the map for a key
+runtime.cgocall                          # Golang's code to call C from Go
+time.(*Location).lookup                  # 
+strconv.formatBits                       # Golang's code to copute string representation of input int
+github.com/rs/zerolog/internal/json.Encoder.AppendString # Golang's code to append strings in json handling
+interrupt_entry                          # 
+encoding/json.(*decodeState).literalStore # Golang's code to decode a literal stored in item of bytes into the actual value
+syscall.Getenv                           # Golang's code to get environment variable
+__printf_fp                              # libstdc++ library function called by printf related functions
+os.(*File).Write                         # Golang's code to write len(b) bytes from b to a File
+runtime.mapaccess2                       # Golang's code to access a key in a map
+encoding/json.stateEndValue              # Golang's code to return state after completing reading a value in jsob
+github.com/rs/zerolog.(*Event).msg       # Golang's code to send an Event with a message (msg)
+runtime.mapaccess1_faststr               # Golang's code to access key of map quickly
+github.com/rs/zerolog.ConsoleWriter.Write # Golang's code to write to a JSON logger
+fmt.(*fmt).fmtInteger                    # Golang's code to format an integer to a string
+encoding/json.indirect                   # Golang's code
+reflect.Value.Elem                       # Golang's code to return the value of whatever the interface contains or what the pointer points to
+path/filepath.Clean                      # Golang's code to return the shortest path name by lexical processing of the path string
+time.appendInt                           # Golang's code
+time.absDate                             # Golang's code to convert time in seconds to date
+runtime.mapiterinit                      # Golang's code to initialize a hiter struct to range over maps
+path/filepath.Rel                        # Golang's code that returns a relative path from base and target path
+encoding/json.unquoteBytes               # Golang's code to convert quoted string to unquoted string
+encoding/json.stateInString              # Golang's code to read after ignoring the first "
+encoding/json.(*Decoder).readValue       # Golang's code to read a JSON value into a buffer
+encoding/json.(*decodeState).rescanLiteral # Golang's code to scan a literal's bytes
+runtime.scanframeworker                  # Golang's garbage collection code to scan a stack frame for local variables and function arguments/results
+net/url.unescape                         # Golang's code to unescape a string
+runtime.retake                           # Golang's code
+runtime.binarySearchTree                 # Golang's code to build a binary search tree with n objects in a list
+runtime.adjustframe                      # Golang code
+runtime.adjustpointers                   # Golang's code by adjusting pointers in a memory given as a bitvector
+runtime.mapiternext                      # Golang's code to go to do map iteration
+runtime.(*consistentHeapStats).acquire   # Golang's code to update the heapstatsdelta
+grpc_core::promise_filter_detail::BaseCallData::Flusher::~Flusher # gRPC C++ destructor
+runtime.(*stackScanState).addObject      # Golang's code to add a stack object at an address of type typ to the set of stack objects
+google::protobuf::internal::ArenaStringPtr::DestroyNoArenaSlowPath # Protobuf's code to delete a mutable pointer
+grpc_core::(anonymous namespace)::RetryFilter::CallData::CallAttempt::BatchData::~BatchData # C++ gRPC destructor
+syscall.Getwd                            # Golang's code to get a rooted path name of the current directory
+grpc_client_security_context::~grpc_client_security_context # C++ gRPC's destructor
+__nss_passwd_lookup
+_IO_vfscanf
+__vsnprintf_chk
+boost::detail
+std::vector
+std::uncaught_exception
+std::
+__curhs_close
+explicit_bzero
+__curhs_file_cursor_open
+__cursor_config_debug
+config_check
+__curstat_get_value
+__curstat_next
+_IO_default_xsputn
+__gnu_cxx::
+__cxxabiv1::__si_class_type_info::__do_dyncast
+main
+bufferevent_base_set
+clock_nanosleep 
+clock_handler
+usleep #  The usleep() function suspends execution of the calling thread for (at least) usec microseconds.
+nanosleep #      nanosleep() suspends the execution of the calling thread until either at least the time specified in *req has elapsed, or..
+_IO_unsave_markers
+fscanf
+__close_nocancel
+_IO_enable_locks
+_IO_sscanf
+_IO_sputbackc
+vprintf
+fscanf
+_IO_file_underflow
+vscanf

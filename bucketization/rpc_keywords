@@ -1,0 +1,62 @@
+grpc_core::(anonymous namespace)::RetryFilter::CallData::Destroy # gRPC's code to destroy a Call Data object before C++'s destruction
+set_pollset_or_pollset_set               # gRPC's code to set a pollset (a completition queue), it is meant to be ignored by the code, don't know why it is taking so many cycles
+grpc_combiner_continue_exec_ctx          # gRPC's code to continue in an Execution context (a bag of data that collects info along a callstack)
+grpc_core::ExecCtx::Flush                # gRPC C++ code to flush any work queued onto a gRPC execution context
+grpc_call_next_op                        # gRPC's code to call the next operation in a channel stack
+grpc::Channel::CreateCallInternal        # gRPC's code to make a call
+grpc_channel_create_registered_call      # gRPC's code to create a call given a handle returned from grpc_channel_register_call
+grpc_core::ClientAuthFilter::MakeCallPromise # gRPC's code
+grpc_core::ClientChannel::CallData::ResumePendingBatchInCallCombiner # gRPC code to choose a batch of data to send via a CallData(instance that represents a complete processing cycle of a client request)
+grpc_core::ClientChannel::LoadBalancedCall::ResumePendingBatchInCallCombiner # gRPC's code
+grpc_slice_buffer_reset_and_unref_internal # gRPC's code
+grpc_core::FilterStackCall::StartBatch   # gRPC's code
+grpc_core::(anonymous namespace)::RetryFilter::CallData::CallAttempt::BatchData::OnComplete # gRPC's code
+grpc_core::arena_promise_detail::CallableImpl<grpc_core::MetadataHandle<grpc_metadata_batch>, grpc_core::promise_detail::CallPushPull<grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::SeqTraits, grpc_core::ArenaPromise<grpc_core::MetadataHandle<grpc_metadata_batch> >, grpc_core::HttpClientFilter::MakeCallPromise(grpc_core::CallArgs, std::function<grpc_core::ArenaPromise<grpc_core::MetadataHandle<grpc_metadata_batch> > (grpc_core::CallArgs)>)::{lambda(grpc_core::MetadataHandle<grpc_metadata_batch>)#1}>, grpc_core::HttpClientFilter::MakeCallPromise(grpc_core::CallArgs, std::function<grpc_core::ArenaPromise<grpc_core::MetadataHandle<grpc_metadata_batch> > (grpc_core::CallArgs)>)::{lambda()#2}, grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::SeqTraits, grpc_core::Latch<grpc_metadata_batch*>::WaitPromise, grpc_core::HttpClientFilter::MakeCallPromise(grpc_core::CallArgs, std::function<grpc_core::ArenaPromise<grpc_core::MetadataHandle<grpc_metadata_batch> > (grpc_core::CallArgs)>)::{lamb # gRPC's code
+grpc_core::ExecCtx::Run                  # gRPC's code to run an execution context
+end_worker                               # gRPC's code called by a worker that just came out of epoll_wait()
+grpc_call_unref                          # gRPC's code to unref a call
+grpc_core::ClientChannel::LoadBalancedCall::Orphan # gRPC's code if the trailing metadata operation did not start, then assume the call to be completed
+grpc_core::FilterStackCall::DestroyCall  # gRPC's code to destroy a call
+grpc::ClientContext::ClientContext       # gRPC's code to initialize ClientContext class
+grpc_core::(anonymous namespace)::RetryFilter::CallData::CallAttempt::MaybeSwitchToFastPath # gRPC's code to switch to fast path for next batches
+connected_channel_destroy_call_elem      # gRPC's code
+grpc_core::(anonymous namespace)::RetryFilter::CallData::CallAttempt::BatchData::RecvTrailingMetadataReady # gRPC's code
+grpc_core::ClientChannel::CallData::ApplyServiceConfigToCallLocked # gRPC's code
+grpc_chttp2_maybe_complete_recv_message  # gRPC's code
+grpc_chttp2_mark_stream_closed           # gRPC code
+grpc_core::promise_filter_detail::ClientCallData::PollContext::Run # gRPC code
+grpc_core::FilterStackCall::ReleaseCall  # gRPC code
+grpc_core::CallCombiner::Start           # gRPC code
+grpc_core::MultiProducerSingleConsumerQueue::PopAndCheckEnd # gRPC's code
+grpc_core::Combiner::Run                 # gRPC's code
+grpc_core::(anonymous namespace)::RetryFilter::CallData::RetryCommit # gRPC's code
+grpc_core::Arena::Destroy                # gRPC's code
+grpc_call_stack_init                     # gRPC's code
+destroy_stream_locked                    # gRPC's code
+init_header_frame_parser                 # gRPC's code to initialize parser for header
+grpc_core::ClientChannelServiceConfigCallData::Destroy # gRPC's code
+grpc_chttp2_stream_map_find              # gRPC's code
+grpc_chttp2_stream_unref                 # gRPC's code
+grpc_chttp2_mark_stream_writable         # gRPC's code
+grpc_core::(anonymous namespace)::RetryFilter::CallData::CreateLoadBalancedCall # gRPC code for client to create a load balanced call
+grpc_chttp2_maybe_complete_recv_initial_metadata # gRPC's code
+grpc_core::HPackParser::ParseInputInner  # gRPC's code
+grpc_core::(anonymous namespace)::RetryFilter::CallData::Init # gRPC's code
+grpc_core::(anonymous namespace)::RetryFilter::CallData::CallAttempt::BatchData::RecvInitialMetadataReady # gRPC's code
+grpc_core::channelz::CallCountingHelper::RecordCallSucceeded # gRPC's code
+grpc_pollset_init                        # gRPC's code
+grpc_core::Executor::RunClosures         # gRPC's code
+grpc_core::channelz::SocketNode::RecordStreamStartedFromLocal # gRPC's code
+grpc_core::FilterStackCall::SetFinalStatus # gRPC's code
+grpc_core::(anonymous namespace)::RetryFilter::CallData::MaybeClearPendingBatch # gRPC's code
+grpc_core::(anonymous namespace)::RetryFilter::CallData::CallAttempt::BatchData::MaybeAddClosureForRecvInitialMetadataCallback # gRPC's code
+grpc_slice_buffer_init                   # gRPC's code
+grpc_core::CompressionAlgorithmSet::CompressionAlgorithmSet # gRPC's code
+grpc_chttp2_stream::grpc_chttp2_stream   # gRPC's code
+rpc::readRequestMetadata  
+mongo::rpc
+apache::thrift
+ngx_resolver_create_name_query
+ngx_resolver_alloc
+ngx_resolver_lookup_srv
+ngx_resolve_name_locked
