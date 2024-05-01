@@ -9,7 +9,7 @@ import pickle
 import numpy as np
 import os
 from tqdm import tqdm
-from copy import deepcopy
+from copy import deepcopy 
 
 def parse_perf_proto(perf_data_proto):
     with open(perf_data_proto, "rb") as proto_file:
